@@ -1,25 +1,35 @@
 {% extends "base.html" %}
 
-{% block title %}This Week in AI — Week of {{ week_display }}{% endblock %}
+{% block title %}This Week in AI — {{ edition_title }}{% endblock %}
 
 {% block content %}
 <header>
   <h1>This Week in <span class="highlight">AI</span></h1>
-  <div class="subtitle">Week of {{ week_display }}</div>
+  <div class="subtitle">{{ edition_title }}</div>
   {% if curator_notes %}
   <div class="curator-notes">{{ curator_notes }}</div>
   {% endif %}
 </header>
 
-<nav class="tabs">
+<nav class="tabs" id="category-tabs">
   {% for cat in categories %}
   {% if cat.slug in active_categories %}
-  <button data-tab="{{ cat.slug }}"{% if loop.first %} class="active"{% endif %}>
+  <button data-tab="{{ cat.slug }}"{% if cat.slug == first_category %} class="active"{% endif %}>
     {{ cat.name }}<span class="count">({{ papers_by_category.get(cat.slug, [])|length }})</span>
   </button>
   {% endif %}
   {% endfor %}
 </nav>
+
+{% if sources|length > 1 %}
+<nav class="source-filters">
+  <span class="filter-label">Source:</span>
+  <button class="source-btn active" data-source="all">All</button>
+  {% for src in sources %}
+  <button class="source-btn" data-source="{{ src }}">{{ src }}</button>
+  {% endfor %}
+</nav>
+{% endif %}
 
 {% for cat in categories %}
 {% set cat_papers = papers_by_category.get(cat.slug, []) %}
@@ -27,10 +37,13 @@
 <section class="category{% if cat.slug == first_category %} active{% endif %}" id="{{ cat.slug }}">
   <h2>{{ cat.name }}</h2>
   {% for paper in cat_papers %}
-  <div class="paper">
+  <div class="paper" data-source="{{ paper.source | default('arxiv') }}">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
       <div class="paper-title">
-        <h3><a href="{{ paper.url }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">{{ paper.title }}</a></h3>
+        <h3>
+          <span class="source-badge source-{{ paper.source | default('arxiv') }}">{{ paper.source | default('arxiv') }}</span>
+          <a href="{{ paper.url }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">{{ paper.title }}</a>
+        </h3>
         <div class="importance-preview">{{ paper.importance | truncate(120) }}</div>
       </div>
       <div class="expand-icon">&#9654;</div>
@@ -38,7 +51,9 @@
     <div class="paper-details">
       <div class="meta">{{ paper.authors | join(", ") }}</div>
       <div class="summary">{{ paper.summary }}</div>
+      {% if paper.importance %}
       <div class="importance">{{ paper.importance }}</div>
+      {% endif %}
       {% if paper.tags %}
       <div class="tags">
         {% for tag in paper.tags %}
@@ -46,7 +61,7 @@
         {% endfor %}
       </div>
       {% endif %}
-      <a class="arxiv-link" href="{{ paper.url }}" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+      <a class="arxiv-link" href="{{ paper.url }}" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   </div>
   {% endfor %}
@@ -65,12 +80,37 @@
 </div>
 
 <script>
-document.querySelectorAll('nav.tabs button').forEach(btn => {
+// Category tabs
+document.querySelectorAll('#category-tabs button').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('nav.tabs button').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('#category-tabs button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     document.querySelectorAll('section.category').forEach(s => s.classList.remove('active'));
     document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Source filters
+document.querySelectorAll('.source-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const src = btn.dataset.source;
+    document.querySelectorAll('.paper').forEach(p => {
+      if (src === 'all' || p.dataset.source === src) {
+        p.style.display = '';
+      } else {
+        p.style.display = 'none';
+      }
+    });
+    // Update counts in category tabs
+    document.querySelectorAll('#category-tabs button').forEach(tab => {
+      const catId = tab.dataset.tab;
+      const section = document.getElementById(catId);
+      if (!section) return;
+      const visible = section.querySelectorAll('.paper:not([style*="display: none"])').length;
+      tab.querySelector('.count').textContent = '(' + visible + ')';
+    });
   });
 });
 </script>

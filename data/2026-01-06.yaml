@@ -1,7 +1,112 @@
 week: '2026-01-06'
 curator_notes: 'Inaugural edition — the best AI agent papers and projects from Q1 2026 (Jan 1 - Mar 8). Sources: arxiv, GitHub
-  trending, lab blogs (Anthropic, OpenAI, Google DeepMind, Microsoft).'
+  trending, HuggingFace, lab blogs.'
 papers:
+- title: 'Agent-Safehouse: Sandbox for Local AI Agents'
+  authors:
+  - eugene1g
+  url: https://github.com/eugene1g/agent-safehouse
+  category: agentops
+  summary: Sandboxing tool that restricts AI agents to read/write only designated files and directories. 1.2K stars. Implements
+    capability-based isolation for local agent execution with minimal overhead.
+  importance: Directly addresses agent security/guardrails for local execution — critical for production agent deployments.
+  tags:
+  - sandboxing
+  - security
+  - guardrails
+  - isolation
+  source: github
+- title: 'Nono: Kernel-Enforced Sandbox for AI Agents'
+  authors:
+  - always-further
+  url: https://github.com/always-further/nono
+  category: agentops
+  summary: Secure kernel-enforced sandbox CLI and SDKs for AI agents with capability-based isolation, secure key management,
+    atomic rollback, and cryptographic immutable audit chain. 1K+ stars. Zero-trust environment for agent execution.
+  importance: Production-grade agent security with audit trails and rollback — essential patterns for enterprise AgentCore
+    deployments.
+  tags:
+  - security
+  - sandbox
+  - audit-trail
+  - zero-trust
+  source: github
+- title: 'Overture: Visual Execution Plan Mapping for Coding Agents'
+  authors:
+  - SixHq
+  url: https://github.com/SixHq/Overture
+  category: agentops
+  summary: Open-source MCP server that visually maps out the execution plan of any AI coding agent as an interactive flowchart/graph
+    before the agent begins writing code. 600 stars. Provides transparency into agent decision-making.
+  importance: Novel approach to agent observability through visual execution planning, making agent behavior inspectable and
+    debuggable.
+  tags:
+  - observability
+  - visualization
+  - execution-plan
+  - mcp
+  source: github
+- title: 'PinchBench: Benchmarking LLMs as Coding Agents'
+  authors:
+  - Kilo AI
+  url: https://github.com/pinchbench/skill
+  category: agentops
+  summary: Benchmarking system for evaluating LLM models as coding agents. 550 stars. Provides standardized evaluation methodology
+    for comparing coding agent performance across models and configurations.
+  importance: Standardized agent evaluation infrastructure — essential for informed model selection in AgentCore deployments.
+  tags:
+  - benchmarking
+  - evaluation
+  - coding-agents
+  source: github
+- title: 'MAESTRO: Multi-Agent Evaluation Suite for Testing, Reliability, and Observability'
+  authors:
+  - Tie Ma
+  - Yixi Chen
+  - Vaastav Anand
+  url: https://arxiv.org/abs/2601.00481
+  category: agentops
+  summary: We present MAESTRO, an evaluation suite for the testing, reliability, and observability of LLM-based MAS. MAESTRO
+    standardizes MAS configuration and execution through a unified interface, supports integrating both native and third-party
+    MAS via a repository of examples and lightweight adapters, and ...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'Kimi K2.5: Visual Agentic Intelligence'
+  authors:
+  - Kimi Team
+  url: https://arxiv.org/abs/2602.02276
+  category: agentops
+  summary: We introduce Kimi K2.5, an open-source multimodal agentic model designed to advance general agentic intelligence.
+    K2.5 emphasizes the joint optimization of text and vision so that two modalities enhance each other. This includes a series
+    of techniques such as joint text-vision pre-training, zero-vis...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: Agentic Reasoning for Large Language Models
+  authors:
+  - Tianxin Wei
+  - Ting-Wei Li
+  - Zhining Liu
+  url: https://arxiv.org/abs/2601.12538
+  category: agentops
+  summary: Reasoning is a fundamental cognitive process underlying inference, problem-solving, and decision-making. While
+    large language models (LLMs) demonstrate strong reasoning capabilities in closed-world settings, they struggle in open-ended
+    and dynamic environments. Agentic reasoning marks a paradigm shi...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'AI Agent Systems: Architectures, Applications, and Evaluation'
+  authors:
+  - Bin Xu
+  url: https://arxiv.org/abs/2601.01743
+  category: agentops
+  summary: 'AI agents -- systems that combine foundation models with reasoning, planning, memory, and tool use -- are rapidly
+    becoming a practical interface between natural-language intent and real-world computation. This survey synthesizes the
+    emerging landscape of AI agent architectures across: (i) deliberati...'
+  importance: ''
+  tags: []
+  source: huggingface
 - title: 'Wink: Recovering from Misbehaviors in Coding Agents'
   authors: []
   url: https://arxiv.org/abs/2602.17037v2
@@ -18,6 +123,7 @@ papers:
   - error-recovery
   - production-systems
   - observability
+  source: arxiv
 - title: Policy Compiler for Secure Agentic Systems
   authors: []
   url: https://arxiv.org/abs/2602.16708v2
@@ -34,6 +140,7 @@ papers:
   - guardrails
   - security
   - multi-agent
+  source: arxiv
 - title: 'AIR: Improving Agent Safety through Incident Response'
   authors:
   - Zibo Xiao
@@ -53,6 +160,7 @@ papers:
   - incident-response
   - guardrails
   - runtime
+  source: arxiv
 - title: 'Silent Egress: When Implicit Prompt Injection Makes LLM Agents Leak Without a Trace'
   authors: []
   url: https://arxiv.org/abs/2602.22450v1
@@ -69,6 +177,7 @@ papers:
   - prompt-injection
   - guardrails
   - data-exfiltration
+  source: arxiv
 - title: 'Adversarial Intent is a Latent Variable: Stateful Trust Inference for Securing Multimodal Agentic RAG'
   authors: []
   url: https://arxiv.org/abs/2602.21447v1
@@ -85,6 +194,7 @@ papers:
   - guardrails
   - agentic-RAG
   - adversarial-defense
+  source: arxiv
 - title: 'MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems'
   authors: []
   url: https://arxiv.org/abs/2602.19843v1
@@ -101,6 +211,7 @@ papers:
   - reliability
   - multi-agent
   - observability
+  source: arxiv
 - title: 'TabAgent: A Framework for Replacing Agentic Generative Components with Tabular-Textual Classifiers'
   authors: []
   url: https://arxiv.org/abs/2602.16429v1
@@ -116,6 +227,7 @@ papers:
   - latency-reduction
   - tool-routing
   - production-agents
+  source: arxiv
 - title: 'Choosing How to Remember: Adaptive Memory Structures for LLM Agents'
   authors:
   - Mingfei Lu
@@ -136,6 +248,7 @@ papers:
   - adaptive-memory
   - long-horizon
   - memory-hierarchy
+  source: arxiv
 - title: 'SideQuest: Model-Driven KV Cache Management for Long-Horizon Agentic Reasoning'
   authors: []
   url: https://arxiv.org/abs/2602.22603v2
@@ -151,6 +264,7 @@ papers:
   - memory-management
   - agentic-reasoning
   - runtime-optimization
+  source: arxiv
 - title: 'Arbor: A Framework for Reliable Navigation of Critical Conversation Flows'
   authors:
   - Luís Silva
@@ -171,6 +285,7 @@ papers:
   - workflow-decomposition
   - healthcare
   - cost-optimization
+  source: arxiv
 - title: 'PrivAct: Internalizing Contextual Privacy Preservation via Multi-Agent Preference Training'
   authors:
   - Yuhan Cheng
@@ -191,6 +306,7 @@ papers:
   - privacy
   - multi-agent
   - preference-training
+  source: arxiv
 - title: 'MCPShield: A Security Cognition Layer for Adaptive Trust Calibration in Model Context Protocol Agents'
   authors: []
   url: https://arxiv.org/abs/2602.14281v3
@@ -207,6 +323,7 @@ papers:
   - tool-validation
   - trust-calibration
   - agent-security
+  source: arxiv
 - title: 'AOI: Turning Failed Trajectories into Training Signals for Autonomous Cloud Diagnosis'
   authors: []
   url: https://arxiv.org/abs/2603.03378v2
@@ -223,6 +340,7 @@ papers:
   - failure-learning
   - cloud-operations
   - safe-execution
+  source: arxiv
 - title: 'TRACER: Trajectory Risk Aggregation for Critical Episodes in Agentic Reasoning'
   authors:
   - Sina Tayebati
@@ -244,106 +362,61 @@ papers:
   - uncertainty
   - tool-use
   - agent-monitoring
-- title: 'When Agents Disagree With Themselves: Measuring Behavioral Consistency in LLM-Based Agents'
+  source: arxiv
+- title: 'OpenAI o3/o4-mini: Full Tool Access Reasoning Models'
   authors:
-  - Aman Mehta
-  url: https://arxiv.org/abs/2602.11619v1
-  category: agentops
-  summary: A study of 3,000 agent runs across three models on HotpotQA revealing that ReAct-style agents produce 2-4.2 distinct
-    action sequences per 10 identical runs. Tasks with consistent behavior achieve 80-92% accuracy versus 25-60% for highly
-    inconsistent tasks. The authors trace 69% of divergence to step 2, suggesting early behavioral monitoring could enable
-    proactive error detection.
-  importance: Directly informs agent observability and runtime monitoring strategies by showing behavioral consistency is
-    a strong predictor of task success.
+  - OpenAI
+  url: https://openai.com/index/introducing-o3-and-o4-mini/
+  category: models
+  source: blog
+  summary: OpenAI o3 and o4-mini models have full access to tools within ChatGPT and custom tools via function calling in
+    the API. Trained to reason about how to solve problems, choosing when and how to use tools. Represents the convergence
+    of reasoning and tool-use capabilities.
+  importance: Reasoning models with native tool use represent a paradigm shift for agent architectures.
   tags:
-  - agent-reliability
-  - observability
-  - behavioral-consistency
-- title: 'AMV-L: Lifecycle-Managed Agent Memory for Tail-Latency Control in Long-Running LLM Systems'
-  authors:
-  - Emmanuel Bamidele
-  url: https://arxiv.org/abs/2603.04443v1
-  category: agentops
-  summary: Presents AMV-L, a memory-management framework treating agent memory as a managed systems resource with value-driven
-    promotion, demotion, and eviction across lifecycle tiers. Retrieval is restricted to a bounded, tier-aware candidate set
-    decoupling working set from total retained memory. Achieves 3.1x throughput improvement and 4.2x median latency reduction
-    over TTL baselines, reducing requests exceeding 2s from 13.8% to 0.007%.
-  importance: Directly addresses agent memory management at the infrastructure level with strong latency guarantees, highly
-    relevant to production agent runtime and memory systems.
-  tags:
-  - agent-memory
-  - latency-optimization
-  - memory-management
-  - agent-infrastructure
-- title: 'Recursive language models for jailbreak detection: a procedural defense for tool-augmented agents'
-  authors:
-  - Doron Shavit
-  url: https://arxiv.org/abs/2602.16520v1
-  category: agentops
-  summary: RLM-JB is an end-to-end jailbreak detection framework that uses recursive language models to defend tool-augmented
-    agents. A root model orchestrates bounded analysis programs that normalize, chunk, and screen inputs in parallel, then
-    aggregate cross-chunk signals to catch split-payload attacks. On AutoDAN-style adversarial inputs it achieves 92.5-98%
-    recall with 98.99-100% precision across three LLM backends.
-  importance: Directly addresses guardrail design for agentic systems with tool access, offering a production-ready detection
-    pipeline with strong precision-recall tradeoffs.
-  tags:
-  - guardrails
-  - jailbreak-detection
-  - agent-security
-- title: 'CausalArmor: Efficient Indirect Prompt Injection Guardrails via Causal Attribution'
-  authors: []
-  url: https://arxiv.org/abs/2602.07918v1
-  category: agentops
-  summary: CausalArmor addresses indirect prompt injection attacks on tool-calling AI agents through a selective defense framework
-    based on causal ablation. It computes leave-one-out attributions at privileged decision points and triggers targeted sanitization
-    only when an untrusted segment dominates user intent, avoiding the over-defense dilemma. It also employs retroactive Chain-of-Thought
-    masking to prevent acting on poisoned reasoning traces. Experiments on AgentDojo and DoomArena match aggressive defenses
-    while preserving utility and latency.
-  importance: Directly applicable as a guardrail layer for agent platforms, offering efficient, selective defense against
-    prompt injection with theoretical guarantees and practical latency benefits.
-  tags:
-  - guardrails
-  - security
-  - prompt-injection
-  - tool-calling
-- title: 'Learning When to Act or Refuse: Guarding Agentic Reasoning Models for Safe Multi-Step Tool Use'
-  authors:
-  - Aradhye Agarwal
-  - Gurdit Siyan
-  - Yash Pandya
-  - Joykirat Singh
-  - Akshay Nambi
-  url: https://arxiv.org/abs/2603.03205v1
-  category: agentops
-  summary: MOSAIC introduces a post-training framework that aligns agents for safe multi-step tool use by structuring inference
-    as a plan-check-act-or-refuse loop with explicit safety reasoning and refusal as first-class actions. It uses preference-based
-    reinforcement learning with pairwise trajectory comparisons to learn safety without trajectory-level labels. Evaluated
-    zero-shot across three model families, MOSAIC reduces harmful behavior by up to 50% and increases refusal on injection
-    attacks by over 20% while preserving benign task performance.
-  importance: Directly addresses guardrails for agentic tool use with a generalizable safety framework, a core concern for
-    agent runtime and session management infrastructure.
-  tags:
-  - agent-safety
-  - guardrails
+  - reasoning
   - tool-use
-  - reinforcement-learning
-- title: 'When Benchmarks Lie: Evaluating Malicious Prompt Classifiers Under True Distribution Shift'
+  - openai
+  - o3
+- title: 'SE-Search: Self-Evolving Search Agent via Memory and Dense Reward'
   authors:
-  - Max Fomin
-  url: https://arxiv.org/abs/2602.14161v1
-  category: agentops
-  summary: Reveals that standard train-test evaluation of prompt injection and jailbreak classifiers overestimates performance
-    by up to 25% per-dataset due to distribution shift. Proposes Leave-One-Dataset-Out (LODO) evaluation across 18 datasets
-    spanning harmful requests, jailbreaks, and indirect prompt injections. Finds production guardrails like PromptGuard 2
-    and LlamaGuard detect only 7-37% of indirect attacks targeting agents. Uses Sparse Auto-Encoder analysis to show 28% of
-    top classifier features are dataset-dependent shortcuts.
-  importance: 'Critical finding for agent safety: production guardrails fail on indirect prompt injection attacks, and standard
-    evaluation methods mask these failures. Essential reading for guardrail deployment.'
-  tags:
-  - guardrails
-  - prompt-injection
-  - evaluation
-  - agent-safety
+  - Jian Li
+  - Yizhang Jin
+  - Dongqi Liu
+  url: https://arxiv.org/abs/2603.03293
+  category: models
+  summary: Retrieval augmented generation (RAG) reduces hallucinations by conditioning generation on retrieved external knowledge.
+    Recent search agents further cast RAG as an autonomous, multi-turn information-seeking process. We propose Self-Evolving
+    Search, an agent that improves online search behavior throu...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: Examining Reasoning LLMs-as-Judges in Non-Verifiable LLM Post-Training
+  authors:
+  - Yixin Liu
+  - Yue Yu
+  - DiJia Su
+  url: https://arxiv.org/abs/2603.12246
+  category: models
+  summary: Reasoning LLMs-as-Judges provide a promising path for extending the success of reasoning models to non-verifiable
+    domains. We conduct a rigorous study to investigate the actual impact of non-reasoning and reasoning judges in reinforcement-learning-based
+    LLM alignment. Our study reveals that non-reas...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'Self-Evolving Recommendation System: End-To-End Autonomous Model Optimization With LLM Agents'
+  authors:
+  - Haochen Wang
+  - Yi Wu
+  - Daryl Chang
+  url: https://arxiv.org/abs/2602.10226
+  category: models
+  summary: Optimizing large-scale machine learning systems requires navigating a massive hyperparameter search space. We propose
+    a self-evolving system that leverages LLM agents to autonomously generate, train, and deploy high-performing model changes
+    within an end-to-end automated workflow. The system compris...
+  importance: ''
+  tags: []
+  source: huggingface
 - title: 'Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters'
   authors:
   - Ailin Huang
@@ -365,6 +438,7 @@ papers:
   - moe
   - agentic-inference
   - open-weights
+  source: arxiv
 - title: 'Search-P1: Path-Centric Reward Shaping for Stable and Efficient Agentic RAG Training'
   authors: []
   url: https://arxiv.org/abs/2602.22576v1
@@ -381,6 +455,7 @@ papers:
   - reward-shaping
   - reinforcement-learning
   - retrieval
+  source: arxiv
 - title: 'Nanbeige4.1-3B: A Small General Model that Reasons, Aligns, and Acts'
   authors:
   - Chen Yang
@@ -401,6 +476,7 @@ papers:
   - agentic
   - tool-calling
   - reinforcement-learning
+  source: arxiv
 - title: 'GLM-5: from Vibe Coding to Agentic Engineering'
   authors:
   - GLM-5-Team
@@ -420,6 +496,7 @@ papers:
   - foundation-model
   - agentic-engineering
   - reinforcement-learning
+  source: arxiv
 - title: Multilingual Safety Alignment Via Sparse Weight Editing
   authors: []
   url: https://arxiv.org/abs/2602.22554v1
@@ -436,6 +513,7 @@ papers:
   - multilingual
   - weight-editing
   - guardrails
+  source: arxiv
 - title: 'CoRefine: Confidence-Guided Self-Refinement for Adaptive Test-Time Compute'
   authors: []
   url: https://arxiv.org/abs/2602.08948v1
@@ -451,6 +529,7 @@ papers:
   - self-refinement
   - reasoning
   - efficiency
+  source: arxiv
 - title: 'DySCO: Dynamic Attention-Scaling Decoding for Long-Context LMs'
   authors: []
   url: https://arxiv.org/abs/2602.22175v1
@@ -466,6 +545,7 @@ papers:
   - decoding
   - attention
   - inference
+  source: arxiv
 - title: 'ARKV: Adaptive and Resource-Efficient KV Cache Management under Limited Memory Budget for Long-Context Inference
     in LLMs'
   authors: []
@@ -482,6 +562,7 @@ papers:
   - memory-efficiency
   - long-context
   - inference
+  source: arxiv
 - title: 'Hit-RAG: Learning to Reason with Long Contexts via Preference Alignment'
   authors: []
   url: https://arxiv.org/abs/2603.07023v1
@@ -498,6 +579,7 @@ papers:
   - long-context
   - preference-alignment
   - reasoning
+  source: arxiv
 - title: '$V_1$: Unifying Generation and Self-Verification for Parallel Reasoners'
   authors: []
   url: https://arxiv.org/abs/2603.04304v1
@@ -512,6 +594,7 @@ papers:
   - test-time-scaling
   - verification
   - code-generation
+  source: arxiv
 - title: 'CAMEL: Confidence-Gated Reflection for Reward Modeling'
   authors: []
   url: https://arxiv.org/abs/2602.20670v1
@@ -527,6 +610,7 @@ papers:
   - rlhf
   - efficiency
   - reflection
+  source: arxiv
 - title: 'Learning from the Irrecoverable: Error-Localized Policy Optimization for Tool-Integrated LLM Reasoning'
   authors:
   - Qiao Liang
@@ -547,6 +631,7 @@ papers:
   - credit-assignment
   - tool-integrated-reasoning
   - policy-optimization
+  source: arxiv
 - title: 'Alignment-Weighted DPO: A principled reasoning approach to improve safety alignment'
   authors: []
   url: https://arxiv.org/abs/2602.21346v1
@@ -562,6 +647,7 @@ papers:
   - dpo
   - chain-of-thought
   - jailbreak-defense
+  source: arxiv
 - title: Leveraging LLM Parametric Knowledge for Fact Checking without Retrieval
   authors: []
   url: https://arxiv.org/abs/2603.05471v1
@@ -577,6 +663,7 @@ papers:
   - hallucination-detection
   - model-internals
   - guardrails
+  source: arxiv
 - title: Privileged Information Distillation for Language Models
   authors: []
   url: https://arxiv.org/abs/2602.04942v3
@@ -593,6 +680,7 @@ papers:
   - reinforcement-learning
   - agentic
   - training
+  source: arxiv
 - title: Evaluating Chain-of-Thought Reasoning through Reusability and Verifiability
   authors:
   - Shashank Aggarwal
@@ -610,6 +698,7 @@ papers:
   - chain-of-thought
   - evaluation
   - multi-agent-reasoning
+  source: arxiv
 - title: 'Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models'
   authors: []
   url: https://arxiv.org/abs/2603.01571v1
@@ -625,6 +714,7 @@ papers:
   - chain-of-thought
   - RLVR
   - evaluation
+  source: arxiv
 - title: 'PyVision-RL: Forging Open Agentic Vision Models via RL'
   authors: []
   url: https://arxiv.org/abs/2602.20739v1
@@ -640,39 +730,114 @@ papers:
   - multimodal
   - tool-use
   - agentic-models
-- title: Experiential Reinforcement Learning
+  source: arxiv
+- title: Building Effective Agents
   authors:
-  - Taiwei Shi
-  - Sihao Chen
-  - Bowen Jiang
-  - Linxin Song
-  - Longqi Yang
-  url: https://arxiv.org/abs/2602.13949v1
-  category: models
-  summary: ERL embeds an experience-reflection-consolidation loop into reinforcement learning for language models. The model
-    generates an attempt, receives feedback, produces a reflection guiding a refined second attempt, and the successful revision
-    is reinforced into the base policy. This achieves up to 81% gains in complex multi-step environments and 11% in tool-using
-    reasoning tasks without additional inference cost at deployment.
-  importance: A training paradigm that internalizes reflection into model weights, improving agentic task performance without
-    inference-time overhead.
+  - Anthropic
+  url: https://www.anthropic.com/research/building-effective-agents
+  category: agents
+  source: blog
+  summary: 'Anthropic''s guide based on working with dozens of teams building LLM agents across industries. Key finding: the
+    most successful implementations use simple, composable patterns rather than complex frameworks. Covers workflow patterns,
+    tool use, and evaluation approaches.'
+  importance: Practitioner-tested guidance from Anthropic on what actually works in production agent systems.
   tags:
-  - reinforcement-learning
-  - self-reflection
-  - training-paradigm
-- title: Self-Improving World Modelling with Latent Actions
-  authors: []
-  url: https://arxiv.org/abs/2602.06130v2
-  category: models
-  summary: SWIRL proposes a self-improvement framework for world models that learns from state-only sequences by treating
-    actions as latent variables, alternating between forward world modelling and inverse dynamics modelling. Both models are
-    trained with GRPO reinforcement learning using the opposite model's log-probability as reward. The approach achieves gains
-    of 16-28% across multiple benchmarks including visual dynamics and tool-calling environments.
-  importance: Demonstrates that world models can self-improve without action labels, with direct implications for building
-    agent planning and tool-use capabilities from unlabeled trajectories.
+  - best-practices
+  - patterns
+  - production
+  - anthropic
+- title: 'Google DeepMind Aletheia: Autonomous Research Agent'
+  authors:
+  - Google DeepMind
+  url: https://www.marktechpost.com/2026/03/13/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/
+  category: agents
+  source: blog
+  summary: 'DeepMind introduced Aletheia, an AI agent using a three-part agentic harness: Generator (proposes solutions),
+    Verifier (checks for flaws), Reviser (corrects errors). Uses heavy tool use including search and web browsing. Inference-time
+    scaling reduced compute needed for IMO-level problems by 100x.'
+  importance: Demonstrates the generator-verifier-reviser pattern at scale, with practical implications for agent architecture
+    design.
   tags:
-  - world-models
-  - self-improvement
-  - planning
+  - research-agent
+  - verification
+  - deepmind
+  - reasoning
+- title: 'MMA: Multimodal Memory Agent'
+  authors:
+  - Yihao Lu
+  - Wanru Cheng
+  - Zeyu Zhang
+  url: https://arxiv.org/abs/2602.16493
+  category: agents
+  summary: Long-horizon multimodal agents depend on external memory; however, similarity-based retrieval often surfaces stale,
+    low-credibility, or conflicting items, which can trigger overconfident errors. We propose Multimodal Memory Agent (MMA),
+    which assigns each retrieved memory item a dynamic reliability ...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'Toward Efficient Agents: Memory, Tool Learning, and Planning'
+  authors:
+  - Xiaofang Yang
+  - Lijun Li
+  - Heng Zhou
+  url: https://arxiv.org/abs/2601.14192
+  category: agents
+  summary: Recent years have witnessed increasing interest in extending large language models into agentic systems. While
+    the effectiveness of agents has continued to improve, efficiency, which is crucial for real-world deployment, has often
+    been overlooked. This paper investigates efficiency from three core c...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'ReIn: Conversational Error Recovery with Reasoning Inception'
+  authors:
+  - Takyoung Kim
+  - Jinseok Nam
+  - Chandrayee Basu
+  url: https://arxiv.org/abs/2602.17022
+  category: agents
+  summary: Conversational agents powered by large language models (LLMs) with tool integration achieve strong performance
+    on fixed task-oriented dialogue datasets but remain vulnerable to unanticipated, user-induced errors. We propose Reasoning
+    Inception (ReIn), a test-time intervention method that plants an i...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'From Passive Metric to Active Signal: The Evolving Role of Uncertainty Quantification in Large Language Models'
+  authors:
+  - Jiaxin Zhang
+  - Wendi Cui
+  - Zhuohang Li
+  url: https://arxiv.org/abs/2601.15690
+  category: agents
+  summary: While Large Language Models (LLMs) show remarkable capabilities, their unreliability remains a critical barrier
+    to deployment in high-stakes domains. This survey charts the evolution of uncertainty from a passive diagnostic metric
+    to an active control signal guiding real-time model behavior. We demo...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: Meta-Reinforcement Learning with Self-Reflection for Agentic Search
+  authors:
+  - Teng Xiao
+  - Yige Yuan
+  - Hamish Ivison
+  url: https://arxiv.org/abs/2603.11327
+  category: agents
+  summary: Meta-Reinforcement Learning with Self-Reflection for Agentic Search explores how agents can use self-reflection
+    and meta-reinforcement learning to improve their search capabilities across diverse environments.
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'XSkill: Continual Learning from Experience and Skills in Multimodal Agents'
+  authors:
+  - Guanyu Jiang
+  - Zhaochen Su
+  - Xiaoye Qu
+  url: https://arxiv.org/abs/2603.12056
+  category: agents
+  summary: XSkill explores continual learning approaches for multimodal agents, enabling them to accumulate and transfer skills
+    from experience across diverse tasks and environments.
+  importance: ''
+  tags: []
+  source: huggingface
 - title: 'CORPGEN: Simulating Corporate Environments with Autonomous Digital Employees in Multi-Horizon Task Environments'
   authors:
   - Abubakarr Jaye
@@ -694,6 +859,7 @@ papers:
   - agent-memory
   - session-management
   - hierarchical-planning
+  source: arxiv
 - title: 'LAPIS: Lightweight API Specification for Intelligent Systems'
   authors: []
   url: https://arxiv.org/abs/2602.18541v1
@@ -709,6 +875,7 @@ papers:
   - tool-use
   - token-efficiency
   - agent-tooling
+  source: arxiv
 - title: 'Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory'
   authors: []
   url: https://arxiv.org/abs/2603.04257v1
@@ -725,6 +892,7 @@ papers:
   - context-management
   - reinforcement-learning
   - long-horizon
+  source: arxiv
 - title: 'ActionEngine: From Reactive to Programmatic GUI Agents via State Machine Memory'
   authors: []
   url: https://arxiv.org/abs/2602.20502v1
@@ -741,6 +909,7 @@ papers:
   - state-machine
   - memory
   - programmatic-planning
+  source: arxiv
 - title: 'W&D: Scaling Parallel Tool Calling for Efficient Deep Research Agents'
   authors:
   - Xiaoqiang Lin
@@ -760,6 +929,7 @@ papers:
   - deep-research
   - agent-efficiency
   - scaling
+  source: arxiv
 - title: 'ASA: Training-Free Representation Engineering for Tool-Calling Agents'
   authors: []
   url: https://arxiv.org/abs/2602.04935v2
@@ -776,6 +946,7 @@ papers:
   - activation-steering
   - inference-optimization
   - representation-engineering
+  source: arxiv
 - title: Memory for Autonomous LLM Agents:Mechanisms, Evaluation, and Emerging Frontiers
   authors:
   - Pengfei Du
@@ -792,6 +963,7 @@ papers:
   - survey
   - retrieval-augmented
   - multi-session
+  source: arxiv
 - title: 'REMem: Reasoning with Episodic Memory in Language Agent'
   authors: []
   url: https://arxiv.org/abs/2602.13530v3
@@ -808,6 +980,7 @@ papers:
   - agent-memory
   - reasoning
   - retrieval
+  source: arxiv
 - title: 'Machine Learning as a Tool (MLAT): A Framework for Integrating Statistical ML Models as Callable Tools within LLM
     Agent Workflows'
   authors:
@@ -826,6 +999,7 @@ papers:
   - ml-integration
   - agent-workflows
   - structured-output
+  source: arxiv
 - title: 'ToolSelf: Unifying Task Execution and Self-Reconfiguration via Tool-Driven Intrinsic Adaptation'
   authors: []
   url: https://arxiv.org/abs/2602.07883v2
@@ -840,6 +1014,7 @@ papers:
   - self-adaptive-agents
   - tool-orchestration
   - runtime-reconfiguration
+  source: arxiv
 - title: 'KARL: Knowledge Agents via Reinforcement Learning'
   authors: []
   url: https://arxiv.org/abs/2603.05218v1
@@ -856,6 +1031,7 @@ papers:
   - reinforcement-learning
   - knowledge-agents
   - benchmark
+  source: arxiv
 - title: 'Beyond Refusal: Probing the Limits of Agentic Self-Correction for Semantic Sensitive Information'
   authors: []
   url: https://arxiv.org/abs/2602.21496v1
@@ -872,6 +1048,7 @@ papers:
   - safety
   - privacy
   - agentic-self-correction
+  source: arxiv
 - title: 'AriadneMem: Threading the Maze of Lifelong Memory for LLM Agents'
   authors: []
   url: https://arxiv.org/abs/2603.03290v1
@@ -886,6 +1063,7 @@ papers:
   - agent-memory
   - graph-memory
   - context-efficiency
+  source: arxiv
 - title: 'VimRAG: Navigating Massive Visual Context in Retrieval-Augmented Generation via Multimodal Memory Graph'
   authors:
   - Qiuchen Wang
@@ -906,113 +1084,100 @@ papers:
   - memory-graph
   - visual-reasoning
   - agent-memory
-- title: 'DenoiseFlow: Uncertainty-Aware Denoising for Reliable LLM Agentic Workflows'
+  source: arxiv
+- title: 'OpenAI Codex: Agent Threads and Parallel Execution'
   authors:
-  - Yandong Yan
-  - Junwei Peng
-  - Shijie Li
-  - Chenxi Li
-  - Yifei Shang
-  url: https://arxiv.org/abs/2603.00532v1
-  category: agents
-  summary: 'DenoiseFlow formalizes multi-step agent reasoning as a Noisy MDP and proposes a closed-loop framework with three
-    stages: Sensing estimates per-step semantic uncertainty, Regulating adaptively routes between fast single-path and parallel
-    exploration, and Correcting performs root-cause localization for recovery. Online self-calibration aligns decision boundaries
-    without ground-truth labels. Achieves highest accuracy on six benchmarks while reducing cost by 40-56%.'
-  importance: Addresses the critical problem of error accumulation in multi-step agent workflows with a principled uncertainty-aware
-    framework that also reduces computational cost.
+  - OpenAI
+  url: https://developers.openai.com/codex/changelog/
+  category: ai-dev
+  source: blog
+  summary: OpenAI's Codex app for macOS provides a desktop interface for running agent threads in parallel, collaborating
+    on long-running tasks with project sidebar, thread list, and review pane. Added web search for local tasks in CLI and
+    IDE Extension.
+  importance: Sets the bar for coding agent UX with parallel thread execution and integrated web search.
   tags:
-  - uncertainty-estimation
-  - error-recovery
-  - agentic-workflows
-  - cost-optimization
-- title: Automating Agent Hijacking via Structural Template Injection
+  - codex
+  - coding-agent
+  - parallel-execution
+  - openai
+- title: 'SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents'
   authors:
-  - Xinhao Deng
-  - Jiaqing Wu
-  - Miao Chen
-  - Yue Xiao
-  - Ke Xu
-  url: https://arxiv.org/abs/2602.16958v1
-  category: agents
-  summary: Proposes Phantom, an automated agent hijacking framework exploiting chat template tokens to induce role confusion
-    in LLM agents. Uses a Template Autoencoder to embed discrete templates into a continuous latent space and applies Bayesian
-    optimization to find optimal adversarial vectors. Significantly outperforms existing baselines on Qwen, GPT, and Gemini,
-    and identified over 70 confirmed vulnerabilities in commercial products.
-  importance: Demonstrates a systematic, transferable attack surface for LLM agents that directly informs guardrail and security
-    design for agent infrastructure.
-  tags:
-  - agent-security
-  - prompt-injection
-  - guardrails
-- title: 'MiroFlow: Towards High-Performance and Robust Open-Source Agent Framework for General Deep Research Tasks'
-  authors: []
-  url: https://arxiv.org/abs/2602.22808v1
-  category: agents
-  summary: MiroFlow is an open-source agent framework featuring an agent graph for flexible orchestration, optional deep reasoning
-    mode, and robust workflow execution for stable performance. It achieves state-of-the-art results across multiple agent
-    benchmarks including GAIA, BrowseComp, HLE, and FutureX. The framework addresses limitations of existing agent systems
-    such as naive workflows, unstable performance, and reliance on costly commercial APIs.
-  importance: Provides an accessible, reproducible open-source baseline for deep research agents with strong benchmark results
-    across diverse evaluation suites.
-  tags:
-  - agent-framework
-  - orchestration
-  - deep-research
-  - benchmarks
-- title: 'Tool-R0: Self-Evolving LLM Agents for Tool-Learning from Zero Data'
-  authors: []
-  url: https://arxiv.org/abs/2602.21320v1
-  category: agents
-  summary: 'Tool-R0 trains general-purpose tool-calling agents from scratch using self-play reinforcement learning with zero
-    pre-existing data. A Generator and Solver co-evolve with complementary rewards: one proposes challenging tasks at the
-    other''s competence frontier while the other learns to solve them with real tool calls. This creates a self-improving
-    cycle that yields 92.5% relative improvement over the base model and surpasses supervised baselines.'
-  importance: Eliminates the dependency on curated tool-use datasets by demonstrating effective self-play training for tool-calling
-    agents.
-  tags:
-  - tool-use
-  - self-play
-  - reinforcement-learning
-  - zero-data
-- title: 'MAS-on-the-Fly: Dynamic Adaptation of LLM-based Multi-Agent Systems at Test Time'
+  - Yuhang Wang
+  - Yuling Shi
+  - Mo Yang
+  url: https://arxiv.org/abs/2601.16746
+  category: ai-dev
+  summary: LLM agents have demonstrated remarkable capabilities in software development, but their performance is hampered
+    by long interaction contexts, which incur high API costs and latency. We propose SWE-Pruner, a self-adaptive context pruning
+    framework tailored for coding agents. Drawing inspiration from ...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'Beyond RAG for Agent Memory: Retrieval by Decoupling and Aggregation'
   authors:
-  - Guangyi Liu
-  - Haojun Lin
-  - Huan Zeng
-  - Heng Wang
-  - Quanming Yao
-  url: https://arxiv.org/abs/2602.13671v1
-  category: agents
-  summary: Introduces MASFly, a framework enabling dynamic adaptation of multi-agent systems at test time through retrieval-augmented
-    SOP instantiation and experience-guided supervision. Uses a self-constructed repository of successful collaboration patterns
-    to assemble customized multi-agent systems for new queries. A dedicated Watcher agent monitors system behaviors and provides
-    real-time interventions. Achieves 61.7% success rate on TravelPlanner, establishing state-of-the-art performance.
-  importance: Demonstrates that dynamic, retrieval-driven agent orchestration at runtime significantly outperforms static
-    designs, informing how agent platforms should support flexible multi-agent assembly.
-  tags:
-  - multi-agent
-  - dynamic-orchestration
-  - runtime-adaptation
-- title: 'SkillJect: Automating Stealthy Skill-Based Prompt Injection for Coding Agents with Trace-Driven Closed-Loop Refinement'
+  - Zhanghao Hu
+  - Qinglin Zhu
+  - Hanqi Yan
+  url: https://arxiv.org/abs/2602.02007
+  category: ai-dev
+  summary: Agent memory systems often adopt the standard Retrieval-Augmented Generation (RAG) pipeline, yet its underlying
+    assumptions differ in this setting. RAG targets large, heterogeneous corpora where retrieved passages are diverse, whereas
+    agent memory is a bounded, coherent dialogue stream with highly c...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'AgentCgroup: Understanding and Controlling OS Resources of AI Agents'
   authors:
-  - Xiaojun Jia
-  - Jie Liao
-  - Simeng Qin
-  - Jindong Gu
-  - Wenqi Ren
-  url: https://arxiv.org/abs/2602.14211v1
-  category: agents
-  summary: SkillJect is the first automated framework for stealthy prompt injection targeting agent skill abstractions. It
-    uses a closed-loop system of Attack, Code, and Evaluate agents to synthesize injection payloads that hide malicious operations
-    in auxiliary scripts while triggering tool execution. The framework achieves high attack success rates across diverse
-    coding-agent settings and real-world software engineering tasks.
-  importance: Exposes a critical new attack surface in skill-based agent architectures, directly motivating guardrail and
-    sandbox improvements in agent runtime systems.
-  tags:
-  - agent-security
-  - prompt-injection
-  - coding-agents
+  - Yusheng Zheng
+  - Jiakun Fan
+  - Quanzhi Fu
+  url: https://arxiv.org/abs/2602.09345
+  category: ai-dev
+  summary: AI agents are increasingly deployed in multi-tenant cloud environments, where they execute diverse tool calls within
+    sandboxed containers. We present a systematic characterization of OS-level resource dynamics in sandboxed AI coding agents,
+    analyzing 144 software engineering tasks. Our measurements ...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'DLLM-Searcher: Adapting Diffusion Large Language Model for Search Agents'
+  authors:
+  - Jiahao Zhao
+  - Shaoxuan Xu
+  - Zhongxiang Sun
+  url: https://arxiv.org/abs/2602.07035
+  category: ai-dev
+  summary: Diffusion Large Language Models (dLLMs) have demonstrated unique efficiency advantages enabled by their inherently
+    parallel decoding mechanism. Meanwhile, Search Agents' practical deployment is constrained by latency challenges from
+    serial execution of multi-round reasoning and tool calling. We prop...
+  importance: ''
+  tags: []
+  source: huggingface
+- title: Agentic Rubrics as Contextual Verifiers for SWE Agents
+  authors:
+  - Mohit Raghavendra
+  - Anisha Gunjal
+  - Bing Liu
+  url: https://arxiv.org/abs/2601.04171
+  category: ai-dev
+  summary: 'Verification is critical for improving agents: it provides the reward signal for Reinforcement Learning and enables
+    inference-time gains through Test-Time Scaling (TTS). We explore Agentic Rubrics: an expert agent interacts with the repository
+    to create a context-grounded rubric checklist, and candi...'
+  importance: ''
+  tags: []
+  source: huggingface
+- title: 'Confucius Code Agent: An Open-sourced AI Software Engineer at Industrial Scale'
+  authors:
+  - Zhaodong Wang
+  - Zhenting Qi
+  - Sherman Wong
+  url: https://arxiv.org/abs/2512.10398
+  category: ai-dev
+  summary: Real-world AI software engineering demands coding agents that can reason over massive repositories, maintain durable
+    memory across and within long sessions, and robustly coordinate complex toolchains. We present the Confucius Code Agent
+    (CCA), an open-sourced AI software engineer built atop the Conf...
+  importance: ''
+  tags: []
+  source: huggingface
 - title: 'SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks Small Language Models as Software Engineering
     Agents'
   authors: []
@@ -1029,6 +1194,7 @@ papers:
   - small-models
   - expert-collaboration
   - reinforcement-learning
+  source: arxiv
 - title: 'EGSS: Entropy-guided Stepwise Scaling for Reliable Software Engineering'
   authors:
   - Chenhui Mao
@@ -1049,6 +1215,7 @@ papers:
   - swe-bench
   - coding-agents
   - entropy-guided
+  source: arxiv
 - title: 'Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?'
   authors:
   - Thibaud Gloaguen
@@ -1069,6 +1236,7 @@ papers:
   - developer-tools
   - evaluation
   - swe-bench
+  source: arxiv
 - title: 'Debug2Fix: Supercharging Coding Agents with Interactive Debugging Capabilities'
   authors:
   - Spandan Garg
@@ -1086,6 +1254,7 @@ papers:
   - interactive-debugging
   - swe-bench
   - subagent-architecture
+  source: arxiv
 - title: 'SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution'
   authors:
   - Kang He
@@ -1103,6 +1272,7 @@ papers:
   - coding-agent
   - codebase-navigation
   - version-control
+  source: arxiv
 - title: 'Immersion in the GitHub Universe: Scaling Coding Agents to Mastery'
   authors: []
   url: https://arxiv.org/abs/2602.09892v2
@@ -1118,6 +1288,7 @@ papers:
   - coding-agents
   - training-data
   - swe-bench
+  source: arxiv
 - title: 'ReflexiCoder: Teaching Large Language Models to Self-Reflect on Generated Code and Self-Correct It via Reinforcement
     Learning'
   authors:
@@ -1139,6 +1310,7 @@ papers:
   - reinforcement-learning
   - self-correction
   - inference-efficiency
+  source: arxiv
 - title: 'Hybrid-Gym: Training Coding Agents to Generalize Across Tasks'
   authors:
   - Yiqing Xie
@@ -1158,6 +1330,7 @@ papers:
   - coding-agents
   - training
   - generalization
+  source: arxiv
 - title: 'RepoLaunch: Automating Build&Test Pipeline of Code Repositories on ANY Language and ANY Platform'
   authors: []
   url: https://arxiv.org/abs/2603.05026v1
@@ -1172,6 +1345,7 @@ papers:
   - coding-agents
   - dataset-creation
   - devtools
+  source: arxiv
 - title: 'Building Effective AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned'
   authors:
   - Nghi D. Q. Bui
@@ -1188,6 +1362,7 @@ papers:
   - context-engineering
   - cli-tools
   - agent-architecture
+  source: arxiv
 - title: 'AIDev: Studying AI Coding Agents on GitHub'
   authors:
   - Hao Li
@@ -1206,6 +1381,7 @@ papers:
   - dataset
   - software-engineering
   - developer-productivity
+  source: arxiv
 - title: Rethinking the Value of Agent-Generated Tests for LLM-Based Software Engineering Agents
   authors: []
   url: https://arxiv.org/abs/2602.07900v1
@@ -1221,6 +1397,7 @@ papers:
   - coding-agents
   - swe-bench
   - empirical-study
+  source: arxiv
 - title: 'SGAgent: Suggestion-Guided LLM-Based Multi-Agent Framework for Repository-Level Software Repair'
   authors:
   - Quanjun Zhang
@@ -1241,6 +1418,7 @@ papers:
   - code-repair
   - knowledge-graph
   - multi-agent
+  source: arxiv
 - title: 'TraceCoder: A Trace-Driven Multi-Agent Framework for Automated Debugging of LLM-Generated Code'
   authors: []
   url: https://arxiv.org/abs/2602.06875v1
@@ -1256,6 +1434,7 @@ papers:
   - multi-agent
   - code-generation
   - iterative-repair
+  source: arxiv
 - title: 'Configuring Agentic AI Coding Tools: An Exploratory Study'
   authors:
   - Matthias Galster
@@ -1275,96 +1454,123 @@ papers:
   - agentic-tools
   - developer-experience
   - configuration
-- title: 'When AI Teammates Meet Code Review: Collaboration Signals Shaping the Integration of Agent-Authored Pull Requests'
+  source: arxiv
+- title: 'OpenFang: Open-source Agent Operating System'
   authors:
-  - Costain Nachuma
-  - Minhaz Zibran
-  url: https://arxiv.org/abs/2602.19441v1
-  category: ai-dev
-  summary: Large empirical study analyzing how agent-authored pull requests integrate into human-driven code review workflows
-    using the AIDev dataset. Finds that reviewer engagement is the strongest predictor of successful merging, while large
-    change sizes and force pushes reduce merge likelihood. Qualitative analysis shows successful integration occurs when agents
-    engage in actionable review loops converging toward reviewer expectations.
-  importance: Provides first large-scale evidence on what makes coding agent PRs succeed, directly informing how teams should
-    configure and deploy autonomous coding agents.
+  - RightNow-AI
+  url: https://github.com/RightNow-AI/openfang
+  category: harnesses
+  source: github
+  summary: Open-source agent operating system providing runtime infrastructure for AI agents. 14K+ stars since Feb 2026, indicating
+    strong community adoption. Provides core primitives for agent lifecycle management, tool orchestration, and session handling.
+  importance: One of the most-starred new agent infrastructure projects of Q1 2026, signaling demand for agent-native OS-level
+    abstractions.
   tags:
-  - coding-agents
-  - code-review
-  - software-engineering
-- title: The Limits of Long-Context Reasoning in Automated Bug Fixing
+  - agent-os
+  - runtime
+  - open-source
+- title: 'OpenViking: Context Database for AI Agents'
   authors:
-  - Ravi Raju
-  - Mengmeng Ji
-  - Shubhangi Upasani
-  - Bo Li
-  - Urmish Thakker
-  url: https://arxiv.org/abs/2602.16069v2
-  category: ai-dev
-  summary: This work systematically evaluates whether LLMs can perform long-context code debugging. Using SWE-bench Verified,
-    it shows agentic workflows succeed primarily through task decomposition into short-context steps (under 20-30k tokens),
-    not long-context reasoning. Single-shot patch generation at 64k tokens fails dramatically, with Qwen3-Coder achieving
-    only 7% and GPT-5-nano solving none. Failure modes include hallucinated diffs and malformed patches.
-  importance: Reveals a critical gap between nominal and usable context length in LLMs, with direct implications for how coding
-    agents should structure their context management.
+  - Volcengine
+  url: https://github.com/volcengine/OpenViking
+  category: harnesses
+  summary: Open-source context database designed for AI agents that unifies management of memory, resources, and skills through
+    a file system paradigm. Enables hierarchical context delivery and self-evolving agent capabilities. 10K+ stars since Jan
+    2026.
+  importance: Addresses the critical gap of unified context/memory management for agents, directly relevant to AgentCore memory
+    patterns.
   tags:
-  - long-context
-  - swe-bench
-  - code-debugging
   - context-management
-- title: 'CodeTaste: Can LLMs Generate Human-Level Code Refactorings?'
+  - memory
+  - agent-infrastructure
+  source: github
+- title: 'Edict: Multi-Agent Orchestration System'
   authors:
-  - Alex Thillen
-  - Niels Mündler
-  - Veselin Raychev
-  - Martin Vechev
-  url: https://arxiv.org/abs/2603.04177v1
-  category: ai-dev
-  summary: CodeTaste introduces a benchmark for evaluating LLM agents on code refactoring tasks mined from real open-source
-    repositories. The benchmark combines test suites with static checks using dataflow reasoning to verify behavior-preserving
-    transformations. Results show agents perform well with detailed specifications but struggle to discover human-preferred
-    refactoring choices independently. A propose-then-implement decomposition improves alignment with human decisions.
-  importance: Addresses a critical gap in coding agent evaluation by focusing on code quality rather than just correctness,
-    providing a preference signal for aligning agents with human refactoring practices.
+  - cft0808
+  url: https://github.com/cft0808/edict
+  category: harnesses
+  summary: Multi-agent orchestration system with 9 specialized AI agents, real-time dashboard, model configuration, and full
+    audit trails. 9K+ stars. Implements a hierarchical agent coordination pattern with observability built in.
+  importance: Production-ready multi-agent orchestration with built-in observability, directly applicable to AgentCore deployment
+    patterns.
   tags:
-  - code-refactoring
-  - benchmark
-  - coding-agents
-- title: 'SVRepair: Structured Visual Reasoning for Automated Program Repair'
-  authors: []
-  url: https://arxiv.org/abs/2602.06090v1
-  category: ai-dev
-  summary: SVRepair introduces a multimodal automated program repair framework that transforms heterogeneous visual artifacts
-    (screenshots, control-flow graphs) into semantic scene graphs capturing GUI elements and structural relations. A coding
-    agent then localizes faults and synthesizes patches using these structured representations. An iterative visual-artifact
-    segmentation strategy progressively narrows input to bug-centered regions. It achieves 36.47% on SWE-Bench M, 38.02% on
-    MMCode, and 95.12% on CodeVision.
-  importance: Pioneers multimodal program repair by bridging visual bug reports and code fixes through structured visual representations,
-    advancing the state of the art on major benchmarks.
-  tags:
-  - program-repair
-  - multimodal
-  - swe-bench
-  - visual-reasoning
-- title: A Multi-Agent Framework for Code-Guided, Modular, and Verifiable Automated Machine Learning
-  authors:
-  - Dat Le
-  - Duc-Cuong Le
-  - Anh-Son Nguyen
-  - Tuan-Dung Bui
-  - Thu-Trang Nguyen
-  url: https://arxiv.org/abs/2602.13937v1
-  category: ai-dev
-  summary: iML is a multi-agent AutoML framework that shifts from black-box prompting to code-guided, modular, and verifiable
-    design. It uses code-guided planning with empirical profiling, modular implementation with interface contracts, and dynamic
-    contract verification. Achieves 85% valid submission rate and 45% medal rate on MLE-BENCH, outperforming state-of-the-art
-    agents by 38-163% on iML-BENCH.
-  importance: Demonstrates that structured code-guided approaches with verification significantly improve reliability of AI-driven
-    ML pipeline generation.
-  tags:
-  - automl
-  - code-generation
+  - orchestration
   - multi-agent
-  - verifiable-ai
+  - observability
+  - dashboard
+  source: github
+- title: 'ClawRouter: Agent-Native LLM Router'
+  authors:
+  - BlockRunAI
+  url: https://github.com/BlockRunAI/ClawRouter
+  category: harnesses
+  summary: Agent-native LLM router supporting 41+ models with sub-millisecond routing. 5.5K stars. Provides intelligent model
+    selection for agent workloads, optimizing cost and latency across different providers.
+  importance: Practical cost/latency optimization for agent deployments — a key AgentCore concern for production agent systems.
+  tags:
+  - routing
+  - cost-optimization
+  - latency
+  - multi-model
+  source: github
+- title: Introducing Advanced Tool Use on Claude
+  authors:
+  - Anthropic
+  url: https://www.anthropic.com/engineering/advanced-tool-use
+  category: harnesses
+  source: blog
+  summary: 'Anthropic released three tool use features: Tool Search Tool (dynamic tool discovery without context window consumption),
+    Programmatic Tool Calling (code execution environment for tool invocation), and Tool Use Examples (standardized demonstrations).
+    Achieved 37% token reduction on complex research tasks.'
+  importance: Major advancement in tool orchestration patterns directly applicable to AgentCore tool management and cost optimization.
+  tags:
+  - tool-use
+  - tool-discovery
+  - token-optimization
+  - anthropic
+- title: Building Agents with the Claude Agent SDK
+  authors:
+  - Anthropic
+  url: https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk
+  category: harnesses
+  source: blog
+  summary: Anthropic renamed Claude Code SDK to Claude Agent SDK reflecting its broader vision. Claude Code has evolved beyond
+    coding to deep research, video creation, and note-taking. The SDK now powers major agent loops across Anthropic's product
+    surface.
+  importance: Signals the maturation of agent SDKs from coding-specific to general-purpose agent infrastructure.
+  tags:
+  - agent-sdk
+  - anthropic
+  - framework
+- title: Introducing Microsoft Agent Framework
+  authors:
+  - Microsoft
+  url: https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/
+  category: harnesses
+  source: blog
+  summary: Microsoft Agent Framework converges AutoGen and Semantic Kernel into a unified, commercial-grade SDK for multi-agent
+    orchestration. Now in public preview, targeting 1.0 GA by end of Q1 2026 with stable APIs, production-grade support, and
+    enterprise readiness certification.
+  importance: Major consolidation of the Microsoft agent ecosystem into a single production framework, setting enterprise
+    standards.
+  tags:
+  - microsoft
+  - autogen
+  - semantic-kernel
+  - enterprise
+- title: 'Jenius Agent: Towards Experience-Driven Accuracy Optimization in Real-World Scenarios'
+  authors:
+  - Defei Xia
+  - Bingfeng Pi
+  - Shenbin Zhang
+  url: https://arxiv.org/abs/2601.01857
+  category: harnesses
+  summary: As agent systems powered by large language models (LLMs) advance, improving the task performance of an autonomous
+    agent, especially in context understanding, tool usage, and response generation, has become increasingly critical. This
+    paper introduces an agent framework grounded in real-world practic...
+  importance: ''
+  tags: []
+  source: huggingface
 - title: 'SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks'
   authors:
   - Xiangyi Li
@@ -1385,6 +1591,7 @@ papers:
   - benchmark
   - procedural-knowledge
   - tool-design
+  source: arxiv
 - title: 'AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications'
   authors: []
   url: https://arxiv.org/abs/2602.22769v2
@@ -1400,6 +1607,7 @@ papers:
   - benchmark
   - retrieval
   - long-horizon
+  source: arxiv
 - title: An Empirical Study of Bugs in Modern LLM Agent Frameworks
   authors:
   - Xinxue Zhu
@@ -1420,6 +1628,7 @@ papers:
   - bug-taxonomy
   - langchain
   - crewai
+  source: arxiv
 - title: 'MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks'
   authors: []
   url: https://arxiv.org/abs/2602.16313v1
@@ -1436,6 +1645,7 @@ papers:
   - benchmark
   - multi-session
   - evaluation
+  source: arxiv
 - title: 'Authenticated Workflows: A Systems Approach to Protecting Agentic AI'
   authors:
   - Mohan Rajagopalan
@@ -1453,6 +1663,7 @@ papers:
   - guardrails
   - enterprise-ai
   - cryptographic-trust
+  source: arxiv
 - title: 'AgentLAB: Benchmarking LLM Agents against Long-Horizon Attacks'
   authors:
   - Tanqiu Jiang
@@ -1471,6 +1682,7 @@ papers:
   - agent-security
   - benchmarks
   - multi-turn-attacks
+  source: arxiv
 - title: 'AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation'
   authors: []
   url: https://arxiv.org/abs/2603.03761v1
@@ -1486,6 +1698,7 @@ papers:
   - benchmark
   - recommendation
   - orchestration
+  source: arxiv
 - title: Evolutionary Generation of Multi-Agent Systems
   authors:
   - Yuntong Hu
@@ -1506,6 +1719,7 @@ papers:
   - evolutionary-optimization
   - swe-bench
   - auto-agent-design
+  source: arxiv
 - title: 'OpaqueToolsBench: Learning Nuances of Tool Behavior Through Interaction'
   authors: []
   url: https://arxiv.org/abs/2602.15197v1
@@ -1521,6 +1735,7 @@ papers:
   - benchmarks
   - function-calling
   - agent-evaluation
+  source: arxiv
 - title: 'AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence'
   authors:
   - Geunbin Yu
@@ -1537,6 +1752,7 @@ papers:
   - multi-agent
   - topology-routing
   - agent-framework
+  source: arxiv
 - title: 'FeatureBench: Benchmarking Agentic Coding for Complex Feature Development'
   authors:
   - Qixing Zhou
@@ -1558,6 +1774,7 @@ papers:
   - benchmarking
   - feature-development
   - swe-bench
+  source: arxiv
 - title: 'Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation'
   authors:
   - Hubert M. Pysklo
@@ -1577,6 +1794,7 @@ papers:
   - evaluation
   - api-orchestration
   - benchmarking
+  source: arxiv
 - title: 'LOGIGEN: Logic-Driven Generation of Verifiable Agentic Tasks'
   authors: []
   url: https://arxiv.org/abs/2603.00540v1
@@ -1592,6 +1810,7 @@ papers:
   - verification
   - data-synthesis
   - orchestration
+  source: arxiv
 - title: 'Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward'
   authors:
   - Renjun Xu
@@ -1609,102 +1828,7 @@ papers:
   - mcp
   - security
   - survey
-- title: '$\tau$-Knowledge: Evaluating Conversational Agents over Unstructured Knowledge'
-  authors: []
-  url: https://arxiv.org/abs/2603.04370v1
-  category: harnesses
-  summary: tau-Knowledge extends tau-Bench to evaluate agents in knowledge-intensive settings requiring coordination of unstructured
-    document retrieval with tool-mediated actions. The new tau-Banking domain models fintech customer support with ~700 interconnected
-    knowledge documents. Even frontier models with high reasoning budgets achieve only ~25.5% pass@1, with reliability degrading
-    sharply over repeated trials, highlighting challenges in retrieval from dense knowledge bases and policy reasoning.
-  importance: Provides a realistic, end-to-end benchmark for knowledge-grounded agentic workflows that exposes critical gaps
-    in current agent capabilities.
-  tags:
-  - benchmarks
-  - knowledge-retrieval
-  - tool-use
-- title: 'AgenticRAGTracer: A Hop-Aware Benchmark for Diagnosing Multi-Step Retrieval Reasoning in Agentic RAG'
-  authors:
-  - Qijie You
-  - Wenkai Yu
-  - Wentao Zhang
-  url: https://arxiv.org/abs/2602.19127v1
-  category: harnesses
-  summary: Introduces the first agentic RAG benchmark with automatic hop-level annotation for step-by-step validation of multi-hop
-    reasoning. The benchmark spans multiple domains with 1,305 data points and reveals that even GPT-5 achieves only 22.6%
-    EM accuracy on the hardest portion. Hop-aware diagnosis shows failures are driven by distorted reasoning chains that either
-    collapse prematurely or wander into over-extension.
-  importance: Fills a critical evaluation gap for agentic RAG systems by enabling fine-grained diagnosis of where multi-step
-    retrieval reasoning fails.
-  tags:
-  - agentic-rag
-  - benchmarks
-  - multi-hop-reasoning
-- title: 'SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration'
-  authors: []
-  url: https://arxiv.org/abs/2603.03823v1
-  category: harnesses
-  summary: SWE-CI is the first repository-level benchmark built on the Continuous Integration loop, shifting evaluation from
-    static one-shot bug fixing to dynamic, long-term code maintainability. Each of its 100 tasks spans an average evolution
-    history of 233 days and 71 consecutive commits in real-world repositories. Agents must resolve tasks through dozens of
-    analysis and coding iterations, testing their ability to sustain code quality through long-term evolution.
-  importance: Fills a critical gap in coding agent evaluation by testing long-term maintainability rather than one-shot fixes,
-    better reflecting real-world development.
-  tags:
-  - benchmarks
-  - coding-agents
-  - continuous-integration
-- title: 'Turn: A Language for Agentic Computation'
-  authors: []
-  url: https://arxiv.org/abs/2603.08755v1
-  category: harnesses
-  summary: Presents Turn, a compiled actor-based programming language designed for agentic software. Features cognitive type
-    safety (LLM inference as a typed primitive with JSON Schema validation), a confidence operator for deterministic control
-    flow, actor-based process model with isolated context windows and persistent memory, and capability-based credential isolation.
-    Compile-time schema absorption synthesizes typed API bindings from OpenAPI, GraphQL, FHIR, and MCP specifications.
-  importance: Proposes language-level guarantees for agent invariants like typed inference output, credential isolation, and
-    durable state, addressing fundamental agent infrastructure concerns.
-  tags:
-  - programming-language
-  - agent-infrastructure
-  - type-safety
-  - actor-model
-- title: 'AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents'
-  authors:
-  - Lingxiang Hu
-  - Yiding Sun
-  - Tianle Xia
-  - Wenwei Li
-  - Ming Xu
-  url: https://arxiv.org/abs/2602.14257v1
-  category: harnesses
-  summary: AD-Bench evaluates LLM agents on real advertising and marketing analytics tasks requiring multi-round interaction
-    with professional marketing tools. Built from real user requests with expert-verified answers and reference tool-call
-    trajectories, it categorizes tasks into three difficulty levels. Even Gemini-3-Pro drops from 68% to 49.4% Pass@1 on the
-    hardest level with only 70.1% trajectory coverage.
-  importance: Provides a realistic multi-tool agent benchmark with trajectory evaluation, useful for measuring agent tool
-    orchestration quality in complex domains.
-  tags:
-  - benchmark
-  - tool-calling
-  - multi-round
-  - advertising
-- title: 'MC-Search: Evaluating and Enhancing Multimodal Agentic Search with Structured Long Reasoning Chains'
-  authors: []
-  url: https://arxiv.org/abs/2603.00873v1
-  category: harnesses
-  summary: MC-Search is the first benchmark for agentic multimodal RAG with long, step-wise annotated reasoning chains spanning
-    five reasoning structures. It introduces process-level metrics for reasoning quality and stepwise retrieval accuracy,
-    and reveals systematic issues like over-retrieval and modality-misaligned planning in six leading MLLMs. The companion
-    Search-Align framework uses process-supervised fine-tuning on verified reasoning chains to improve planning and retrieval
-    fidelity.
-  importance: Provides a rigorous evaluation framework for agentic retrieval systems, informing how tool orchestration and
-    planning should be benchmarked in agent platforms.
-  tags:
-  - benchmarks
-  - multimodal-rag
-  - agentic-search
-  - reasoning
+  source: arxiv
 - title: 'IDP Accelerator: Agentic Document Intelligence from Extraction to Compliance Validation'
   authors: []
   url: https://arxiv.org/abs/2602.23481v1
@@ -1721,6 +1845,7 @@ papers:
   - MCP
   - agentic-workflows
   - enterprise
+  source: arxiv
 - title: 'Mozi: Governed Autonomy for Drug Discovery LLM Agents'
   authors:
   - He Cao
@@ -1742,6 +1867,7 @@ papers:
   - drug-discovery
   - guardrails
   - workflow-orchestration
+  source: arxiv
 - title: 'Beyond Rows to Reasoning: Agentic Retrieval for Multimodal Spreadsheet Understanding and Editing'
   authors: []
   url: https://arxiv.org/abs/2603.06503v1
@@ -1757,6 +1883,7 @@ papers:
   - agentic-rag
   - multimodal
   - enterprise
+  source: arxiv
 - title: 'OptiRepair: Closed-Loop Diagnosis and Repair of Supply Chain Optimization Models with LLM Agents'
   authors: []
   url: https://arxiv.org/abs/2602.19439v2
@@ -1772,6 +1899,7 @@ papers:
   - tool-use
   - optimization
   - domain-agents
+  source: arxiv
 - title: 'CT-Flow: Orchestrating CT Interpretation Workflow with Model Context Protocol Servers'
   authors: []
   url: https://arxiv.org/abs/2603.00123v1
@@ -1787,6 +1915,7 @@ papers:
   - medical-ai
   - tool-orchestration
   - clinical-workflows
+  source: arxiv
 - title: An end-to-end agentic pipeline for smart contract translation and quality evaluation
   authors:
   - Abhinav Goel
@@ -1806,6 +1935,7 @@ papers:
   - code-generation
   - multi-agent
   - quality-evaluation
+  source: arxiv
 - title: 'LiaisonAgent: An Multi-Agent Framework for Autonomous Risk Investigation and Governance'
   authors:
   - Chuanming Tang
@@ -1824,6 +1954,7 @@ papers:
   - multi-agent
   - hybrid-planning
   - tool-calling
+  source: arxiv
 - title: Agentic AI for Scalable and Robust Optical Systems Control
   authors: []
   url: https://arxiv.org/abs/2602.20144v1
@@ -1839,6 +1970,7 @@ papers:
   - tool-orchestration
   - industrial-ai
   - optical-systems
+  source: arxiv
 - title: 'Decoding ML Decision: An Agentic Reasoning Framework for Large-Scale Ranking System'
   authors:
   - Longfei Yun
@@ -1858,6 +1990,7 @@ papers:
   - ranking-systems
   - agentic-optimization
   - ml-operations
+  source: arxiv
 - title: 'Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational Video Generation'
   authors:
   - Lingyong Yan
@@ -1878,6 +2011,7 @@ papers:
   - video-generation
   - orchestration
   - production-scale
+  source: arxiv
 - title: 'Cast-R1: Learning Tool-Augmented Sequential Decision Policies for Time Series Forecasting'
   authors: []
   url: https://arxiv.org/abs/2602.13802v1
@@ -1894,6 +2028,7 @@ papers:
   - tool-augmented
   - sequential-decisions
   - forecasting
+  source: arxiv
 - title: Autonomous Edge-Deployed AI Agents for Electric Vehicle Charging Infrastructure Management
   authors: []
   url: https://arxiv.org/abs/2603.08736v1
@@ -1909,6 +2044,7 @@ papers:
   - multi-agent
   - orchestration
   - autonomous-agents
+  source: arxiv
 - title: 'AnomaMind: Agentic Time Series Anomaly Detection with Tool-Augmented Reasoning'
   authors: []
   url: https://arxiv.org/abs/2602.13807v1
@@ -1923,6 +2059,7 @@ papers:
   - anomaly-detection
   - tool-augmented
   - observability
+  source: arxiv
 - title: 'GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant'
   authors: []
   url: https://arxiv.org/abs/2603.01059v1
@@ -1938,6 +2075,7 @@ papers:
   - privacy
   - token-efficiency
   - chat-agents
+  source: arxiv
 - title: 'Catalyst-Agent: Autonomous heterogeneous catalyst screening and optimization with an LLM Agent'
   authors: []
   url: https://arxiv.org/abs/2603.01311v1
@@ -1953,6 +2091,7 @@ papers:
   - mcp
   - tool-orchestration
   - materials-science
+  source: arxiv
 - title: 'MedScope: Incentivizing Think with Videos for Clinical Reasoning via Coarse-to-Fine Tool Calling'
   authors: []
   url: https://arxiv.org/abs/2602.13332v1
@@ -1969,6 +2108,7 @@ papers:
   - video-reasoning
   - tool-use
   - clinical
+  source: arxiv
 - title: 'HLER: Human-in-the-Loop Economic Research via Multi-Agent Pipelines for Empirical Discovery'
   authors: []
   url: https://arxiv.org/abs/2603.07444v1
@@ -1983,6 +2123,7 @@ papers:
   - human-in-the-loop
   - multi-agent
   - research-automation
+  source: arxiv
 - title: 'CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era'
   authors: []
   url: https://arxiv.org/abs/2602.23452v1
@@ -1999,6 +2140,7 @@ papers:
   - hallucination-detection
   - multi-agent
   - scientific-writing
+  source: arxiv
 - title: 'DataJoint 2.0: A Computational Substrate for Agentic Scientific Workflows'
   authors:
   - Dimitri Yatsenko
@@ -2015,6 +2157,7 @@ papers:
   - workflow-orchestration
   - scientific-computing
   - data-pipelines
+  source: arxiv
 - title: 'GenDB: The Next Generation of Query Processing -- Synthesized, Not Engineered'
   authors:
   - Jiale Lao
@@ -2031,3 +2174,5 @@ papers:
   - database
   - code-synthesis
   - multi-agent
+  source: arxiv
+edition: inaugural

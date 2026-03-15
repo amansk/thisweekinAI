@@ -43,7 +43,12 @@ For example, if today is Sunday March 22, the page is 'Week of March 16'.
    - Git commit with message: 'Week of [date]: weekly AI papers curation'
    - Git push to origin main
 
-Important: max 4 papers per category for weekly editions. Be selective and rigorous." \
+IMPORTANT CONSTRAINTS for weekly editions:
+- 10 papers TOTAL across all categories (not 10 per category)
+- Max 4 from arxiv. The rest should come from GitHub, HuggingFace, or lab blogs.
+- Only the highest signal, most impactful papers. Be extremely selective.
+- Each paper must have a 'source' field: arxiv, github, huggingface, or blog
+- Quality over quantity. If a week is quiet, fewer papers is fine." \
   --allowedTools "Bash,Read,Write,Edit" 2>&1 | tee -a "$LOG_FILE"
 
 echo "=== Run complete: $(date) ===" | tee -a "$LOG_FILE"
