@@ -3,3 +3,4 @@ __pycache__/
 .env
 data/candidates/
 .DS_Store
+logs/

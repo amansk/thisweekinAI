@@ -1,6 +1,6 @@
 week: '2026-01-06'
-curator_notes: Inaugural edition — the best AI agent papers from Q1 2026 (Jan-Mar), covering observability, reasoning, frameworks,
-  and more.
+curator_notes: Inaugural edition — the best AI agent papers from Q1 2026 (Jan 1 - Mar 8), covering observability, reasoning,
+  frameworks, and more.
 papers:
 - title: 'Wink: Recovering from Misbehaviors in Coding Agents'
   authors: []
@@ -420,22 +420,6 @@ papers:
   - foundation-model
   - agentic-engineering
   - reinforcement-learning
-- title: Scaling Reasoning Efficiently via Relaxed On-Policy Distillation
-  authors: []
-  url: https://arxiv.org/abs/2603.11137v1
-  category: models
-  summary: REOPOLD reinterprets on-policy distillation as policy optimization where the teacher-student log-likelihood ratio
-    acts as a token reward. It stabilizes training through mixture-based reward clipping, entropy-based token-level dynamic
-    sampling, and a unified exploration-to-refinement strategy. The framework achieves 6.7-12x greater sample efficiency than
-    recent RL approaches and enables a 7B student to match a 32B teacher in visual reasoning with 3.3x inference speedup.
-    Results span mathematical, visual, and agentic tool-use reasoning tasks.
-  importance: Offers a practical and theoretically grounded method to efficiently distill reasoning capabilities into smaller
-    models, directly relevant to deploying capable but cost-effective agents.
-  tags:
-  - distillation
-  - reasoning
-  - sample-efficiency
-  - model-compression
 - title: Multilingual Safety Alignment Via Sparse Weight Editing
   authors: []
   url: https://arxiv.org/abs/2602.22554v1
@@ -514,26 +498,6 @@ papers:
   - long-context
   - preference-alignment
   - reasoning
-- title: 'Understanding by Reconstruction: Reversing the Software Development Process for LLM Pretraining'
-  authors:
-  - Zhiyuan Zeng
-  - Yichi Zhang
-  - Yong Shan
-  - Kai Hua
-  - Siyuan Fang
-  url: https://arxiv.org/abs/2603.11103v1
-  category: models
-  summary: This paper proposes reverse-engineering the latent agentic trajectories behind static code repositories to create
-    richer pretraining data. A multi-agent simulation synthesizes planning, reasoning, and debugging steps grounded in repository
-    structure. Search-based optimization refines Chain-of-Thought reasoning to maximize ground-truth code likelihood. Continuous
-    pretraining on reconstructed trajectories significantly improves Llama-3-8B on coding, long-context, and agentic benchmarks.
-  importance: Novel pretraining data synthesis approach that could substantially improve coding and agentic capabilities of
-    foundation models through trajectory reconstruction.
-  tags:
-  - pretraining
-  - code-generation
-  - trajectory-synthesis
-  - chain-of-thought
 - title: '$V_1$: Unifying Generation and Self-Verification for Parallel Reasoners'
   authors: []
   url: https://arxiv.org/abs/2603.04304v1
@@ -563,22 +527,6 @@ papers:
   - rlhf
   - efficiency
   - reflection
-- title: 'ExecVerify: White-Box RL with Verifiable Stepwise Rewards for Code Execution Reasoning'
-  authors: []
-  url: https://arxiv.org/abs/2603.11226v1
-  category: models
-  summary: ExecVerify improves code execution reasoning in LLMs by incorporating verifiable white-box rewards derived from
-    execution traces, including next-statement prediction and variable value/type prediction. The approach builds a difficulty-stratified
-    dataset via constraint-based program synthesis and applies RL to reward correct intermediate execution steps. A two-stage
-    pipeline first enhances execution reasoning, then transfers to code generation. A 7B model trained with ExecVerify matches
-    32B model performance on code reasoning benchmarks.
-  importance: Provides a principled approach to training smaller models for code reasoning with verifiable step-level rewards,
-    enabling significant efficiency gains in code-focused LLMs.
-  tags:
-  - code-reasoning
-  - reinforcement-learning
-  - execution-traces
-  - model-training
 - title: 'Learning from the Irrecoverable: Error-Localized Policy Optimization for Tool-Integrated LLM Reasoning'
   authors:
   - Qiao Liang
@@ -677,6 +625,54 @@ papers:
   - chain-of-thought
   - RLVR
   - evaluation
+- title: 'PyVision-RL: Forging Open Agentic Vision Models via RL'
+  authors: []
+  url: https://arxiv.org/abs/2602.20739v1
+  category: models
+  summary: PyVision-RL addresses interaction collapse in RL-trained agentic multimodal models, where models learn to avoid
+    tool use and multi-turn reasoning. It introduces an oversampling-filtering-ranking rollout strategy with accumulative
+    tool rewards to sustain interaction. PyVision-Video uses on-demand context construction, selectively sampling task-relevant
+    frames during reasoning to reduce visual token usage while maintaining strong performance.
+  importance: Solves a fundamental RL training failure mode for agentic models, ensuring sustained tool use and multi-turn
+    interaction critical for agent runtime behavior.
+  tags:
+  - reinforcement-learning
+  - multimodal
+  - tool-use
+  - agentic-models
+- title: Experiential Reinforcement Learning
+  authors:
+  - Taiwei Shi
+  - Sihao Chen
+  - Bowen Jiang
+  - Linxin Song
+  - Longqi Yang
+  url: https://arxiv.org/abs/2602.13949v1
+  category: models
+  summary: ERL embeds an experience-reflection-consolidation loop into reinforcement learning for language models. The model
+    generates an attempt, receives feedback, produces a reflection guiding a refined second attempt, and the successful revision
+    is reinforced into the base policy. This achieves up to 81% gains in complex multi-step environments and 11% in tool-using
+    reasoning tasks without additional inference cost at deployment.
+  importance: A training paradigm that internalizes reflection into model weights, improving agentic task performance without
+    inference-time overhead.
+  tags:
+  - reinforcement-learning
+  - self-reflection
+  - training-paradigm
+- title: Self-Improving World Modelling with Latent Actions
+  authors: []
+  url: https://arxiv.org/abs/2602.06130v2
+  category: models
+  summary: SWIRL proposes a self-improvement framework for world models that learns from state-only sequences by treating
+    actions as latent variables, alternating between forward world modelling and inverse dynamics modelling. Both models are
+    trained with GRPO reinforcement learning using the opposite model's log-probability as reward. The approach achieves gains
+    of 16-28% across multiple benchmarks including visual dynamics and tool-calling environments.
+  importance: Demonstrates that world models can self-improve without action labels, with direct implications for building
+    agent planning and tool-use capabilities from unlabeled trajectories.
+  tags:
+  - world-models
+  - self-improvement
+  - planning
 - title: 'CORPGEN: Simulating Corporate Environments with Autonomous Digital Employees in Multi-Horizon Task Environments'
   authors:
   - Abubakarr Jaye
@@ -876,26 +872,6 @@ papers:
   - safety
   - privacy
   - agentic-self-correction
-- title: 'Ares: Adaptive Reasoning Effort Selection for Efficient LLM Agents'
-  authors:
-  - Jingbo Yang
-  - Bairu Hou
-  - Wei Wei
-  - Yujia Bao
-  - Shiyu Chang
-  url: https://arxiv.org/abs/2603.07915v1
-  category: agents
-  summary: Proposes Ares, a framework for per-step dynamic reasoning effort selection in multi-step agent tasks. Uses a lightweight
-    router trained on minimum-effort labels to predict the lowest appropriate reasoning level at each step. Reduces reasoning
-    token usage by up to 52.7% compared to fixed high-effort reasoning on TAU-Bench, BrowseComp-Plus, and WebArena with minimal
-    accuracy degradation.
-  importance: Provides a practical, plug-and-play solution for dramatically reducing agent inference costs by intelligently
-    routing reasoning effort, directly applicable to production agent deployments.
-  tags:
-  - reasoning-efficiency
-  - adaptive-compute
-  - agent-optimization
-  - cost-reduction
 - title: 'AriadneMem: Threading the Maze of Lifelong Memory for LLM Agents'
   authors: []
   url: https://arxiv.org/abs/2603.03290v1
@@ -1018,6 +994,25 @@ papers:
   - multi-agent
   - dynamic-orchestration
   - runtime-adaptation
+- title: 'SkillJect: Automating Stealthy Skill-Based Prompt Injection for Coding Agents with Trace-Driven Closed-Loop Refinement'
+  authors:
+  - Xiaojun Jia
+  - Jie Liao
+  - Simeng Qin
+  - Jindong Gu
+  - Wenqi Ren
+  url: https://arxiv.org/abs/2602.14211v1
+  category: agents
+  summary: SkillJect is the first automated framework for stealthy prompt injection targeting agent skill abstractions. It
+    uses a closed-loop system of Attack, Code, and Evaluate agents to synthesize injection payloads that hide malicious operations
+    in auxiliary scripts while triggering tool execution. The framework achieves high attack success rates across diverse
+    coding-agent settings and real-world software engineering tasks.
+  importance: Exposes a critical new attack surface in skill-based agent architectures, directly motivating guardrail and
+    sandbox improvements in agent runtime systems.
+  tags:
+  - agent-security
+  - prompt-injection
+  - coding-agents
 - title: 'SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks Small Language Models as Software Engineering
     Agents'
   authors: []
@@ -1123,22 +1118,6 @@ papers:
   - coding-agents
   - training-data
   - swe-bench
-- title: An Empirical Study of Interaction Smells in Multi-Turn Human-LLM Collaborative Code Generation
-  authors: []
-  url: https://arxiv.org/abs/2603.09701v1
-  category: ai-dev
-  summary: This paper establishes the first taxonomy of 'Interaction Smells' in multi-turn human-LLM code generation through
-    manual analysis of real-world conversations from WildChat and LMSYS-Chat-1M. It categorizes issues into User Intent Quality,
-    Historical Instruction Compliance, and Historical Response Violation across nine subcategories. The paper evaluates six
-    mainstream LLMs and proposes InCE, a multi-agent framework using global invariant extraction and pre-generation quality
-    audits that significantly improves task success rates.
-  importance: Identifies and categorizes systematic quality issues in multi-turn LLM interactions for code generation, offering
-    actionable mitigation through invariant-aware constraint evolution.
-  tags:
-  - interaction-quality
-  - code-generation
-  - multi-turn
-  - session-management
 - title: 'ReflexiCoder: Teaching Large Language Models to Self-Reflect on Generated Code and Self-Correct It via Reinforcement
     Learning'
   authors:
@@ -1160,21 +1139,6 @@ papers:
   - reinforcement-learning
   - self-correction
   - inference-efficiency
-- title: 'SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning and Entropy-aware RLVR Training'
-  authors: []
-  url: https://arxiv.org/abs/2603.07927v1
-  category: ai-dev
-  summary: SWE-Fuse addresses the problem of misleading issue descriptions in software engineering agents by fusing issue-guided
-    and issue-free training samples. It introduces entropy-aware RLVR training that adaptively adjusts clipping based on entropy
-    levels. On SWE-bench Verified, SWE-Fuse outperforms the best 8B and 32B baselines by 43% and 60% in solve rate respectively,
-    with test-time scaling pushing results to 49.8% and 65.2%.
-  importance: Significant SWE-bench improvements demonstrate that training agents to debug without relying on issue descriptions
-    produces more robust software engineering agents.
-  tags:
-  - swe-bench
-  - reinforcement-learning
-  - software-agents
-  - training
 - title: 'Hybrid-Gym: Training Coding Agents to Generalize Across Tasks'
   authors:
   - Yiqing Xie
@@ -1365,6 +1329,42 @@ papers:
   - code-refactoring
   - benchmark
   - coding-agents
+- title: 'SVRepair: Structured Visual Reasoning for Automated Program Repair'
+  authors: []
+  url: https://arxiv.org/abs/2602.06090v1
+  category: ai-dev
+  summary: SVRepair introduces a multimodal automated program repair framework that transforms heterogeneous visual artifacts
+    (screenshots, control-flow graphs) into semantic scene graphs capturing GUI elements and structural relations. A coding
+    agent then localizes faults and synthesizes patches using these structured representations. An iterative visual-artifact
+    segmentation strategy progressively narrows input to bug-centered regions. It achieves 36.47% on SWE-Bench M, 38.02% on
+    MMCode, and 95.12% on CodeVision.
+  importance: Pioneers multimodal program repair by bridging visual bug reports and code fixes through structured visual representations,
+    advancing the state of the art on major benchmarks.
+  tags:
+  - program-repair
+  - multimodal
+  - swe-bench
+  - visual-reasoning
+- title: A Multi-Agent Framework for Code-Guided, Modular, and Verifiable Automated Machine Learning
+  authors:
+  - Dat Le
+  - Duc-Cuong Le
+  - Anh-Son Nguyen
+  - Tuan-Dung Bui
+  - Thu-Trang Nguyen
+  url: https://arxiv.org/abs/2602.13937v1
+  category: ai-dev
+  summary: iML is a multi-agent AutoML framework that shifts from black-box prompting to code-guided, modular, and verifiable
+    design. It uses code-guided planning with empirical profiling, modular implementation with interface contracts, and dynamic
+    contract verification. Achieves 85% valid submission rate and 45% medal rate on MLE-BENCH, outperforming state-of-the-art
+    agents by 38-163% on iML-BENCH.
+  importance: Demonstrates that structured code-guided approaches with verification significantly improve reliability of AI-driven
+    ML pipeline generation.
+  tags:
+  - automl
+  - code-generation
+  - multi-agent
+  - verifiable-ai
 - title: 'SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks'
   authors:
   - Xiangyi Li
@@ -1772,20 +1772,6 @@ papers:
   - tool-use
   - optimization
   - domain-agents
-- title: 'CogSearch: A Cognitive-Aligned Multi-Agent Framework for Proactive Decision Support in E-Commerce Search'
-  authors: []
-  url: https://arxiv.org/abs/2603.11927v1
-  category: applications
-  summary: CogSearch is a cognitive-oriented multi-agent framework that reimagines e-commerce search as a proactive decision
-    support system. Four specialized agents decompose user intents, fuse heterogeneous knowledge, and deliver actionable insights.
-    Online A/B testing on JD.com demonstrates a 5% reduction in decision costs, 0.41% increase in overall UCVR, and a 30%
-    surge in conversion for decision-heavy queries.
-  importance: One of the few multi-agent systems validated at production scale with real A/B test results on a major e-commerce
-    platform, demonstrating clear business impact.
-  tags:
-  - multi-agent
-  - e-commerce
-  - production-deployment
 - title: 'CT-Flow: Orchestrating CT Interpretation Workflow with Model Context Protocol Servers'
   authors: []
   url: https://arxiv.org/abs/2603.00123v1
@@ -1838,26 +1824,6 @@ papers:
   - multi-agent
   - hybrid-planning
   - tool-calling
-- title: 'When OpenClaw Meets Hospital: Toward an Agentic Operating System for Dynamic Clinical Workflows'
-  authors:
-  - Wenxian Yang
-  - Hanzheng Qiu
-  - Bangqun Zhang
-  - Chengquan Li
-  - Zhiyong Huang
-  url: https://arxiv.org/abs/2603.11721v1
-  category: applications
-  summary: 'This work proposes an agentic operating system for hospitals adapting LLM agents with four components: a restricted
-    execution environment inspired by Linux multi-user systems, a document-centric interaction paradigm, page-indexed memory
-    for long-term clinical context, and a curated medical skills library. The architecture constrains agent actions through
-    predefined skill interfaces and resource isolation for safety and auditability.'
-  importance: Demonstrates how agent platforms can be constrained for high-stakes domains through skill isolation, resource
-    governance, and structured memory -- patterns transferable to other regulated environments.
-  tags:
-  - healthcare-agents
-  - agent-os
-  - skill-isolation
-  - safety
 - title: Agentic AI for Scalable and Robust Optical Systems Control
   authors: []
   url: https://arxiv.org/abs/2602.20144v1
@@ -1957,20 +1923,6 @@ papers:
   - anomaly-detection
   - tool-augmented
   - observability
-- title: 'DUCTILE: Agentic LLM Orchestration of Engineering Analysis in Product Development Practice'
-  authors: []
-  url: https://arxiv.org/abs/2603.10249v1
-  category: applications
-  summary: Presents DUCTILE, an agentic orchestration approach that separates adaptive LLM-driven orchestration from deterministic
-    execution by verified engineering tools. The agent interprets design practices, inspects input data, and adapts processing
-    paths while engineers supervise. Demonstrated on industrial structural analysis at an aerospace manufacturer, handling
-    format, unit, and methodology deviations that break traditional scripted pipelines.
-  importance: Validates a practical agent orchestration pattern for industrial engineering workflows, demonstrating real-world
-    deployment with human-in-the-loop supervision.
-  tags:
-  - agent-orchestration
-  - engineering-automation
-  - human-in-the-loop
 - title: 'GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant'
   authors: []
   url: https://arxiv.org/abs/2603.01059v1
@@ -1986,20 +1938,6 @@ papers:
   - privacy
   - token-efficiency
   - chat-agents
-- title: 'Human-AI Collaboration for Scaling Agile Regression Testing: An Agentic-AI Teammate from Manual to Automated Testing'
-  authors: []
-  url: https://arxiv.org/abs/2603.08190v1
-  category: applications
-  summary: Presents an agentic AI system that generates system-level test scripts from validated specifications in partnership
-    with Hacon (Siemens). The retrieval-augmented multi-agent architecture integrates into agile workflows to accelerate regression
-    test automation. Mixed-method evaluation on industrial artifacts shows significant throughput increases and reduced manual
-    effort, while highlighting the ongoing need for human review.
-  importance: Demonstrates practical agentic AI deployment in industrial software testing workflows, providing lessons for
-    enterprise agent adoption with human oversight.
-  tags:
-  - testing-automation
-  - enterprise-agents
-  - human-ai-collaboration
 - title: 'Catalyst-Agent: Autonomous heterogeneous catalyst screening and optimization with an LLM Agent'
   authors: []
   url: https://arxiv.org/abs/2603.01311v1
@@ -2031,3 +1969,65 @@ papers:
   - video-reasoning
   - tool-use
   - clinical
+- title: 'HLER: Human-in-the-Loop Economic Research via Multi-Agent Pipelines for Empirical Discovery'
+  authors: []
+  url: https://arxiv.org/abs/2603.07444v1
+  category: applications
+  summary: HLER introduces a multi-agent architecture for empirical economics research that preserves human oversight through
+    embedded decision gates. The system orchestrates agents for data auditing, hypothesis generation, econometric analysis,
+    manuscript drafting, and automated review within a two-loop architecture. Dataset-aware hypothesis generation produces
+    feasible research questions in 87% of cases versus 41% under unconstrained generation, at $0.8-$1.5 per complete manuscript.
+  importance: Demonstrates practical human-in-the-loop agent pipelines with strong feasibility improvements, applicable to
+    broader research automation workflows.
+  tags:
+  - human-in-the-loop
+  - multi-agent
+  - research-automation
+- title: 'CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era'
+  authors: []
+  url: https://arxiv.org/abs/2602.23452v1
+  category: applications
+  summary: CiteAudit presents the first comprehensive benchmark and multi-agent detection framework for hallucinated citations
+    in scientific writing. The verification pipeline decomposes citation checking into claim extraction, evidence retrieval,
+    passage matching, reasoning, and calibrated judgment. A large-scale human-validated dataset across domains defines unified
+    metrics for citation faithfulness. Experiments show substantial citation errors in state-of-the-art LLMs and demonstrate
+    the framework significantly outperforms prior methods.
+  importance: Addresses a critical trust problem in LLM-generated scientific text with a practical multi-agent verification
+    pipeline applicable to any document processing system.
+  tags:
+  - citation-verification
+  - hallucination-detection
+  - multi-agent
+  - scientific-writing
+- title: 'DataJoint 2.0: A Computational Substrate for Agentic Scientific Workflows'
+  authors:
+  - Dimitri Yatsenko
+  - Thinh T. Nguyen
+  url: https://arxiv.org/abs/2602.16585v1
+  category: applications
+  summary: Introduces DataJoint 2.0, a relational workflow model where tables represent workflow steps, rows represent artifacts,
+    and foreign keys prescribe execution order. Features object-augmented schemas, semantic matching for join safety, extensible
+    type systems, and distributed job coordination. Creates a substrate for SciOps where agents can participate in scientific
+    workflows with transactional guarantees and full provenance.
+  importance: Provides a principled infrastructure pattern for agent-safe workflow orchestration with data integrity, relevant
+    to agent orchestration in scientific and data-intensive domains.
+  tags:
+  - workflow-orchestration
+  - scientific-computing
+  - data-pipelines
+- title: 'GenDB: The Next Generation of Query Processing -- Synthesized, Not Engineered'
+  authors:
+  - Jiale Lao
+  - Immanuel Trummer
+  url: https://arxiv.org/abs/2603.02081v1
+  category: applications
+  summary: GenDB proposes using LLMs to synthesize instance-optimized query execution code for each incoming query rather
+    than relying on traditional query engines. Built as a multi-agent system using Claude Code Agent, it generates customized
+    code tailored to specific data, workloads, and hardware. Evaluations on TPC-H and a new benchmark show GenDB outperforms
+    DuckDB, Umbra, MonetDB, ClickHouse, and PostgreSQL.
+  importance: Demonstrates a paradigm shift in database query processing where LLM agents synthesize optimized execution code,
+    outperforming hand-engineered database engines.
+  tags:
+  - database
+  - code-synthesis
+  - multi-agent

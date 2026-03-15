@@ -12,7 +12,7 @@
   <h1>This Week in <span class="highlight">AI</span></h1>
   <div class="subtitle">Week of January 6, 2026</div>
   
-  <div class="curator-notes">Inaugural edition — the best AI agent papers from Q1 2026 (Jan-Mar), covering observability, reasoning, frameworks, and more.</div>
+  <div class="curator-notes">Inaugural edition — the best AI agent papers from Q1 2026 (Jan 1 - Mar 8), covering observability, reasoning, frameworks, and more.</div>
   
 </header>
 
@@ -763,35 +763,6 @@
   <div class="paper">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
       <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.11137v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">Scaling Reasoning Efficiently via Relaxed On-Policy Distillation</a></h3>
-        <div class="importance-preview">Offers a practical and theoretically grounded method to efficiently distill reasoning capabilities into smaller...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta"></div>
-      <div class="summary">REOPOLD reinterprets on-policy distillation as policy optimization where the teacher-student log-likelihood ratio acts as a token reward. It stabilizes training through mixture-based reward clipping, entropy-based token-level dynamic sampling, and a unified exploration-to-refinement strategy. The framework achieves 6.7-12x greater sample efficiency than recent RL approaches and enables a 7B student to match a 32B teacher in visual reasoning with 3.3x inference speedup. Results span mathematical, visual, and agentic tool-use reasoning tasks.</div>
-      <div class="importance">Offers a practical and theoretically grounded method to efficiently distill reasoning capabilities into smaller models, directly relevant to deploying capable but cost-effective agents.</div>
-      
-      <div class="tags">
-        
-        <span>#distillation</span>
-        
-        <span>#reasoning</span>
-        
-        <span>#sample-efficiency</span>
-        
-        <span>#model-compression</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.11137v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
         <h3><a href="https://arxiv.org/abs/2602.22554v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">Multilingual Safety Alignment Via Sparse Weight Editing</a></h3>
         <div class="importance-preview">Offers a computationally efficient, data-light approach to extending safety guardrails across languages without retraining.</div>
       </div>
@@ -937,35 +908,6 @@
   <div class="paper">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
       <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.11103v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">Understanding by Reconstruction: Reversing the Software Development Process for LLM Pretraining</a></h3>
-        <div class="importance-preview">Novel pretraining data synthesis approach that could substantially improve coding and agentic capabilities of...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta">Zhiyuan Zeng, Yichi Zhang, Yong Shan, Kai Hua, Siyuan Fang</div>
-      <div class="summary">This paper proposes reverse-engineering the latent agentic trajectories behind static code repositories to create richer pretraining data. A multi-agent simulation synthesizes planning, reasoning, and debugging steps grounded in repository structure. Search-based optimization refines Chain-of-Thought reasoning to maximize ground-truth code likelihood. Continuous pretraining on reconstructed trajectories significantly improves Llama-3-8B on coding, long-context, and agentic benchmarks.</div>
-      <div class="importance">Novel pretraining data synthesis approach that could substantially improve coding and agentic capabilities of foundation models through trajectory reconstruction.</div>
-      
-      <div class="tags">
-        
-        <span>#pretraining</span>
-        
-        <span>#code-generation</span>
-        
-        <span>#trajectory-synthesis</span>
-        
-        <span>#chain-of-thought</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.11103v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
         <h3><a href="https://arxiv.org/abs/2603.04304v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">$V_1$: Unifying Generation and Self-Verification for Parallel Reasoners</a></h3>
         <div class="importance-preview">Advances test-time scaling with a practical pairwise verification approach that jointly improves generation and...</div>
       </div>
@@ -1016,35 +958,6 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2602.20670v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.11226v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">ExecVerify: White-Box RL with Verifiable Stepwise Rewards for Code Execution Reasoning</a></h3>
-        <div class="importance-preview">Provides a principled approach to training smaller models for code reasoning with verifiable step-level rewards,...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta"></div>
-      <div class="summary">ExecVerify improves code execution reasoning in LLMs by incorporating verifiable white-box rewards derived from execution traces, including next-statement prediction and variable value/type prediction. The approach builds a difficulty-stratified dataset via constraint-based program synthesis and applies RL to reward correct intermediate execution steps. A two-stage pipeline first enhances execution reasoning, then transfers to code generation. A 7B model trained with ExecVerify matches 32B model performance on code reasoning benchmarks.</div>
-      <div class="importance">Provides a principled approach to training smaller models for code reasoning with verifiable step-level rewards, enabling significant efficiency gains in code-focused LLMs.</div>
-      
-      <div class="tags">
-        
-        <span>#code-reasoning</span>
-        
-        <span>#reinforcement-learning</span>
-        
-        <span>#execution-traces</span>
-        
-        <span>#model-training</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.11226v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
     </div>
   </div>
   
@@ -1217,6 +1130,89 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2603.01571v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2602.20739v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">PyVision-RL: Forging Open Agentic Vision Models via RL</a></h3>
+        <div class="importance-preview">Solves a fundamental RL training failure mode for agentic models, ensuring sustained tool use and multi-turn...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta"></div>
+      <div class="summary">PyVision-RL addresses interaction collapse in RL-trained agentic multimodal models, where models learn to avoid tool use and multi-turn reasoning. It introduces an oversampling-filtering-ranking rollout strategy with accumulative tool rewards to sustain interaction. PyVision-Video uses on-demand context construction, selectively sampling task-relevant frames during reasoning to reduce visual token usage while maintaining strong performance.</div>
+      <div class="importance">Solves a fundamental RL training failure mode for agentic models, ensuring sustained tool use and multi-turn interaction critical for agent runtime behavior.</div>
+      
+      <div class="tags">
+        
+        <span>#reinforcement-learning</span>
+        
+        <span>#multimodal</span>
+        
+        <span>#tool-use</span>
+        
+        <span>#agentic-models</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2602.20739v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2602.13949v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">Experiential Reinforcement Learning</a></h3>
+        <div class="importance-preview">A training paradigm that internalizes reflection into model weights, improving agentic task performance without...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Taiwei Shi, Sihao Chen, Bowen Jiang, Linxin Song, Longqi Yang</div>
+      <div class="summary">ERL embeds an experience-reflection-consolidation loop into reinforcement learning for language models. The model generates an attempt, receives feedback, produces a reflection guiding a refined second attempt, and the successful revision is reinforced into the base policy. This achieves up to 81% gains in complex multi-step environments and 11% in tool-using reasoning tasks without additional inference cost at deployment.</div>
+      <div class="importance">A training paradigm that internalizes reflection into model weights, improving agentic task performance without inference-time overhead.</div>
+      
+      <div class="tags">
+        
+        <span>#reinforcement-learning</span>
+        
+        <span>#self-reflection</span>
+        
+        <span>#training-paradigm</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2602.13949v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2602.06130v2" target="_blank" rel="noopener" onclick="event.stopPropagation()">Self-Improving World Modelling with Latent Actions</a></h3>
+        <div class="importance-preview">Demonstrates that world models can self-improve without action labels, with direct implications for building agent...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta"></div>
+      <div class="summary">SWIRL proposes a self-improvement framework for world models that learns from state-only sequences by treating actions as latent variables, alternating between forward world modelling and inverse dynamics modelling. Both models are trained with GRPO reinforcement learning using the opposite model's log-probability as reward. The approach achieves gains of 16-28% across multiple benchmarks including visual dynamics and tool-calling environments.</div>
+      <div class="importance">Demonstrates that world models can self-improve without action labels, with direct implications for building agent planning and tool-use capabilities from unlabeled trajectories.</div>
+      
+      <div class="tags">
+        
+        <span>#world-models</span>
+        
+        <span>#self-improvement</span>
+        
+        <span>#planning</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2602.06130v2" target="_blank" rel="noopener">View on arxiv &rarr;</a>
     </div>
   </div>
   
@@ -1577,35 +1573,6 @@
   <div class="paper">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
       <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.07915v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">Ares: Adaptive Reasoning Effort Selection for Efficient LLM Agents</a></h3>
-        <div class="importance-preview">Provides a practical, plug-and-play solution for dramatically reducing agent inference costs by intelligently...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta">Jingbo Yang, Bairu Hou, Wei Wei, Yujia Bao, Shiyu Chang</div>
-      <div class="summary">Proposes Ares, a framework for per-step dynamic reasoning effort selection in multi-step agent tasks. Uses a lightweight router trained on minimum-effort labels to predict the lowest appropriate reasoning level at each step. Reduces reasoning token usage by up to 52.7% compared to fixed high-effort reasoning on TAU-Bench, BrowseComp-Plus, and WebArena with minimal accuracy degradation.</div>
-      <div class="importance">Provides a practical, plug-and-play solution for dramatically reducing agent inference costs by intelligently routing reasoning effort, directly applicable to production agent deployments.</div>
-      
-      <div class="tags">
-        
-        <span>#reasoning-efficiency</span>
-        
-        <span>#adaptive-compute</span>
-        
-        <span>#agent-optimization</span>
-        
-        <span>#cost-reduction</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.07915v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
         <h3><a href="https://arxiv.org/abs/2603.03290v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">AriadneMem: Threading the Maze of Lifelong Memory for LLM Agents</a></h3>
         <div class="importance-preview">Demonstrates a highly efficient agent memory architecture with dramatic runtime and context savings, directly...</div>
       </div>
@@ -1800,6 +1767,33 @@
     </div>
   </div>
   
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2602.14211v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">SkillJect: Automating Stealthy Skill-Based Prompt Injection for Coding Agents with Trace-Driven Closed-Loop Refinement</a></h3>
+        <div class="importance-preview">Exposes a critical new attack surface in skill-based agent architectures, directly motivating guardrail and sandbox...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Xiaojun Jia, Jie Liao, Simeng Qin, Jindong Gu, Wenqi Ren</div>
+      <div class="summary">SkillJect is the first automated framework for stealthy prompt injection targeting agent skill abstractions. It uses a closed-loop system of Attack, Code, and Evaluate agents to synthesize injection payloads that hide malicious operations in auxiliary scripts while triggering tool execution. The framework achieves high attack success rates across diverse coding-agent settings and real-world software engineering tasks.</div>
+      <div class="importance">Exposes a critical new attack surface in skill-based agent architectures, directly motivating guardrail and sandbox improvements in agent runtime systems.</div>
+      
+      <div class="tags">
+        
+        <span>#agent-security</span>
+        
+        <span>#prompt-injection</span>
+        
+        <span>#coding-agents</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2602.14211v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
 </section>
 
 
@@ -1983,35 +1977,6 @@
   <div class="paper">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
       <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.09701v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">An Empirical Study of Interaction Smells in Multi-Turn Human-LLM Collaborative Code Generation</a></h3>
-        <div class="importance-preview">Identifies and categorizes systematic quality issues in multi-turn LLM interactions for code generation, offering...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta"></div>
-      <div class="summary">This paper establishes the first taxonomy of 'Interaction Smells' in multi-turn human-LLM code generation through manual analysis of real-world conversations from WildChat and LMSYS-Chat-1M. It categorizes issues into User Intent Quality, Historical Instruction Compliance, and Historical Response Violation across nine subcategories. The paper evaluates six mainstream LLMs and proposes InCE, a multi-agent framework using global invariant extraction and pre-generation quality audits that significantly improves task success rates.</div>
-      <div class="importance">Identifies and categorizes systematic quality issues in multi-turn LLM interactions for code generation, offering actionable mitigation through invariant-aware constraint evolution.</div>
-      
-      <div class="tags">
-        
-        <span>#interaction-quality</span>
-        
-        <span>#code-generation</span>
-        
-        <span>#multi-turn</span>
-        
-        <span>#session-management</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.09701v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
         <h3><a href="https://arxiv.org/abs/2603.05863v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">ReflexiCoder: Teaching Large Language Models to Self-Reflect on Generated Code and Self-Correct It via Reinforcement Learning</a></h3>
         <div class="importance-preview">Demonstrates that intrinsic self-correction can rival external-feedback approaches for code generation, with...</div>
       </div>
@@ -2035,35 +2000,6 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2603.05863v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.07927v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">SWE-Fuse: Empowering Software Agents via Issue-free Trajectory Learning and Entropy-aware RLVR Training</a></h3>
-        <div class="importance-preview">Significant SWE-bench improvements demonstrate that training agents to debug without relying on issue descriptions...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta"></div>
-      <div class="summary">SWE-Fuse addresses the problem of misleading issue descriptions in software engineering agents by fusing issue-guided and issue-free training samples. It introduces entropy-aware RLVR training that adaptively adjusts clipping based on entropy levels. On SWE-bench Verified, SWE-Fuse outperforms the best 8B and 32B baselines by 43% and 60% in solve rate respectively, with test-time scaling pushing results to 49.8% and 65.2%.</div>
-      <div class="importance">Significant SWE-bench improvements demonstrate that training agents to debug without relying on issue descriptions produces more robust software engineering agents.</div>
-      
-      <div class="tags">
-        
-        <span>#swe-bench</span>
-        
-        <span>#reinforcement-learning</span>
-        
-        <span>#software-agents</span>
-        
-        <span>#training</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.07927v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
     </div>
   </div>
   
@@ -2373,6 +2309,64 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2603.04177v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2602.06090v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">SVRepair: Structured Visual Reasoning for Automated Program Repair</a></h3>
+        <div class="importance-preview">Pioneers multimodal program repair by bridging visual bug reports and code fixes through structured visual...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta"></div>
+      <div class="summary">SVRepair introduces a multimodal automated program repair framework that transforms heterogeneous visual artifacts (screenshots, control-flow graphs) into semantic scene graphs capturing GUI elements and structural relations. A coding agent then localizes faults and synthesizes patches using these structured representations. An iterative visual-artifact segmentation strategy progressively narrows input to bug-centered regions. It achieves 36.47% on SWE-Bench M, 38.02% on MMCode, and 95.12% on CodeVision.</div>
+      <div class="importance">Pioneers multimodal program repair by bridging visual bug reports and code fixes through structured visual representations, advancing the state of the art on major benchmarks.</div>
+      
+      <div class="tags">
+        
+        <span>#program-repair</span>
+        
+        <span>#multimodal</span>
+        
+        <span>#swe-bench</span>
+        
+        <span>#visual-reasoning</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2602.06090v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2602.13937v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">A Multi-Agent Framework for Code-Guided, Modular, and Verifiable Automated Machine Learning</a></h3>
+        <div class="importance-preview">Demonstrates that structured code-guided approaches with verification significantly improve reliability of AI-driven...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Dat Le, Duc-Cuong Le, Anh-Son Nguyen, Tuan-Dung Bui, Thu-Trang Nguyen</div>
+      <div class="summary">iML is a multi-agent AutoML framework that shifts from black-box prompting to code-guided, modular, and verifiable design. It uses code-guided planning with empirical profiling, modular implementation with interface contracts, and dynamic contract verification. Achieves 85% valid submission rate and 45% medal rate on MLE-BENCH, outperforming state-of-the-art agents by 38-163% on iML-BENCH.</div>
+      <div class="importance">Demonstrates that structured code-guided approaches with verification significantly improve reliability of AI-driven ML pipeline generation.</div>
+      
+      <div class="tags">
+        
+        <span>#automl</span>
+        
+        <span>#code-generation</span>
+        
+        <span>#multi-agent</span>
+        
+        <span>#verifiable-ai</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2602.13937v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
     </div>
   </div>
   
@@ -3083,33 +3077,6 @@
   <div class="paper">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
       <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.11927v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">CogSearch: A Cognitive-Aligned Multi-Agent Framework for Proactive Decision Support in E-Commerce Search</a></h3>
-        <div class="importance-preview">One of the few multi-agent systems validated at production scale with real A/B test results on a major e-commerce...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta"></div>
-      <div class="summary">CogSearch is a cognitive-oriented multi-agent framework that reimagines e-commerce search as a proactive decision support system. Four specialized agents decompose user intents, fuse heterogeneous knowledge, and deliver actionable insights. Online A/B testing on JD.com demonstrates a 5% reduction in decision costs, 0.41% increase in overall UCVR, and a 30% surge in conversion for decision-heavy queries.</div>
-      <div class="importance">One of the few multi-agent systems validated at production scale with real A/B test results on a major e-commerce platform, demonstrating clear business impact.</div>
-      
-      <div class="tags">
-        
-        <span>#multi-agent</span>
-        
-        <span>#e-commerce</span>
-        
-        <span>#production-deployment</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.11927v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
         <h3><a href="https://arxiv.org/abs/2603.00123v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">CT-Flow: Orchestrating CT Interpretation Workflow with Model Context Protocol Servers</a></h3>
         <div class="importance-preview">Demonstrates MCP-based tool orchestration for clinical workflows, showing how agentic architectures can coordinate...</div>
       </div>
@@ -3191,35 +3158,6 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2603.00200v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.11721v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">When OpenClaw Meets Hospital: Toward an Agentic Operating System for Dynamic Clinical Workflows</a></h3>
-        <div class="importance-preview">Demonstrates how agent platforms can be constrained for high-stakes domains through skill isolation, resource...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta">Wenxian Yang, Hanzheng Qiu, Bangqun Zhang, Chengquan Li, Zhiyong Huang</div>
-      <div class="summary">This work proposes an agentic operating system for hospitals adapting LLM agents with four components: a restricted execution environment inspired by Linux multi-user systems, a document-centric interaction paradigm, page-indexed memory for long-term clinical context, and a curated medical skills library. The architecture constrains agent actions through predefined skill interfaces and resource isolation for safety and auditability.</div>
-      <div class="importance">Demonstrates how agent platforms can be constrained for high-stakes domains through skill isolation, resource governance, and structured memory -- patterns transferable to other regulated environments.</div>
-      
-      <div class="tags">
-        
-        <span>#healthcare-agents</span>
-        
-        <span>#agent-os</span>
-        
-        <span>#skill-isolation</span>
-        
-        <span>#safety</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.11721v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
     </div>
   </div>
   
@@ -3396,33 +3334,6 @@
   <div class="paper">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
       <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.10249v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">DUCTILE: Agentic LLM Orchestration of Engineering Analysis in Product Development Practice</a></h3>
-        <div class="importance-preview">Validates a practical agent orchestration pattern for industrial engineering workflows, demonstrating real-world...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta"></div>
-      <div class="summary">Presents DUCTILE, an agentic orchestration approach that separates adaptive LLM-driven orchestration from deterministic execution by verified engineering tools. The agent interprets design practices, inspects input data, and adapts processing paths while engineers supervise. Demonstrated on industrial structural analysis at an aerospace manufacturer, handling format, unit, and methodology deviations that break traditional scripted pipelines.</div>
-      <div class="importance">Validates a practical agent orchestration pattern for industrial engineering workflows, demonstrating real-world deployment with human-in-the-loop supervision.</div>
-      
-      <div class="tags">
-        
-        <span>#agent-orchestration</span>
-        
-        <span>#engineering-automation</span>
-        
-        <span>#human-in-the-loop</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.10249v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
         <h3><a href="https://arxiv.org/abs/2603.01059v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant</a></h3>
         <div class="importance-preview">Addresses the under-explored multi-user agent deployment scenario with practical solutions for token efficiency,...</div>
       </div>
@@ -3446,33 +3357,6 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2603.01059v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
-        <h3><a href="https://arxiv.org/abs/2603.08190v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">Human-AI Collaboration for Scaling Agile Regression Testing: An Agentic-AI Teammate from Manual to Automated Testing</a></h3>
-        <div class="importance-preview">Demonstrates practical agentic AI deployment in industrial software testing workflows, providing lessons for...</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta"></div>
-      <div class="summary">Presents an agentic AI system that generates system-level test scripts from validated specifications in partnership with Hacon (Siemens). The retrieval-augmented multi-agent architecture integrates into agile workflows to accelerate regression test automation. Mixed-method evaluation on industrial artifacts shows significant throughput increases and reduced manual effort, while highlighting the ongoing need for human review.</div>
-      <div class="importance">Demonstrates practical agentic AI deployment in industrial software testing workflows, providing lessons for enterprise agent adoption with human oversight.</div>
-      
-      <div class="tags">
-        
-        <span>#testing-automation</span>
-        
-        <span>#enterprise-agents</span>
-        
-        <span>#human-ai-collaboration</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://arxiv.org/abs/2603.08190v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
     </div>
   </div>
   
@@ -3531,6 +3415,116 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2602.13332v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2603.07444v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">HLER: Human-in-the-Loop Economic Research via Multi-Agent Pipelines for Empirical Discovery</a></h3>
+        <div class="importance-preview">Demonstrates practical human-in-the-loop agent pipelines with strong feasibility improvements, applicable to broader...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta"></div>
+      <div class="summary">HLER introduces a multi-agent architecture for empirical economics research that preserves human oversight through embedded decision gates. The system orchestrates agents for data auditing, hypothesis generation, econometric analysis, manuscript drafting, and automated review within a two-loop architecture. Dataset-aware hypothesis generation produces feasible research questions in 87% of cases versus 41% under unconstrained generation, at $0.8-$1.5 per complete manuscript.</div>
+      <div class="importance">Demonstrates practical human-in-the-loop agent pipelines with strong feasibility improvements, applicable to broader research automation workflows.</div>
+      
+      <div class="tags">
+        
+        <span>#human-in-the-loop</span>
+        
+        <span>#multi-agent</span>
+        
+        <span>#research-automation</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2603.07444v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2602.23452v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era</a></h3>
+        <div class="importance-preview">Addresses a critical trust problem in LLM-generated scientific text with a practical multi-agent verification...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta"></div>
+      <div class="summary">CiteAudit presents the first comprehensive benchmark and multi-agent detection framework for hallucinated citations in scientific writing. The verification pipeline decomposes citation checking into claim extraction, evidence retrieval, passage matching, reasoning, and calibrated judgment. A large-scale human-validated dataset across domains defines unified metrics for citation faithfulness. Experiments show substantial citation errors in state-of-the-art LLMs and demonstrate the framework significantly outperforms prior methods.</div>
+      <div class="importance">Addresses a critical trust problem in LLM-generated scientific text with a practical multi-agent verification pipeline applicable to any document processing system.</div>
+      
+      <div class="tags">
+        
+        <span>#citation-verification</span>
+        
+        <span>#hallucination-detection</span>
+        
+        <span>#multi-agent</span>
+        
+        <span>#scientific-writing</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2602.23452v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2602.16585v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">DataJoint 2.0: A Computational Substrate for Agentic Scientific Workflows</a></h3>
+        <div class="importance-preview">Provides a principled infrastructure pattern for agent-safe workflow orchestration with data integrity, relevant to...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Dimitri Yatsenko, Thinh T. Nguyen</div>
+      <div class="summary">Introduces DataJoint 2.0, a relational workflow model where tables represent workflow steps, rows represent artifacts, and foreign keys prescribe execution order. Features object-augmented schemas, semantic matching for join safety, extensible type systems, and distributed job coordination. Creates a substrate for SciOps where agents can participate in scientific workflows with transactional guarantees and full provenance.</div>
+      <div class="importance">Provides a principled infrastructure pattern for agent-safe workflow orchestration with data integrity, relevant to agent orchestration in scientific and data-intensive domains.</div>
+      
+      <div class="tags">
+        
+        <span>#workflow-orchestration</span>
+        
+        <span>#scientific-computing</span>
+        
+        <span>#data-pipelines</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2602.16585v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="https://arxiv.org/abs/2603.02081v1" target="_blank" rel="noopener" onclick="event.stopPropagation()">GenDB: The Next Generation of Query Processing -- Synthesized, Not Engineered</a></h3>
+        <div class="importance-preview">Demonstrates a paradigm shift in database query processing where LLM agents synthesize optimized execution code,...</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Jiale Lao, Immanuel Trummer</div>
+      <div class="summary">GenDB proposes using LLMs to synthesize instance-optimized query execution code for each incoming query rather than relying on traditional query engines. Built as a multi-agent system using Claude Code Agent, it generates customized code tailored to specific data, workloads, and hardware. Evaluations on TPC-H and a new benchmark show GenDB outperforms DuckDB, Umbra, MonetDB, ClickHouse, and PostgreSQL.</div>
+      <div class="importance">Demonstrates a paradigm shift in database query processing where LLM agents synthesize optimized execution code, outperforming hand-engineered database engines.</div>
+      
+      <div class="tags">
+        
+        <span>#database</span>
+        
+        <span>#code-synthesis</span>
+        
+        <span>#multi-agent</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://arxiv.org/abs/2603.02081v1" target="_blank" rel="noopener">View on arxiv &rarr;</a>
     </div>
   </div>
   
