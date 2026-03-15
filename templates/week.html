@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}This Week in AI — Week of {{ week_display }}{% endblock %}
+
+{% block content %}
+<header>
+  <h1>This Week in <span class="highlight">AI</span></h1>
+  <div class="subtitle">Week of {{ week_display }}</div>
+  {% if curator_notes %}
+  <div class="curator-notes">{{ curator_notes }}</div>
+  {% endif %}
+</header>
+
+<nav class="tabs">
+  {% for cat in categories %}
+  {% if cat.slug in active_categories %}
+  <button data-tab="{{ cat.slug }}"{% if loop.first %} class="active"{% endif %}>
+    {{ cat.name }}<span class="count">({{ papers_by_category.get(cat.slug, [])|length }})</span>
+  </button>
+  {% endif %}
+  {% endfor %}
+</nav>
+
+{% for cat in categories %}
+{% set cat_papers = papers_by_category.get(cat.slug, []) %}
+{% if cat_papers %}
+<section class="category{% if cat.slug == first_category %} active{% endif %}" id="{{ cat.slug }}">
+  <h2>{{ cat.name }}</h2>
+  {% for paper in cat_papers %}
+  <div class="paper">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3><a href="{{ paper.url }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">{{ paper.title }}</a></h3>
+        <div class="importance-preview">{{ paper.importance | truncate(120) }}</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">{{ paper.authors | join(", ") }}</div>
+      <div class="summary">{{ paper.summary }}</div>
+      <div class="importance">{{ paper.importance }}</div>
+      {% if paper.tags %}
+      <div class="tags">
+        {% for tag in paper.tags %}
+        <span>#{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <a class="arxiv-link" href="{{ paper.url }}" target="_blank" rel="noopener">View on arxiv &rarr;</a>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+{% endfor %}
+
+<div class="week-nav">
+  <div>
+    {% if prev_week %}<a href="weeks/{{ prev_week }}.html">&larr; Previous week</a>{% endif %}
+  </div>
+  <div><a href="{{ root }}archive.html">Archive</a></div>
+  <div>
+    {% if next_week %}<a href="weeks/{{ next_week }}.html">Next week &rarr;</a>{% endif %}
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('nav.tabs button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('nav.tabs button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('section.category').forEach(s => s.classList.remove('active'));
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+</script>
+{% endblock %}
