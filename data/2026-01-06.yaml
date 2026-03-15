@@ -2339,4 +2339,89 @@ papers:
   - anthropic
   - exploit
   source: blog
+- title: On Agent Frameworks and Agent Observability
+  authors:
+  - LangChain
+  url: https://blog.langchain.com/on-agent-frameworks-and-agent-observability/
+  category: agentops
+  summary: 'LangChain argues agent frameworks remain relevant but must evolve as fast as models. Traces three generations
+    of frameworks — from simple chaining to orchestration to autonomous tool-calling. Key insight: LangSmith observability
+    is framework-agnostic via OpenTelemetry, working across AutoGen, Claude Agent SDK, and CrewAI. Makes the case that agent
+    traces, not code, document application logic.'
+  importance: Defines the role of observability as the stable layer in a rapidly evolving agent framework landscape.
+  tags:
+  - observability
+  - frameworks
+  - langchain
+  - opentelemetry
+  source: blog
+  published: '2026-02-12'
+- title: Improving Deep Agents with Harness Engineering
+  authors:
+  - LangChain
+  url: https://blog.langchain.com/improving-deep-agents-with-harness-engineering/
+  category: ai-dev
+  summary: 'LangChain improved their coding agent from 52.8% to 66.5% on Terminal Bench 2.0 by changing only the harness,
+    not the model. Key techniques: self-verification loops via PreCompletionChecklistMiddleware, environmental context mapping,
+    loop detection to escape doom loops, and reasoning budget allocation (reasoning sandwich strategy). Demonstrates that
+    harness design is the primary lever for agent performance.'
+  importance: Concrete proof that harness engineering matters more than model choice — 14pp improvement without changing the
+    model.
+  tags:
+  - harness-engineering
+  - coding-agents
+  - langchain
+  - benchmarks
+  source: blog
+  published: '2026-02-17'
+- title: 'From Traces to Insights: Understanding Agent Behavior at Scale'
+  authors:
+  - LangChain
+  url: https://blog.langchain.com/from-traces-to-insights-understanding-agent-behavior-at-scale/
+  category: agentops
+  summary: 'LangChain addresses the gap between collecting traces and extracting value. Key insight: agents are non-deterministic,
+    prompt-sensitive, and have unbounded input space — making pre-production testing insufficient. Traditional analytics cannot
+    discover unknown failure patterns. LangSmith Insights Agent uses clustering to automatically surface patterns across thousands
+    of conversations without predefined hypotheses.'
+  importance: Identifies the fundamental analytics gap for agent systems and proposes a clustering-based approach to unknown
+    unknowns.
+  tags:
+  - traces
+  - analytics
+  - clustering
+  - langchain
+  source: blog
+  published: '2026-01-20'
+- title: Autonomous Context Compression for Deep Agents
+  authors:
+  - LangChain
+  url: https://blog.langchain.com/autonomous-context-compression/
+  category: agents
+  summary: LangChain adds a tool to the Deep Agents SDK that allows models to compress their own context windows autonomously.
+    The model decides when and how to compress, preserving critical information while staying within token limits during long-running
+    tasks.
+  importance: Practical solution to the context window problem for long-horizon agents.
+  tags:
+  - context-compression
+  - long-horizon
+  - langchain
+  - deep-agents
+  source: blog
+  published: '2026-03-10'
+- title: Choosing the Right Multi-Agent Architecture
+  authors:
+  - LangChain
+  url: https://blog.langchain.com/choosing-the-right-multi-agent-architecture/
+  category: harnesses
+  summary: LangChain provides a decision framework for selecting multi-agent patterns based on use case characteristics. Covers
+    supervisor-worker, peer-to-peer, hierarchical, and swarm patterns with guidance on when each is appropriate. Includes
+    real-world examples and architectural trade-offs.
+  importance: Practical decision guide for the most common architectural question in multi-agent systems.
+  tags:
+  - multi-agent
+  - architecture
+  - patterns
+  - langchain
+  source: blog
+  published: '2026-01-15'
 edition: inaugural

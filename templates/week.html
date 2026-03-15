@@ -49,7 +49,7 @@
       <div class="expand-icon">&#9654;</div>
     </div>
     <div class="paper-details">
-      <div class="meta">{{ paper.authors | join(", ") }}</div>
+      <div class="meta">{{ paper.authors | join(", ") }}{% if paper.published %} · {{ paper.published }}{% endif %}</div>
       <div class="summary">{{ paper.summary }}</div>
       {% if paper.importance %}
       <div class="importance">{{ paper.importance }}</div>

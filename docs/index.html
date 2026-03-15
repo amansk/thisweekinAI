@@ -20,7 +20,7 @@
   
   
   <button data-tab="agentops" class="active">
-    AgentOps<span class="count">(26)</span>
+    AgentOps<span class="count">(28)</span>
   </button>
   
   
@@ -32,19 +32,19 @@
   
   
   <button data-tab="agents">
-    Agents & Reasoning<span class="count">(23)</span>
+    Agents & Reasoning<span class="count">(24)</span>
   </button>
   
   
   
   <button data-tab="ai-dev">
-    AI-Assisted Dev<span class="count">(24)</span>
+    AI-Assisted Dev<span class="count">(25)</span>
   </button>
   
   
   
   <button data-tab="harnesses">
-    Agent Harnesses<span class="count">(23)</span>
+    Agent Harnesses<span class="count">(24)</span>
   </button>
   
   
@@ -901,6 +901,74 @@
       </div>
       
       <a class="arxiv-link" href="https://www.anthropic.com/engineering/eval-awareness-browsecomp" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener" onclick="event.stopPropagation()">On Agent Frameworks and Agent Observability</a>
+        </h3>
+        <div class="importance-preview">Defines the role of observability as the stable layer in a rapidly evolving agent framework landscape.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">LangChain · 2026-02-12</div>
+      <div class="summary">LangChain argues agent frameworks remain relevant but must evolve as fast as models. Traces three generations of frameworks — from simple chaining to orchestration to autonomous tool-calling. Key insight: LangSmith observability is framework-agnostic via OpenTelemetry, working across AutoGen, Claude Agent SDK, and CrewAI. Makes the case that agent traces, not code, document application logic.</div>
+      
+      <div class="importance">Defines the role of observability as the stable layer in a rapidly evolving agent framework landscape.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#observability</span>
+        
+        <span>#frameworks</span>
+        
+        <span>#langchain</span>
+        
+        <span>#opentelemetry</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://blog.langchain.com/on-agent-frameworks-and-agent-observability/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://blog.langchain.com/from-traces-to-insights-understanding-agent-behavior-at-scale/" target="_blank" rel="noopener" onclick="event.stopPropagation()">From Traces to Insights: Understanding Agent Behavior at Scale</a>
+        </h3>
+        <div class="importance-preview">Identifies the fundamental analytics gap for agent systems and proposes a clustering-based approach to unknown unknowns.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">LangChain · 2026-01-20</div>
+      <div class="summary">LangChain addresses the gap between collecting traces and extracting value. Key insight: agents are non-deterministic, prompt-sensitive, and have unbounded input space — making pre-production testing insufficient. Traditional analytics cannot discover unknown failure patterns. LangSmith Insights Agent uses clustering to automatically surface patterns across thousands of conversations without predefined hypotheses.</div>
+      
+      <div class="importance">Identifies the fundamental analytics gap for agent systems and proposes a clustering-based approach to unknown unknowns.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#traces</span>
+        
+        <span>#analytics</span>
+        
+        <span>#clustering</span>
+        
+        <span>#langchain</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://blog.langchain.com/from-traces-to-insights-understanding-agent-behavior-at-scale/" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   </div>
   
@@ -2348,6 +2416,40 @@
     </div>
   </div>
   
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://blog.langchain.com/autonomous-context-compression/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Autonomous Context Compression for Deep Agents</a>
+        </h3>
+        <div class="importance-preview">Practical solution to the context window problem for long-horizon agents.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">LangChain · 2026-03-10</div>
+      <div class="summary">LangChain adds a tool to the Deep Agents SDK that allows models to compress their own context windows autonomously. The model decides when and how to compress, preserving critical information while staying within token limits during long-running tasks.</div>
+      
+      <div class="importance">Practical solution to the context window problem for long-horizon agents.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#context-compression</span>
+        
+        <span>#long-horizon</span>
+        
+        <span>#langchain</span>
+        
+        <span>#deep-agents</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://blog.langchain.com/autonomous-context-compression/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
 </section>
 
 
@@ -3077,6 +3179,40 @@
       </div>
       
       <a class="arxiv-link" href="https://openai.com/index/unrolling-the-codex-agent-loop/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://blog.langchain.com/improving-deep-agents-with-harness-engineering/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Improving Deep Agents with Harness Engineering</a>
+        </h3>
+        <div class="importance-preview">Concrete proof that harness engineering matters more than model choice — 14pp improvement without changing the model.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">LangChain · 2026-02-17</div>
+      <div class="summary">LangChain improved their coding agent from 52.8% to 66.5% on Terminal Bench 2.0 by changing only the harness, not the model. Key techniques: self-verification loops via PreCompletionChecklistMiddleware, environmental context mapping, loop detection to escape doom loops, and reasoning budget allocation (reasoning sandwich strategy). Demonstrates that harness design is the primary lever for agent performance.</div>
+      
+      <div class="importance">Concrete proof that harness engineering matters more than model choice — 14pp improvement without changing the model.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#harness-engineering</span>
+        
+        <span>#coding-agents</span>
+        
+        <span>#langchain</span>
+        
+        <span>#benchmarks</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://blog.langchain.com/improving-deep-agents-with-harness-engineering/" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   </div>
   
@@ -3845,6 +3981,40 @@
       </div>
       
       <a class="arxiv-link" href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://blog.langchain.com/choosing-the-right-multi-agent-architecture/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Choosing the Right Multi-Agent Architecture</a>
+        </h3>
+        <div class="importance-preview">Practical decision guide for the most common architectural question in multi-agent systems.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">LangChain · 2026-01-15</div>
+      <div class="summary">LangChain provides a decision framework for selecting multi-agent patterns based on use case characteristics. Covers supervisor-worker, peer-to-peer, hierarchical, and swarm patterns with guidance on when each is appropriate. Includes real-world examples and architectural trade-offs.</div>
+      
+      <div class="importance">Practical decision guide for the most common architectural question in multi-agent systems.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#multi-agent</span>
+        
+        <span>#architecture</span>
+        
+        <span>#patterns</span>
+        
+        <span>#langchain</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://blog.langchain.com/choosing-the-right-multi-agent-architecture/" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   </div>
   
