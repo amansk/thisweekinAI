@@ -1,6 +1,6 @@
 week: '2026-01-06'
-curator_notes: Inaugural edition — the best AI agent papers from Q1 2026 (Jan 1 - Mar 8), covering observability, reasoning,
-  frameworks, and more.
+curator_notes: 'Inaugural edition — the best AI agent papers and projects from Q1 2026 (Jan 1 - Mar 8). Sources: arxiv, GitHub
+  trending, lab blogs (Anthropic, OpenAI, Google DeepMind, Microsoft).'
 papers:
 - title: 'Wink: Recovering from Misbehaviors in Coding Agents'
   authors: []
