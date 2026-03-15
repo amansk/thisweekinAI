@@ -4,8 +4,7 @@
 
 {% block content %}
 <header>
-  <h1>This Week in <span class="highlight">AI</span></h1>
-  <div class="subtitle">{{ edition_title }}</div>
+  <h2 class="edition-title">{{ edition_title }}</h2>
   {% if curator_notes %}
   <div class="curator-notes">{{ curator_notes }}</div>
   {% endif %}
@@ -35,7 +34,6 @@
 {% set cat_papers = papers_by_category.get(cat.slug, []) %}
 {% if cat_papers %}
 <section class="category{% if cat.slug == first_category %} active{% endif %}" id="{{ cat.slug }}">
-  <h2>{{ cat.name }}</h2>
   {% for paper in cat_papers %}
   <div class="paper" data-source="{{ paper.source | default('arxiv') }}">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
@@ -70,18 +68,7 @@
 {% endif %}
 {% endfor %}
 
-<div class="week-nav">
-  <div>
-    {% if prev_week %}<a href="weeks/{{ prev_week }}.html">&larr; Previous week</a>{% endif %}
-  </div>
-  <div><a href="{{ root }}archive.html">Archive</a></div>
-  <div>
-    {% if next_week %}<a href="weeks/{{ next_week }}.html">Next week &rarr;</a>{% endif %}
-  </div>
-</div>
-
 <script>
-// Category tabs
 document.querySelectorAll('#category-tabs button').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('#category-tabs button').forEach(b => b.classList.remove('active'));
@@ -91,23 +78,16 @@ document.querySelectorAll('#category-tabs button').forEach(btn => {
   });
 });
 
-// Source filters
 document.querySelectorAll('.source-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const src = btn.dataset.source;
     document.querySelectorAll('.paper').forEach(p => {
-      if (src === 'all' || p.dataset.source === src) {
-        p.style.display = '';
-      } else {
-        p.style.display = 'none';
-      }
+      p.style.display = (src === 'all' || p.dataset.source === src) ? '' : 'none';
     });
-    // Update counts in category tabs
     document.querySelectorAll('#category-tabs button').forEach(tab => {
-      const catId = tab.dataset.tab;
-      const section = document.getElementById(catId);
+      const section = document.getElementById(tab.dataset.tab);
       if (!section) return;
       const visible = section.querySelectorAll('.paper:not([style*="display: none"])').length;
       tab.querySelector('.count').textContent = '(' + visible + ')';

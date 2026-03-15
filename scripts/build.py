@@ -25,7 +25,6 @@ CATEGORIES = [
 
 
 def load_weeks():
-    """Load all weekly YAML files, sorted newest first."""
     weeks = []
     for f in sorted(DATA_DIR.glob("*.yaml"), reverse=True):
         if f.name.startswith("candidates"):
@@ -40,8 +39,7 @@ def load_weeks():
 def group_by_category(papers):
     groups = {}
     for p in papers:
-        cat = p.get("category", "applications")
-        groups.setdefault(cat, []).append(p)
+        groups.setdefault(p.get("category", "applications"), []).append(p)
     return groups
 
 
@@ -53,41 +51,53 @@ def get_first_category(papers_by_cat):
 
 
 def get_sources(papers):
-    """Get unique source types from papers."""
     return sorted(set(p.get("source", "arxiv") for p in papers))
 
 
 def get_edition_title(week_data):
-    """Return display title — 'Inaugural Edition' or 'Week of ...'."""
     if week_data.get("edition") == "inaugural":
         return "Inaugural Edition — Q1 2026"
     dt = datetime.strptime(week_data["week"], "%Y-%m-%d")
     return f"Week of {dt.strftime('%B %-d, %Y')}"
 
 
-def format_week(date_str):
-    dt = datetime.strptime(date_str, "%Y-%m-%d")
-    return dt.strftime("%B %-d, %Y")
+def get_short_title(week_data):
+    """Short title for the sidebar."""
+    if week_data.get("edition") == "inaugural":
+        return "Inaugural — Q1 2026"
+    dt = datetime.strptime(week_data["week"], "%Y-%m-%d")
+    return dt.strftime("%b %-d, %Y")
 
 
-def render_week(env, week_data, prev_week, next_week, root):
-    week_template = env.get_template("week.html")
+def build_week_index(weeks):
+    """Build sidebar week list used on every page."""
+    return [
+        {
+            "date": w["week"],
+            "display": get_short_title(w),
+            "count": len(w.get("papers", [])),
+        }
+        for w in weeks
+    ]
+
+
+def render_page(env, template_name, week_data, all_weeks, root, **extra):
+    template = env.get_template(template_name)
     papers = week_data.get("papers", [])
     papers_by_cat = group_by_category(papers)
-    active_cats = set(papers_by_cat.keys())
 
-    return week_template.render(
+    return template.render(
         edition_title=get_edition_title(week_data),
-        week_display=format_week(week_data["week"]),
         curator_notes=week_data.get("curator_notes", ""),
         categories=CATEGORIES,
-        active_categories=active_cats,
+        active_categories=set(papers_by_cat.keys()),
         papers_by_category=papers_by_cat,
         first_category=get_first_category(papers_by_cat),
         sources=get_sources(papers),
-        prev_week=prev_week,
-        next_week=next_week,
+        all_weeks=all_weeks,
+        current_week=week_data["week"],
         root=root,
+        **extra,
     )
 
 
@@ -101,37 +111,30 @@ def build():
         shutil.copy2(f, DOCS_DIR / f.name)
 
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)))
-    archive_template = env.get_template("archive.html")
-
     weeks = load_weeks()
     if not weeks:
         print("No data files found. Nothing to build.")
         return
 
-    week_dates = [w["week"] for w in weeks]
+    all_weeks = build_week_index(weeks)
 
     # Build individual week pages
-    for i, week_data in enumerate(weeks):
-        prev_week = week_dates[i + 1] if i + 1 < len(week_dates) else None
-        next_week = week_dates[i - 1] if i > 0 else None
-        html = render_week(env, week_data, prev_week, next_week, "../")
+    for week_data in weeks:
+        html = render_page(env, "week.html", week_data, all_weeks, "../")
         (DOCS_DIR / "weeks" / f"{week_data['week']}.html").write_text(html)
 
     # Build index.html (latest week)
-    next_week = week_dates[1] if len(week_dates) > 1 else None
-    index_html = render_week(env, weeks[0], next_week, None, "")
+    index_html = render_page(env, "week.html", weeks[0], all_weeks, "")
     (DOCS_DIR / "index.html").write_text(index_html)
 
     # Build archive page
-    archive_weeks = [
-        {
-            "date": w["week"],
-            "display": get_edition_title(w),
-            "count": len(w.get("papers", [])),
-        }
-        for w in weeks
-    ]
-    archive_html = archive_template.render(weeks=archive_weeks, root="")
+    archive_template = env.get_template("archive.html")
+    archive_html = archive_template.render(
+        weeks=all_weeks,
+        all_weeks=all_weeks,
+        current_week="",
+        root="",
+    )
     (DOCS_DIR / "archive.html").write_text(archive_html)
 
     print(f"Built {len(weeks)} week(s) → docs/")

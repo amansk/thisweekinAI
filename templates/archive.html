@@ -4,14 +4,13 @@
 
 {% block content %}
 <header>
-  <h1><a href="{{ root }}index.html" style="color: inherit; text-decoration: none;">This Week in AI</a></h1>
-  <div class="subtitle">Archive</div>
+  <h2 class="edition-title">Archive</h2>
 </header>
 
 <ul class="archive-list">
   {% for week in weeks %}
   <li>
-    <a href="weeks/{{ week.date }}.html">Week of {{ week.display }}</a>
+    <a href="weeks/{{ week.date }}.html">{{ week.display }}</a>
     <span class="count">{{ week.count }} papers</span>
   </li>
   {% endfor %}

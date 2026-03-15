@@ -7,9 +7,26 @@
   <link rel="stylesheet" href="{{ root }}style.css">
 </head>
 <body>
-  {% block content %}{% endblock %}
-  <footer>
-    This Week in AI &mdash; curated weekly
-  </footer>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1><a href="{{ root }}index.html">This Week in <span class="highlight">AI</span></a></h1>
+      </div>
+      <nav class="week-list">
+        {% for w in all_weeks %}
+        <a href="{{ root }}weeks/{{ w.date }}.html" class="week-link{% if w.date == current_week %} active{% endif %}">
+          <span class="week-title">{{ w.display }}</span>
+          <span class="week-count">{{ w.count }}</span>
+        </a>
+        {% endfor %}
+      </nav>
+    </aside>
+    <main class="content">
+      {% block content %}{% endblock %}
+      <footer>
+        This Week in AI &mdash; curated weekly
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
