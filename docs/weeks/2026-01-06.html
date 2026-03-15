@@ -12,7 +12,7 @@
   <h1>This Week in <span class="highlight">AI</span></h1>
   <div class="subtitle">Inaugural Edition — Q1 2026</div>
   
-  <div class="curator-notes">Inaugural edition — the best AI agent papers and projects from Q1 2026 (Jan 1 - Mar 8). Sources: arxiv, GitHub trending, HuggingFace, lab blogs.</div>
+  <div class="curator-notes">Inaugural edition — the best AI agent papers, projects, and blog posts from Q1 2026. Sources: arxiv, GitHub trending, HuggingFace, lab blogs (Anthropic, OpenAI, Google DeepMind, Microsoft).</div>
   
 </header>
 
@@ -20,37 +20,37 @@
   
   
   <button data-tab="agentops" class="active">
-    AgentOps<span class="count">(22)</span>
+    AgentOps<span class="count">(26)</span>
   </button>
   
   
   
   <button data-tab="models">
-    Models & Training<span class="count">(22)</span>
+    Models & Training<span class="count">(23)</span>
   </button>
   
   
   
   <button data-tab="agents">
-    Agents & Reasoning<span class="count">(22)</span>
+    Agents & Reasoning<span class="count">(23)</span>
   </button>
   
   
   
   <button data-tab="ai-dev">
-    AI-Assisted Dev<span class="count">(22)</span>
+    AI-Assisted Dev<span class="count">(24)</span>
   </button>
   
   
   
   <button data-tab="harnesses">
-    Agent Harnesses<span class="count">(22)</span>
+    Agent Harnesses<span class="count">(23)</span>
   </button>
   
   
   
   <button data-tab="applications">
-    Applications<span class="count">(20)</span>
+    Applications<span class="count">(22)</span>
   </button>
   
   
@@ -768,6 +768,142 @@
     </div>
   </div>
   
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://www.anthropic.com/engineering/infrastructure-noise" target="_blank" rel="noopener" onclick="event.stopPropagation()">Quantifying Infrastructure Noise in Agentic Coding Evals</a>
+        </h3>
+        <div class="importance-preview">Essential reading for anyone running agent evals — proves that infrastructure noise is a major confound in benchmark results.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Anthropic</div>
+      <div class="summary">Anthropic quantifies how infrastructure variability — network latency, API rate limits, tool execution jitter — introduces noise into agent evaluation benchmarks. Shows that up to 15% of score variance in coding evals is attributable to infra rather than model capability, and proposes statistical methods to control for it.</div>
+      
+      <div class="importance">Essential reading for anyone running agent evals — proves that infrastructure noise is a major confound in benchmark results.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#evaluation</span>
+        
+        <span>#benchmarks</span>
+        
+        <span>#infrastructure</span>
+        
+        <span>#anthropic</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://www.anthropic.com/engineering/infrastructure-noise" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents" target="_blank" rel="noopener" onclick="event.stopPropagation()">Demystifying Evals for AI Agents</a>
+        </h3>
+        <div class="importance-preview">Canonical reference for agent evaluation methodology from the team behind Claude.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Anthropic</div>
+      <div class="summary">Practical guide from Anthropic on building evaluation suites for AI agents. Covers the unique challenges of evaluating multi-step, tool-using agents versus static LLM benchmarks. Introduces frameworks for measuring trajectory quality, tool selection accuracy, and task completion reliability.</div>
+      
+      <div class="importance">Canonical reference for agent evaluation methodology from the team behind Claude.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#evaluation</span>
+        
+        <span>#methodology</span>
+        
+        <span>#anthropic</span>
+        
+        <span>#best-practices</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://www.langchain.com/state-of-agent-engineering" target="_blank" rel="noopener" onclick="event.stopPropagation()">State of Agent Engineering</a>
+        </h3>
+        <div class="importance-preview">Most comprehensive industry survey on how teams actually build, evaluate, and observe agents in production.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">LangChain</div>
+      <div class="summary">LangChain survey of agent engineering practices across the industry. Key finding: 89% of organizations have implemented agent observability, outpacing evals adoption (52%). 62% have detailed tracing for inspecting individual agent steps and tool calls. Reports on framework adoption, evaluation practices, and deployment patterns.</div>
+      
+      <div class="importance">Most comprehensive industry survey on how teams actually build, evaluate, and observe agents in production.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#survey</span>
+        
+        <span>#observability</span>
+        
+        <span>#industry</span>
+        
+        <span>#langchain</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://www.langchain.com/state-of-agent-engineering" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://www.anthropic.com/engineering/eval-awareness-browsecomp" target="_blank" rel="noopener" onclick="event.stopPropagation()">Eval Awareness in Claude Opus 4.6 BrowseComp Performance</a>
+        </h3>
+        <div class="importance-preview">Raises critical questions about evaluation validity when agents can detect and game benchmarks.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Anthropic</div>
+      <div class="summary">Anthropic investigates whether Claude Opus 4.6 exhibits eval awareness — the ability to detect when it is being evaluated and adjust behavior accordingly. Examines BrowseComp benchmark performance and discusses implications for evaluation integrity and agent trustworthiness.</div>
+      
+      <div class="importance">Raises critical questions about evaluation validity when agents can detect and game benchmarks.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#eval-awareness</span>
+        
+        <span>#benchmarks</span>
+        
+        <span>#trust</span>
+        
+        <span>#anthropic</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://www.anthropic.com/engineering/eval-awareness-browsecomp" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
 </section>
 
 
@@ -775,40 +911,6 @@
 
 <section class="category" id="models">
   <h2>Models & Training</h2>
-  
-  <div class="paper" data-source="blog">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
-        <h3>
-          <span class="source-badge source-blog">blog</span>
-          <a href="https://openai.com/index/introducing-o3-and-o4-mini/" target="_blank" rel="noopener" onclick="event.stopPropagation()">OpenAI o3/o4-mini: Full Tool Access Reasoning Models</a>
-        </h3>
-        <div class="importance-preview">Reasoning models with native tool use represent a paradigm shift for agent architectures.</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta">OpenAI</div>
-      <div class="summary">OpenAI o3 and o4-mini models have full access to tools within ChatGPT and custom tools via function calling in the API. Trained to reason about how to solve problems, choosing when and how to use tools. Represents the convergence of reasoning and tool-use capabilities.</div>
-      
-      <div class="importance">Reasoning models with native tool use represent a paradigm shift for agent architectures.</div>
-      
-      
-      <div class="tags">
-        
-        <span>#reasoning</span>
-        
-        <span>#tool-use</span>
-        
-        <span>#openai</span>
-        
-        <span>#o3</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://openai.com/index/introducing-o3-and-o4-mini/" target="_blank" rel="noopener">View source &rarr;</a>
-    </div>
-  </div>
   
   <div class="paper" data-source="huggingface">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
@@ -1476,6 +1578,74 @@
     </div>
   </div>
   
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://openai.com/index/introducing-gpt-5-3-codex/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Introducing GPT-5.3-Codex</a>
+        </h3>
+        <div class="importance-preview">Sets the new frontier for agentic coding models with interactive mid-task steering.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">OpenAI</div>
+      <div class="summary">OpenAI introduces GPT-5.3-Codex, described as the most capable agentic coding model to date. Combines frontier coding performance with reasoning and professional knowledge, 25% faster than predecessor. Supports interactive steering during long-running tasks involving research, tool use, and complex execution.</div>
+      
+      <div class="importance">Sets the new frontier for agentic coding models with interactive mid-task steering.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#openai</span>
+        
+        <span>#codex</span>
+        
+        <span>#coding-model</span>
+        
+        <span>#agentic</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://openai.com/index/introducing-gpt-5-3-codex/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Gemini Deep Think: Redefining Scientific Research</a>
+        </h3>
+        <div class="importance-preview">Demonstrates that inference-time compute scaling is the key lever for frontier reasoning capabilities.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Google DeepMind</div>
+      <div class="summary">DeepMind details how inference-time scaling in Gemini Deep Think reduced compute for IMO-level problems by 100x compared to 2025. The system uses extended deliberation loops — reasoning longer before committing to solutions — achieving breakthroughs in mathematical and scientific discovery.</div>
+      
+      <div class="importance">Demonstrates that inference-time compute scaling is the key lever for frontier reasoning capabilities.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#deepmind</span>
+        
+        <span>#reasoning</span>
+        
+        <span>#inference-scaling</span>
+        
+        <span>#gemini</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
 </section>
 
 
@@ -1515,40 +1685,6 @@
       </div>
       
       <a class="arxiv-link" href="https://www.anthropic.com/research/building-effective-agents" target="_blank" rel="noopener">View source &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper" data-source="blog">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
-        <h3>
-          <span class="source-badge source-blog">blog</span>
-          <a href="https://www.marktechpost.com/2026/03/13/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Google DeepMind Aletheia: Autonomous Research Agent</a>
-        </h3>
-        <div class="importance-preview">Demonstrates the generator-verifier-reviser pattern at scale, with practical implications for agent architecture design.</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta">Google DeepMind</div>
-      <div class="summary">DeepMind introduced Aletheia, an AI agent using a three-part agentic harness: Generator (proposes solutions), Verifier (checks for flaws), Reviser (corrects errors). Uses heavy tool use including search and web browsing. Inference-time scaling reduced compute needed for IMO-level problems by 100x.</div>
-      
-      <div class="importance">Demonstrates the generator-verifier-reviser pattern at scale, with practical implications for agent architecture design.</div>
-      
-      
-      <div class="tags">
-        
-        <span>#research-agent</span>
-        
-        <span>#verification</span>
-        
-        <span>#deepmind</span>
-        
-        <span>#reasoning</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://www.marktechpost.com/2026/03/13/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   </div>
   
@@ -2144,6 +2280,74 @@
     </div>
   </div>
   
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://www.marktechpost.com/2026/02/15/google-deepmind-proposes-new-framework-for-intelligent-ai-delegation-to-secure-the-emerging-agentic-web-for-future-economies/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Google DeepMind: Intelligent AI Delegation for the Agentic Web</a>
+        </h3>
+        <div class="importance-preview">Foundational framework for multi-agent trust and delegation — directly relevant to production agent orchestration.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Google DeepMind</div>
+      <div class="summary">DeepMind proposes that for the agentic web to scale, agents must adopt human-like organizational principles: authority, responsibility, and accountability. Introduces Delegation Capability Tokens (DCTs) using cryptographic caveats to enforce the principle of least privilege in multi-agent systems.</div>
+      
+      <div class="importance">Foundational framework for multi-agent trust and delegation — directly relevant to production agent orchestration.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#delegation</span>
+        
+        <span>#trust</span>
+        
+        <span>#multi-agent</span>
+        
+        <span>#deepmind</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://www.marktechpost.com/2026/02/15/google-deepmind-proposes-new-framework-for-intelligent-ai-delegation-to-secure-the-emerging-agentic-web-for-future-economies/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/" target="_blank" rel="noopener" onclick="event.stopPropagation()">SIMA 2: A Gemini-Powered AI Agent for 3D Virtual Worlds</a>
+        </h3>
+        <div class="importance-preview">Shows the path from instruction-following to autonomous reasoning agents in rich environments.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Google DeepMind</div>
+      <div class="summary">DeepMind evolved SIMA from instruction-follower to interactive companion by integrating Gemini model capabilities. SIMA 2 reasons, plans, and learns within 3D environments, demonstrating the progression from reactive agents to proactive reasoning agents in complex environments.</div>
+      
+      <div class="importance">Shows the path from instruction-following to autonomous reasoning agents in rich environments.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#embodied-agent</span>
+        
+        <span>#reasoning</span>
+        
+        <span>#gemini</span>
+        
+        <span>#deepmind</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
 </section>
 
 
@@ -2151,40 +2355,6 @@
 
 <section class="category" id="ai-dev">
   <h2>AI-Assisted Dev</h2>
-  
-  <div class="paper" data-source="blog">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
-        <h3>
-          <span class="source-badge source-blog">blog</span>
-          <a href="https://developers.openai.com/codex/changelog/" target="_blank" rel="noopener" onclick="event.stopPropagation()">OpenAI Codex: Agent Threads and Parallel Execution</a>
-        </h3>
-        <div class="importance-preview">Sets the bar for coding agent UX with parallel thread execution and integrated web search.</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta">OpenAI</div>
-      <div class="summary">OpenAI's Codex app for macOS provides a desktop interface for running agent threads in parallel, collaborating on long-running tasks with project sidebar, thread list, and review pane. Added web search for local tasks in CLI and IDE Extension.</div>
-      
-      <div class="importance">Sets the bar for coding agent UX with parallel thread execution and integrated web search.</div>
-      
-      
-      <div class="tags">
-        
-        <span>#codex</span>
-        
-        <span>#coding-agent</span>
-        
-        <span>#parallel-execution</span>
-        
-        <span>#openai</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://developers.openai.com/codex/changelog/" target="_blank" rel="noopener">View source &rarr;</a>
-    </div>
-  </div>
   
   <div class="paper" data-source="huggingface">
     <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
@@ -2808,6 +2978,108 @@
     </div>
   </div>
   
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://www.anthropic.com/engineering/building-c-compiler" target="_blank" rel="noopener" onclick="event.stopPropagation()">Building a C Compiler with a Team of Parallel Claudes</a>
+        </h3>
+        <div class="importance-preview">Practical demonstration of parallel coding agent orchestration on a non-trivial systems task.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Anthropic</div>
+      <div class="summary">Anthropic demonstrates building a full C compiler using multiple Claude instances working in parallel. Details the orchestration patterns, task decomposition strategies, and coordination challenges when running parallel coding agents on a complex systems programming task.</div>
+      
+      <div class="importance">Practical demonstration of parallel coding agent orchestration on a non-trivial systems task.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#parallel-agents</span>
+        
+        <span>#coding</span>
+        
+        <span>#orchestration</span>
+        
+        <span>#anthropic</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://www.anthropic.com/engineering/building-c-compiler" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://openai.com/index/harness-engineering/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Harness Engineering: Leveraging Codex in an Agent-First World</a>
+        </h3>
+        <div class="importance-preview">Defines a new engineering discipline around agent harness design — required reading for coding agent builders.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">OpenAI</div>
+      <div class="summary">OpenAI introduces the concept of harness engineering — the discipline of designing the scaffolding, prompts, tool definitions, and orchestration patterns that make coding agents effective. Covers practical patterns for structuring agent workflows and managing context across long-running coding tasks.</div>
+      
+      <div class="importance">Defines a new engineering discipline around agent harness design — required reading for coding agent builders.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#harness-engineering</span>
+        
+        <span>#coding-agents</span>
+        
+        <span>#openai</span>
+        
+        <span>#patterns</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://openai.com/index/harness-engineering/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://openai.com/index/unrolling-the-codex-agent-loop/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Unrolling the Codex Agent Loop</a>
+        </h3>
+        <div class="importance-preview">Rare deep dive into production coding agent internals from a frontier lab.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">OpenAI</div>
+      <div class="summary">OpenAI provides a detailed technical walkthrough of the Codex agent loop internals — how the agent decides what to do next, when to use tools, how it manages context, and how it recovers from errors. Includes architecture diagrams and performance analysis.</div>
+      
+      <div class="importance">Rare deep dive into production coding agent internals from a frontier lab.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#codex</span>
+        
+        <span>#agent-loop</span>
+        
+        <span>#architecture</span>
+        
+        <span>#openai</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://openai.com/index/unrolling-the-codex-agent-loop/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
 </section>
 
 
@@ -3011,40 +3283,6 @@
       </div>
       
       <a class="arxiv-link" href="https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk" target="_blank" rel="noopener">View source &rarr;</a>
-    </div>
-  </div>
-  
-  <div class="paper" data-source="blog">
-    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
-      <div class="paper-title">
-        <h3>
-          <span class="source-badge source-blog">blog</span>
-          <a href="https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Introducing Microsoft Agent Framework</a>
-        </h3>
-        <div class="importance-preview">Major consolidation of the Microsoft agent ecosystem into a single production framework, setting enterprise standards.</div>
-      </div>
-      <div class="expand-icon">&#9654;</div>
-    </div>
-    <div class="paper-details">
-      <div class="meta">Microsoft</div>
-      <div class="summary">Microsoft Agent Framework converges AutoGen and Semantic Kernel into a unified, commercial-grade SDK for multi-agent orchestration. Now in public preview, targeting 1.0 GA by end of Q1 2026 with stable APIs, production-grade support, and enterprise readiness certification.</div>
-      
-      <div class="importance">Major consolidation of the Microsoft agent ecosystem into a single production framework, setting enterprise standards.</div>
-      
-      
-      <div class="tags">
-        
-        <span>#microsoft</span>
-        
-        <span>#autogen</span>
-        
-        <span>#semantic-kernel</span>
-        
-        <span>#enterprise</span>
-        
-      </div>
-      
-      <a class="arxiv-link" href="https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   </div>
   
@@ -3539,6 +3777,74 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2602.12430v3" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Microsoft Agent Framework Reaches Release Candidate</a>
+        </h3>
+        <div class="importance-preview">The enterprise agent framework consolidation — signals where Microsoft is betting for production agent infrastructure.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Microsoft</div>
+      <div class="summary">Microsoft Agent Framework hits RC for .NET and Python, converging AutoGen and Semantic Kernel into one unified framework. API surface is now stable with all 1.0 features complete. Includes agent creation, function tools, graph-based workflows, multi-provider support, and interoperability standards.</div>
+      
+      <div class="importance">The enterprise agent framework consolidation — signals where Microsoft is betting for production agent infrastructure.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#microsoft</span>
+        
+        <span>#agent-framework</span>
+        
+        <span>#enterprise</span>
+        
+        <span>#release-candidate</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Gemini 2.5 Computer Use Model</a>
+        </h3>
+        <div class="importance-preview">Direct competitor to Anthropic computer use — signals computer-use agents becoming a standard capability.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Google</div>
+      <div class="summary">Google introduces a Gemini model specifically optimized for computer use — interacting with GUIs, navigating applications, and completing multi-step desktop tasks. Represents the convergence of vision, reasoning, and action capabilities in a single model purpose-built for agent interaction patterns.</div>
+      
+      <div class="importance">Direct competitor to Anthropic computer use — signals computer-use agents becoming a standard capability.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#computer-use</span>
+        
+        <span>#gui-agent</span>
+        
+        <span>#gemini</span>
+        
+        <span>#google</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   </div>
   
@@ -4217,6 +4523,74 @@
       </div>
       
       <a class="arxiv-link" href="https://arxiv.org/abs/2603.02081v1" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://blog.google/innovation-and-ai/technology/developers-tools/deep-research-agent-gemini-api/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Build with Gemini Deep Research</a>
+        </h3>
+        <div class="importance-preview">Makes deep research agent capabilities accessible to all developers via API.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Google</div>
+      <div class="summary">Google opens the Gemini Deep Research API for developers to build research agents. The API provides multi-step research workflows, source synthesis, and structured output generation. Demonstrates how research agents can autonomously gather, analyze, and synthesize information across multiple sources.</div>
+      
+      <div class="importance">Makes deep research agent capabilities accessible to all developers via API.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#deep-research</span>
+        
+        <span>#api</span>
+        
+        <span>#gemini</span>
+        
+        <span>#google</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/deep-research-agent-gemini-api/" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="paper" data-source="blog">
+    <div class="paper-header" onclick="this.parentElement.classList.toggle('expanded')">
+      <div class="paper-title">
+        <h3>
+          <span class="source-badge source-blog">blog</span>
+          <a href="https://red.anthropic.com/2026/exploit/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Reverse Engineering Claude CVE-2026-2796 Exploit</a>
+        </h3>
+        <div class="importance-preview">Demonstrates frontier agent capability in security research — both the potential and the risks.</div>
+      </div>
+      <div class="expand-icon">&#9654;</div>
+    </div>
+    <div class="paper-details">
+      <div class="meta">Anthropic Red Team</div>
+      <div class="summary">Anthropic details how Claude wrote an exploit for a vulnerability it discovered in Firefox, part of a collaboration with Mozilla where Claude Opus 4.6 found 22 vulnerabilities over two weeks. Deep technical walkthrough of autonomous vulnerability discovery and exploit generation.</div>
+      
+      <div class="importance">Demonstrates frontier agent capability in security research — both the potential and the risks.</div>
+      
+      
+      <div class="tags">
+        
+        <span>#security</span>
+        
+        <span>#vulnerability-discovery</span>
+        
+        <span>#anthropic</span>
+        
+        <span>#exploit</span>
+        
+      </div>
+      
+      <a class="arxiv-link" href="https://red.anthropic.com/2026/exploit/" target="_blank" rel="noopener">View source &rarr;</a>
     </div>
   </div>
   

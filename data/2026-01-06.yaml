@@ -1,6 +1,6 @@
 week: '2026-01-06'
-curator_notes: 'Inaugural edition — the best AI agent papers and projects from Q1 2026 (Jan 1 - Mar 8). Sources: arxiv, GitHub
-  trending, HuggingFace, lab blogs.'
+curator_notes: 'Inaugural edition — the best AI agent papers, projects, and blog posts from Q1 2026. Sources: arxiv, GitHub
+  trending, HuggingFace, lab blogs (Anthropic, OpenAI, Google DeepMind, Microsoft).'
 papers:
 - title: 'Agent-Safehouse: Sandbox for Local AI Agents'
   authors:
@@ -363,21 +363,6 @@ papers:
   - tool-use
   - agent-monitoring
   source: arxiv
-- title: 'OpenAI o3/o4-mini: Full Tool Access Reasoning Models'
-  authors:
-  - OpenAI
-  url: https://openai.com/index/introducing-o3-and-o4-mini/
-  category: models
-  source: blog
-  summary: OpenAI o3 and o4-mini models have full access to tools within ChatGPT and custom tools via function calling in
-    the API. Trained to reason about how to solve problems, choosing when and how to use tools. Represents the convergence
-    of reasoning and tool-use capabilities.
-  importance: Reasoning models with native tool use represent a paradigm shift for agent architectures.
-  tags:
-  - reasoning
-  - tool-use
-  - openai
-  - o3
 - title: 'SE-Search: Self-Evolving Search Agent via Memory and Dense Reward'
   authors:
   - Jian Li
@@ -746,22 +731,6 @@ papers:
   - patterns
   - production
   - anthropic
-- title: 'Google DeepMind Aletheia: Autonomous Research Agent'
-  authors:
-  - Google DeepMind
-  url: https://www.marktechpost.com/2026/03/13/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/
-  category: agents
-  source: blog
-  summary: 'DeepMind introduced Aletheia, an AI agent using a three-part agentic harness: Generator (proposes solutions),
-    Verifier (checks for flaws), Reviser (corrects errors). Uses heavy tool use including search and web browsing. Inference-time
-    scaling reduced compute needed for IMO-level problems by 100x.'
-  importance: Demonstrates the generator-verifier-reviser pattern at scale, with practical implications for agent architecture
-    design.
-  tags:
-  - research-agent
-  - verification
-  - deepmind
-  - reasoning
 - title: 'MMA: Multimodal Memory Agent'
   authors:
   - Yihao Lu
@@ -1085,21 +1054,6 @@ papers:
   - visual-reasoning
   - agent-memory
   source: arxiv
-- title: 'OpenAI Codex: Agent Threads and Parallel Execution'
-  authors:
-  - OpenAI
-  url: https://developers.openai.com/codex/changelog/
-  category: ai-dev
-  source: blog
-  summary: OpenAI's Codex app for macOS provides a desktop interface for running agent threads in parallel, collaborating
-    on long-running tasks with project sidebar, thread list, and review pane. Added web search for local tasks in CLI and
-    IDE Extension.
-  importance: Sets the bar for coding agent UX with parallel thread execution and integrated web search.
-  tags:
-  - codex
-  - coding-agent
-  - parallel-execution
-  - openai
 - title: 'SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents'
   authors:
   - Yuhang Wang
@@ -1542,22 +1496,6 @@ papers:
   - agent-sdk
   - anthropic
   - framework
-- title: Introducing Microsoft Agent Framework
-  authors:
-  - Microsoft
-  url: https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/
-  category: harnesses
-  source: blog
-  summary: Microsoft Agent Framework converges AutoGen and Semantic Kernel into a unified, commercial-grade SDK for multi-agent
-    orchestration. Now in public preview, targeting 1.0 GA by end of Q1 2026 with stable APIs, production-grade support, and
-    enterprise readiness certification.
-  importance: Major consolidation of the Microsoft agent ecosystem into a single production framework, setting enterprise
-    standards.
-  tags:
-  - microsoft
-  - autogen
-  - semantic-kernel
-  - enterprise
 - title: 'Jenius Agent: Towards Experience-Driven Accuracy Optimization in Real-World Scenarios'
   authors:
   - Defei Xia
@@ -2175,4 +2113,230 @@ papers:
   - code-synthesis
   - multi-agent
   source: arxiv
+- title: Quantifying Infrastructure Noise in Agentic Coding Evals
+  authors:
+  - Anthropic
+  url: https://www.anthropic.com/engineering/infrastructure-noise
+  category: agentops
+  summary: Anthropic quantifies how infrastructure variability — network latency, API rate limits, tool execution jitter —
+    introduces noise into agent evaluation benchmarks. Shows that up to 15% of score variance in coding evals is attributable
+    to infra rather than model capability, and proposes statistical methods to control for it.
+  importance: Essential reading for anyone running agent evals — proves that infrastructure noise is a major confound in benchmark
+    results.
+  tags:
+  - evaluation
+  - benchmarks
+  - infrastructure
+  - anthropic
+  source: blog
+- title: Demystifying Evals for AI Agents
+  authors:
+  - Anthropic
+  url: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+  category: agentops
+  summary: Practical guide from Anthropic on building evaluation suites for AI agents. Covers the unique challenges of evaluating
+    multi-step, tool-using agents versus static LLM benchmarks. Introduces frameworks for measuring trajectory quality, tool
+    selection accuracy, and task completion reliability.
+  importance: Canonical reference for agent evaluation methodology from the team behind Claude.
+  tags:
+  - evaluation
+  - methodology
+  - anthropic
+  - best-practices
+  source: blog
+- title: State of Agent Engineering
+  authors:
+  - LangChain
+  url: https://www.langchain.com/state-of-agent-engineering
+  category: agentops
+  summary: 'LangChain survey of agent engineering practices across the industry. Key finding: 89% of organizations have implemented
+    agent observability, outpacing evals adoption (52%). 62% have detailed tracing for inspecting individual agent steps and
+    tool calls. Reports on framework adoption, evaluation practices, and deployment patterns.'
+  importance: Most comprehensive industry survey on how teams actually build, evaluate, and observe agents in production.
+  tags:
+  - survey
+  - observability
+  - industry
+  - langchain
+  source: blog
+- title: Eval Awareness in Claude Opus 4.6 BrowseComp Performance
+  authors:
+  - Anthropic
+  url: https://www.anthropic.com/engineering/eval-awareness-browsecomp
+  category: agentops
+  summary: Anthropic investigates whether Claude Opus 4.6 exhibits eval awareness — the ability to detect when it is being
+    evaluated and adjust behavior accordingly. Examines BrowseComp benchmark performance and discusses implications for evaluation
+    integrity and agent trustworthiness.
+  importance: Raises critical questions about evaluation validity when agents can detect and game benchmarks.
+  tags:
+  - eval-awareness
+  - benchmarks
+  - trust
+  - anthropic
+  source: blog
+- title: Introducing GPT-5.3-Codex
+  authors:
+  - OpenAI
+  url: https://openai.com/index/introducing-gpt-5-3-codex/
+  category: models
+  summary: OpenAI introduces GPT-5.3-Codex, described as the most capable agentic coding model to date. Combines frontier
+    coding performance with reasoning and professional knowledge, 25% faster than predecessor. Supports interactive steering
+    during long-running tasks involving research, tool use, and complex execution.
+  importance: Sets the new frontier for agentic coding models with interactive mid-task steering.
+  tags:
+  - openai
+  - codex
+  - coding-model
+  - agentic
+  source: blog
+- title: 'Gemini Deep Think: Redefining Scientific Research'
+  authors:
+  - Google DeepMind
+  url: https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/
+  category: models
+  summary: DeepMind details how inference-time scaling in Gemini Deep Think reduced compute for IMO-level problems by 100x
+    compared to 2025. The system uses extended deliberation loops — reasoning longer before committing to solutions — achieving
+    breakthroughs in mathematical and scientific discovery.
+  importance: Demonstrates that inference-time compute scaling is the key lever for frontier reasoning capabilities.
+  tags:
+  - deepmind
+  - reasoning
+  - inference-scaling
+  - gemini
+  source: blog
+- title: 'Google DeepMind: Intelligent AI Delegation for the Agentic Web'
+  authors:
+  - Google DeepMind
+  url: https://www.marktechpost.com/2026/02/15/google-deepmind-proposes-new-framework-for-intelligent-ai-delegation-to-secure-the-emerging-agentic-web-for-future-economies/
+  category: agents
+  summary: 'DeepMind proposes that for the agentic web to scale, agents must adopt human-like organizational principles: authority,
+    responsibility, and accountability. Introduces Delegation Capability Tokens (DCTs) using cryptographic caveats to enforce
+    the principle of least privilege in multi-agent systems.'
+  importance: Foundational framework for multi-agent trust and delegation — directly relevant to production agent orchestration.
+  tags:
+  - delegation
+  - trust
+  - multi-agent
+  - deepmind
+  source: blog
+- title: 'SIMA 2: A Gemini-Powered AI Agent for 3D Virtual Worlds'
+  authors:
+  - Google DeepMind
+  url: https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/
+  category: agents
+  summary: DeepMind evolved SIMA from instruction-follower to interactive companion by integrating Gemini model capabilities.
+    SIMA 2 reasons, plans, and learns within 3D environments, demonstrating the progression from reactive agents to proactive
+    reasoning agents in complex environments.
+  importance: Shows the path from instruction-following to autonomous reasoning agents in rich environments.
+  tags:
+  - embodied-agent
+  - reasoning
+  - gemini
+  - deepmind
+  source: blog
+- title: Building a C Compiler with a Team of Parallel Claudes
+  authors:
+  - Anthropic
+  url: https://www.anthropic.com/engineering/building-c-compiler
+  category: ai-dev
+  summary: Anthropic demonstrates building a full C compiler using multiple Claude instances working in parallel. Details
+    the orchestration patterns, task decomposition strategies, and coordination challenges when running parallel coding agents
+    on a complex systems programming task.
+  importance: Practical demonstration of parallel coding agent orchestration on a non-trivial systems task.
+  tags:
+  - parallel-agents
+  - coding
+  - orchestration
+  - anthropic
+  source: blog
+- title: 'Harness Engineering: Leveraging Codex in an Agent-First World'
+  authors:
+  - OpenAI
+  url: https://openai.com/index/harness-engineering/
+  category: ai-dev
+  summary: OpenAI introduces the concept of harness engineering — the discipline of designing the scaffolding, prompts, tool
+    definitions, and orchestration patterns that make coding agents effective. Covers practical patterns for structuring agent
+    workflows and managing context across long-running coding tasks.
+  importance: Defines a new engineering discipline around agent harness design — required reading for coding agent builders.
+  tags:
+  - harness-engineering
+  - coding-agents
+  - openai
+  - patterns
+  source: blog
+- title: Unrolling the Codex Agent Loop
+  authors:
+  - OpenAI
+  url: https://openai.com/index/unrolling-the-codex-agent-loop/
+  category: ai-dev
+  summary: OpenAI provides a detailed technical walkthrough of the Codex agent loop internals — how the agent decides what
+    to do next, when to use tools, how it manages context, and how it recovers from errors. Includes architecture diagrams
+    and performance analysis.
+  importance: Rare deep dive into production coding agent internals from a frontier lab.
+  tags:
+  - codex
+  - agent-loop
+  - architecture
+  - openai
+  source: blog
+- title: Microsoft Agent Framework Reaches Release Candidate
+  authors:
+  - Microsoft
+  url: https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/
+  category: harnesses
+  summary: Microsoft Agent Framework hits RC for .NET and Python, converging AutoGen and Semantic Kernel into one unified
+    framework. API surface is now stable with all 1.0 features complete. Includes agent creation, function tools, graph-based
+    workflows, multi-provider support, and interoperability standards.
+  importance: The enterprise agent framework consolidation — signals where Microsoft is betting for production agent infrastructure.
+  tags:
+  - microsoft
+  - agent-framework
+  - enterprise
+  - release-candidate
+  source: blog
+- title: Gemini 2.5 Computer Use Model
+  authors:
+  - Google
+  url: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/
+  category: harnesses
+  summary: Google introduces a Gemini model specifically optimized for computer use — interacting with GUIs, navigating applications,
+    and completing multi-step desktop tasks. Represents the convergence of vision, reasoning, and action capabilities in a
+    single model purpose-built for agent interaction patterns.
+  importance: Direct competitor to Anthropic computer use — signals computer-use agents becoming a standard capability.
+  tags:
+  - computer-use
+  - gui-agent
+  - gemini
+  - google
+  source: blog
+- title: Build with Gemini Deep Research
+  authors:
+  - Google
+  url: https://blog.google/innovation-and-ai/technology/developers-tools/deep-research-agent-gemini-api/
+  category: applications
+  summary: Google opens the Gemini Deep Research API for developers to build research agents. The API provides multi-step
+    research workflows, source synthesis, and structured output generation. Demonstrates how research agents can autonomously
+    gather, analyze, and synthesize information across multiple sources.
+  importance: Makes deep research agent capabilities accessible to all developers via API.
+  tags:
+  - deep-research
+  - api
+  - gemini
+  - google
+  source: blog
+- title: Reverse Engineering Claude CVE-2026-2796 Exploit
+  authors:
+  - Anthropic Red Team
+  url: https://red.anthropic.com/2026/exploit/
+  category: applications
+  summary: Anthropic details how Claude wrote an exploit for a vulnerability it discovered in Firefox, part of a collaboration
+    with Mozilla where Claude Opus 4.6 found 22 vulnerabilities over two weeks. Deep technical walkthrough of autonomous vulnerability
+    discovery and exploit generation.
+  importance: Demonstrates frontier agent capability in security research — both the potential and the risks.
+  tags:
+  - security
+  - vulnerability-discovery
+  - anthropic
+  - exploit
+  source: blog
 edition: inaugural
