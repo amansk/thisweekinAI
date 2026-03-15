@@ -44,6 +44,7 @@
           <span class="source-badge source-{{ paper.source | default('arxiv') }}">{{ paper.source | default('arxiv') }}</span>
           <a href="{{ paper.url }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">{{ paper.title }}</a>
         </h3>
+        {% if paper.published %}<div class="date-badge">{{ paper.published }}</div>{% endif %}
         <div class="importance-preview">{{ paper.importance | truncate(120) }}</div>
       </div>
       <div class="expand-icon">&#9654;</div>

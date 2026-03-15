@@ -16,6 +16,7 @@ papers:
   - guardrails
   - isolation
   source: github
+  published: '2026-02-09'
 - title: 'Nono: Kernel-Enforced Sandbox for AI Agents'
   authors:
   - always-further
@@ -31,6 +32,7 @@ papers:
   - audit-trail
   - zero-trust
   source: github
+  published: '2026-01-31'
 - title: 'Overture: Visual Execution Plan Mapping for Coding Agents'
   authors:
   - SixHq
@@ -46,6 +48,7 @@ papers:
   - execution-plan
   - mcp
   source: github
+  published: '2026-02-17'
 - title: 'PinchBench: Benchmarking LLMs as Coding Agents'
   authors:
   - Kilo AI
@@ -59,6 +62,7 @@ papers:
   - evaluation
   - coding-agents
   source: github
+  published: '2026-02-11'
 - title: 'MAESTRO: Multi-Agent Evaluation Suite for Testing, Reliability, and Observability'
   authors:
   - Tie Ma
@@ -72,6 +76,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-01-01'
 - title: 'Kimi K2.5: Visual Agentic Intelligence'
   authors:
   - Kimi Team
@@ -83,6 +88,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-02-02'
 - title: Agentic Reasoning for Large Language Models
   authors:
   - Tianxin Wei
@@ -96,6 +102,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-01-18'
 - title: 'AI Agent Systems: Architectures, Applications, and Evaluation'
   authors:
   - Bin Xu
@@ -107,6 +114,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-01-05'
 - title: 'Wink: Recovering from Misbehaviors in Coding Agents'
   authors: []
   url: https://arxiv.org/abs/2602.17037v2
@@ -124,6 +132,7 @@ papers:
   - production-systems
   - observability
   source: arxiv
+  published: '2026-02-19'
 - title: Policy Compiler for Secure Agentic Systems
   authors: []
   url: https://arxiv.org/abs/2602.16708v2
@@ -141,6 +150,7 @@ papers:
   - security
   - multi-agent
   source: arxiv
+  published: '2026-02-18'
 - title: 'AIR: Improving Agent Safety through Incident Response'
   authors:
   - Zibo Xiao
@@ -161,6 +171,7 @@ papers:
   - guardrails
   - runtime
   source: arxiv
+  published: '2026-02-12'
 - title: 'Silent Egress: When Implicit Prompt Injection Makes LLM Agents Leak Without a Trace'
   authors: []
   url: https://arxiv.org/abs/2602.22450v1
@@ -178,6 +189,7 @@ papers:
   - guardrails
   - data-exfiltration
   source: arxiv
+  published: '2026-02-25'
 - title: 'Adversarial Intent is a Latent Variable: Stateful Trust Inference for Securing Multimodal Agentic RAG'
   authors: []
   url: https://arxiv.org/abs/2602.21447v1
@@ -195,6 +207,7 @@ papers:
   - agentic-RAG
   - adversarial-defense
   source: arxiv
+  published: '2026-02-24'
 - title: 'MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems'
   authors: []
   url: https://arxiv.org/abs/2602.19843v1
@@ -212,6 +225,7 @@ papers:
   - multi-agent
   - observability
   source: arxiv
+  published: '2026-02-23'
 - title: 'TabAgent: A Framework for Replacing Agentic Generative Components with Tabular-Textual Classifiers'
   authors: []
   url: https://arxiv.org/abs/2602.16429v1
@@ -228,6 +242,7 @@ papers:
   - tool-routing
   - production-agents
   source: arxiv
+  published: '2026-02-18'
 - title: 'Choosing How to Remember: Adaptive Memory Structures for LLM Agents'
   authors:
   - Mingfei Lu
@@ -249,6 +264,7 @@ papers:
   - long-horizon
   - memory-hierarchy
   source: arxiv
+  published: '2026-02-15'
 - title: 'SideQuest: Model-Driven KV Cache Management for Long-Horizon Agentic Reasoning'
   authors: []
   url: https://arxiv.org/abs/2602.22603v2
@@ -265,6 +281,7 @@ papers:
   - agentic-reasoning
   - runtime-optimization
   source: arxiv
+  published: '2026-02-26'
 - title: 'Arbor: A Framework for Reliable Navigation of Critical Conversation Flows'
   authors:
   - Luís Silva
@@ -286,6 +303,7 @@ papers:
   - healthcare
   - cost-optimization
   source: arxiv
+  published: '2026-02-16'
 - title: 'PrivAct: Internalizing Contextual Privacy Preservation via Multi-Agent Preference Training'
   authors:
   - Yuhan Cheng
@@ -307,6 +325,7 @@ papers:
   - multi-agent
   - preference-training
   source: arxiv
+  published: '2026-02-14'
 - title: 'MCPShield: A Security Cognition Layer for Adaptive Trust Calibration in Model Context Protocol Agents'
   authors: []
   url: https://arxiv.org/abs/2602.14281v3
@@ -324,6 +343,7 @@ papers:
   - trust-calibration
   - agent-security
   source: arxiv
+  published: '2026-02-15'
 - title: 'AOI: Turning Failed Trajectories into Training Signals for Autonomous Cloud Diagnosis'
   authors: []
   url: https://arxiv.org/abs/2603.03378v2
@@ -341,6 +361,7 @@ papers:
   - cloud-operations
   - safe-execution
   source: arxiv
+  published: '2026-03-03'
 - title: 'TRACER: Trajectory Risk Aggregation for Critical Episodes in Agentic Reasoning'
   authors:
   - Sina Tayebati
@@ -363,6 +384,7 @@ papers:
   - tool-use
   - agent-monitoring
   source: arxiv
+  published: '2026-02-11'
 - title: 'SE-Search: Self-Evolving Search Agent via Memory and Dense Reward'
   authors:
   - Jian Li
@@ -376,6 +398,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-02-06'
 - title: Examining Reasoning LLMs-as-Judges in Non-Verifiable LLM Post-Training
   authors:
   - Yixin Liu
@@ -389,6 +412,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-03-12'
 - title: 'Self-Evolving Recommendation System: End-To-End Autonomous Model Optimization With LLM Agents'
   authors:
   - Haochen Wang
@@ -402,6 +426,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-02-10'
 - title: 'Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters'
   authors:
   - Ailin Huang
@@ -424,6 +449,7 @@ papers:
   - agentic-inference
   - open-weights
   source: arxiv
+  published: '2026-02-11'
 - title: 'Search-P1: Path-Centric Reward Shaping for Stable and Efficient Agentic RAG Training'
   authors: []
   url: https://arxiv.org/abs/2602.22576v1
@@ -441,6 +467,7 @@ papers:
   - reinforcement-learning
   - retrieval
   source: arxiv
+  published: '2026-02-26'
 - title: 'Nanbeige4.1-3B: A Small General Model that Reasons, Aligns, and Acts'
   authors:
   - Chen Yang
@@ -462,6 +489,7 @@ papers:
   - tool-calling
   - reinforcement-learning
   source: arxiv
+  published: '2026-02-13'
 - title: 'GLM-5: from Vibe Coding to Agentic Engineering'
   authors:
   - GLM-5-Team
@@ -482,6 +510,7 @@ papers:
   - agentic-engineering
   - reinforcement-learning
   source: arxiv
+  published: '2026-02-17'
 - title: Multilingual Safety Alignment Via Sparse Weight Editing
   authors: []
   url: https://arxiv.org/abs/2602.22554v1
@@ -499,6 +528,7 @@ papers:
   - weight-editing
   - guardrails
   source: arxiv
+  published: '2026-02-26'
 - title: 'CoRefine: Confidence-Guided Self-Refinement for Adaptive Test-Time Compute'
   authors: []
   url: https://arxiv.org/abs/2602.08948v1
@@ -515,6 +545,7 @@ papers:
   - reasoning
   - efficiency
   source: arxiv
+  published: '2026-02-09'
 - title: 'DySCO: Dynamic Attention-Scaling Decoding for Long-Context LMs'
   authors: []
   url: https://arxiv.org/abs/2602.22175v1
@@ -531,6 +562,7 @@ papers:
   - attention
   - inference
   source: arxiv
+  published: '2026-02-25'
 - title: 'ARKV: Adaptive and Resource-Efficient KV Cache Management under Limited Memory Budget for Long-Context Inference
     in LLMs'
   authors: []
@@ -548,6 +580,7 @@ papers:
   - long-context
   - inference
   source: arxiv
+  published: '2026-02-19'
 - title: 'Hit-RAG: Learning to Reason with Long Contexts via Preference Alignment'
   authors: []
   url: https://arxiv.org/abs/2603.07023v1
@@ -565,6 +598,7 @@ papers:
   - preference-alignment
   - reasoning
   source: arxiv
+  published: '2026-03-07'
 - title: '$V_1$: Unifying Generation and Self-Verification for Parallel Reasoners'
   authors: []
   url: https://arxiv.org/abs/2603.04304v1
@@ -580,6 +614,7 @@ papers:
   - verification
   - code-generation
   source: arxiv
+  published: '2026-03-04'
 - title: 'CAMEL: Confidence-Gated Reflection for Reward Modeling'
   authors: []
   url: https://arxiv.org/abs/2602.20670v1
@@ -596,6 +631,7 @@ papers:
   - efficiency
   - reflection
   source: arxiv
+  published: '2026-02-24'
 - title: 'Learning from the Irrecoverable: Error-Localized Policy Optimization for Tool-Integrated LLM Reasoning'
   authors:
   - Qiao Liang
@@ -617,6 +653,7 @@ papers:
   - tool-integrated-reasoning
   - policy-optimization
   source: arxiv
+  published: '2026-02-10'
 - title: 'Alignment-Weighted DPO: A principled reasoning approach to improve safety alignment'
   authors: []
   url: https://arxiv.org/abs/2602.21346v1
@@ -633,6 +670,7 @@ papers:
   - chain-of-thought
   - jailbreak-defense
   source: arxiv
+  published: '2026-02-24'
 - title: Leveraging LLM Parametric Knowledge for Fact Checking without Retrieval
   authors: []
   url: https://arxiv.org/abs/2603.05471v1
@@ -649,6 +687,7 @@ papers:
   - model-internals
   - guardrails
   source: arxiv
+  published: '2026-03-05'
 - title: Privileged Information Distillation for Language Models
   authors: []
   url: https://arxiv.org/abs/2602.04942v3
@@ -666,6 +705,7 @@ papers:
   - agentic
   - training
   source: arxiv
+  published: '2026-02-04'
 - title: Evaluating Chain-of-Thought Reasoning through Reusability and Verifiability
   authors:
   - Shashank Aggarwal
@@ -684,6 +724,7 @@ papers:
   - evaluation
   - multi-agent-reasoning
   source: arxiv
+  published: '2026-02-19'
 - title: 'Beyond Length Scaling: Synergizing Breadth and Depth for Generative Reward Models'
   authors: []
   url: https://arxiv.org/abs/2603.01571v1
@@ -700,6 +741,7 @@ papers:
   - RLVR
   - evaluation
   source: arxiv
+  published: '2026-03-02'
 - title: 'PyVision-RL: Forging Open Agentic Vision Models via RL'
   authors: []
   url: https://arxiv.org/abs/2602.20739v1
@@ -716,6 +758,7 @@ papers:
   - tool-use
   - agentic-models
   source: arxiv
+  published: '2026-02-24'
 - title: Building Effective Agents
   authors:
   - Anthropic
@@ -731,6 +774,7 @@ papers:
   - patterns
   - production
   - anthropic
+  published: '2024-12-20'
 - title: 'MMA: Multimodal Memory Agent'
   authors:
   - Yihao Lu
@@ -744,6 +788,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-02-18'
 - title: 'Toward Efficient Agents: Memory, Tool Learning, and Planning'
   authors:
   - Xiaofang Yang
@@ -757,6 +802,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-01-20'
 - title: 'ReIn: Conversational Error Recovery with Reasoning Inception'
   authors:
   - Takyoung Kim
@@ -770,6 +816,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-02-19'
 - title: 'From Passive Metric to Active Signal: The Evolving Role of Uncertainty Quantification in Large Language Models'
   authors:
   - Jiaxin Zhang
@@ -783,6 +830,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-01-22'
 - title: Meta-Reinforcement Learning with Self-Reflection for Agentic Search
   authors:
   - Teng Xiao
@@ -795,6 +843,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-03-11'
 - title: 'XSkill: Continual Learning from Experience and Skills in Multimodal Agents'
   authors:
   - Guanyu Jiang
@@ -807,6 +856,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-03-12'
 - title: 'CORPGEN: Simulating Corporate Environments with Autonomous Digital Employees in Multi-Horizon Task Environments'
   authors:
   - Abubakarr Jaye
@@ -829,6 +879,7 @@ papers:
   - session-management
   - hierarchical-planning
   source: arxiv
+  published: '2026-02-15'
 - title: 'LAPIS: Lightweight API Specification for Intelligent Systems'
   authors: []
   url: https://arxiv.org/abs/2602.18541v1
@@ -845,6 +896,7 @@ papers:
   - token-efficiency
   - agent-tooling
   source: arxiv
+  published: '2026-02-20'
 - title: 'Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory'
   authors: []
   url: https://arxiv.org/abs/2603.04257v1
@@ -862,6 +914,7 @@ papers:
   - reinforcement-learning
   - long-horizon
   source: arxiv
+  published: '2026-03-04'
 - title: 'ActionEngine: From Reactive to Programmatic GUI Agents via State Machine Memory'
   authors: []
   url: https://arxiv.org/abs/2602.20502v1
@@ -879,6 +932,7 @@ papers:
   - memory
   - programmatic-planning
   source: arxiv
+  published: '2026-02-24'
 - title: 'W&D: Scaling Parallel Tool Calling for Efficient Deep Research Agents'
   authors:
   - Xiaoqiang Lin
@@ -899,6 +953,7 @@ papers:
   - agent-efficiency
   - scaling
   source: arxiv
+  published: '2026-02-01'
 - title: 'ASA: Training-Free Representation Engineering for Tool-Calling Agents'
   authors: []
   url: https://arxiv.org/abs/2602.04935v2
@@ -916,6 +971,7 @@ papers:
   - inference-optimization
   - representation-engineering
   source: arxiv
+  published: '2026-02-04'
 - title: Memory for Autonomous LLM Agents:Mechanisms, Evaluation, and Emerging Frontiers
   authors:
   - Pengfei Du
@@ -933,6 +989,7 @@ papers:
   - retrieval-augmented
   - multi-session
   source: arxiv
+  published: '2026-03-08'
 - title: 'REMem: Reasoning with Episodic Memory in Language Agent'
   authors: []
   url: https://arxiv.org/abs/2602.13530v3
@@ -950,6 +1007,7 @@ papers:
   - reasoning
   - retrieval
   source: arxiv
+  published: '2026-02-13'
 - title: 'Machine Learning as a Tool (MLAT): A Framework for Integrating Statistical ML Models as Callable Tools within LLM
     Agent Workflows'
   authors:
@@ -969,6 +1027,7 @@ papers:
   - agent-workflows
   - structured-output
   source: arxiv
+  published: '2026-02-15'
 - title: 'ToolSelf: Unifying Task Execution and Self-Reconfiguration via Tool-Driven Intrinsic Adaptation'
   authors: []
   url: https://arxiv.org/abs/2602.07883v2
@@ -984,6 +1043,7 @@ papers:
   - tool-orchestration
   - runtime-reconfiguration
   source: arxiv
+  published: '2026-02-08'
 - title: 'KARL: Knowledge Agents via Reinforcement Learning'
   authors: []
   url: https://arxiv.org/abs/2603.05218v1
@@ -1001,6 +1061,7 @@ papers:
   - knowledge-agents
   - benchmark
   source: arxiv
+  published: '2026-03-05'
 - title: 'Beyond Refusal: Probing the Limits of Agentic Self-Correction for Semantic Sensitive Information'
   authors: []
   url: https://arxiv.org/abs/2602.21496v1
@@ -1018,6 +1079,7 @@ papers:
   - privacy
   - agentic-self-correction
   source: arxiv
+  published: '2026-02-25'
 - title: 'AriadneMem: Threading the Maze of Lifelong Memory for LLM Agents'
   authors: []
   url: https://arxiv.org/abs/2603.03290v1
@@ -1033,6 +1095,7 @@ papers:
   - graph-memory
   - context-efficiency
   source: arxiv
+  published: '2026-02-05'
 - title: 'VimRAG: Navigating Massive Visual Context in Retrieval-Augmented Generation via Multimodal Memory Graph'
   authors:
   - Qiuchen Wang
@@ -1054,6 +1117,7 @@ papers:
   - visual-reasoning
   - agent-memory
   source: arxiv
+  published: '2026-02-13'
 - title: 'SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents'
   authors:
   - Yuhang Wang
@@ -1067,6 +1131,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-01-23'
 - title: 'Beyond RAG for Agent Memory: Retrieval by Decoupling and Aggregation'
   authors:
   - Zhanghao Hu
@@ -1080,6 +1145,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-02-02'
 - title: 'AgentCgroup: Understanding and Controlling OS Resources of AI Agents'
   authors:
   - Yusheng Zheng
@@ -1093,6 +1159,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-02-10'
 - title: 'DLLM-Searcher: Adapting Diffusion Large Language Model for Search Agents'
   authors:
   - Jiahao Zhao
@@ -1106,6 +1173,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-02-03'
 - title: Agentic Rubrics as Contextual Verifiers for SWE Agents
   authors:
   - Mohit Raghavendra
@@ -1119,6 +1187,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-01-07'
 - title: 'Confucius Code Agent: An Open-sourced AI Software Engineer at Industrial Scale'
   authors:
   - Zhaodong Wang
@@ -1132,6 +1201,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2025-12-11'
 - title: 'SWE-Protégé: Learning to Selectively Collaborate With an Expert Unlocks Small Language Models as Software Engineering
     Agents'
   authors: []
@@ -1149,6 +1219,7 @@ papers:
   - expert-collaboration
   - reinforcement-learning
   source: arxiv
+  published: '2026-02-25'
 - title: 'EGSS: Entropy-guided Stepwise Scaling for Reliable Software Engineering'
   authors:
   - Chenhui Mao
@@ -1170,6 +1241,7 @@ papers:
   - coding-agents
   - entropy-guided
   source: arxiv
+  published: '2026-02-05'
 - title: 'Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?'
   authors:
   - Thibaud Gloaguen
@@ -1191,6 +1263,7 @@ papers:
   - evaluation
   - swe-bench
   source: arxiv
+  published: '2026-02-12'
 - title: 'Debug2Fix: Supercharging Coding Agents with Interactive Debugging Capabilities'
   authors:
   - Spandan Garg
@@ -1209,6 +1282,7 @@ papers:
   - swe-bench
   - subagent-architecture
   source: arxiv
+  published: '2026-02-20'
 - title: 'SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution'
   authors:
   - Kang He
@@ -1227,6 +1301,7 @@ papers:
   - codebase-navigation
   - version-control
   source: arxiv
+  published: '2026-03-01'
 - title: 'Immersion in the GitHub Universe: Scaling Coding Agents to Mastery'
   authors: []
   url: https://arxiv.org/abs/2602.09892v2
@@ -1243,6 +1318,7 @@ papers:
   - training-data
   - swe-bench
   source: arxiv
+  published: '2026-02-10'
 - title: 'ReflexiCoder: Teaching Large Language Models to Self-Reflect on Generated Code and Self-Correct It via Reinforcement
     Learning'
   authors:
@@ -1265,6 +1341,7 @@ papers:
   - self-correction
   - inference-efficiency
   source: arxiv
+  published: '2026-03-06'
 - title: 'Hybrid-Gym: Training Coding Agents to Generalize Across Tasks'
   authors:
   - Yiqing Xie
@@ -1285,6 +1362,7 @@ papers:
   - training
   - generalization
   source: arxiv
+  published: '2026-02-18'
 - title: 'RepoLaunch: Automating Build&Test Pipeline of Code Repositories on ANY Language and ANY Platform'
   authors: []
   url: https://arxiv.org/abs/2603.05026v1
@@ -1300,6 +1378,7 @@ papers:
   - dataset-creation
   - devtools
   source: arxiv
+  published: '2026-03-05'
 - title: 'Building Effective AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned'
   authors:
   - Nghi D. Q. Bui
@@ -1317,6 +1396,7 @@ papers:
   - cli-tools
   - agent-architecture
   source: arxiv
+  published: '2026-03-05'
 - title: 'AIDev: Studying AI Coding Agents on GitHub'
   authors:
   - Hao Li
@@ -1336,6 +1416,7 @@ papers:
   - software-engineering
   - developer-productivity
   source: arxiv
+  published: '2026-02-09'
 - title: Rethinking the Value of Agent-Generated Tests for LLM-Based Software Engineering Agents
   authors: []
   url: https://arxiv.org/abs/2602.07900v1
@@ -1352,6 +1433,7 @@ papers:
   - swe-bench
   - empirical-study
   source: arxiv
+  published: '2026-02-08'
 - title: 'SGAgent: Suggestion-Guided LLM-Based Multi-Agent Framework for Repository-Level Software Repair'
   authors:
   - Quanjun Zhang
@@ -1373,6 +1455,7 @@ papers:
   - knowledge-graph
   - multi-agent
   source: arxiv
+  published: '2026-02-27'
 - title: 'TraceCoder: A Trace-Driven Multi-Agent Framework for Automated Debugging of LLM-Generated Code'
   authors: []
   url: https://arxiv.org/abs/2602.06875v1
@@ -1389,6 +1472,7 @@ papers:
   - code-generation
   - iterative-repair
   source: arxiv
+  published: '2026-02-06'
 - title: 'Configuring Agentic AI Coding Tools: An Exploratory Study'
   authors:
   - Matthias Galster
@@ -1409,6 +1493,7 @@ papers:
   - developer-experience
   - configuration
   source: arxiv
+  published: '2026-02-16'
 - title: 'OpenFang: Open-source Agent Operating System'
   authors:
   - RightNow-AI
@@ -1423,6 +1508,7 @@ papers:
   - agent-os
   - runtime
   - open-source
+  published: '2026-02-24'
 - title: 'OpenViking: Context Database for AI Agents'
   authors:
   - Volcengine
@@ -1438,6 +1524,7 @@ papers:
   - memory
   - agent-infrastructure
   source: github
+  published: '2026-01-05'
 - title: 'Edict: Multi-Agent Orchestration System'
   authors:
   - cft0808
@@ -1453,6 +1540,7 @@ papers:
   - observability
   - dashboard
   source: github
+  published: '2026-02-23'
 - title: 'ClawRouter: Agent-Native LLM Router'
   authors:
   - BlockRunAI
@@ -1467,6 +1555,7 @@ papers:
   - latency
   - multi-model
   source: github
+  published: '2026-02-03'
 - title: Introducing Advanced Tool Use on Claude
   authors:
   - Anthropic
@@ -1482,6 +1571,7 @@ papers:
   - tool-discovery
   - token-optimization
   - anthropic
+  published: '2025-11-24'
 - title: Building Agents with the Claude Agent SDK
   authors:
   - Anthropic
@@ -1496,6 +1586,7 @@ papers:
   - agent-sdk
   - anthropic
   - framework
+  published: '2026-01-15'
 - title: 'Jenius Agent: Towards Experience-Driven Accuracy Optimization in Real-World Scenarios'
   authors:
   - Defei Xia
@@ -1509,6 +1600,7 @@ papers:
   importance: ''
   tags: []
   source: huggingface
+  published: '2026-01-05'
 - title: 'SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks'
   authors:
   - Xiangyi Li
@@ -1530,6 +1622,7 @@ papers:
   - procedural-knowledge
   - tool-design
   source: arxiv
+  published: '2026-02-13'
 - title: 'AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications'
   authors: []
   url: https://arxiv.org/abs/2602.22769v2
@@ -1546,6 +1639,7 @@ papers:
   - retrieval
   - long-horizon
   source: arxiv
+  published: '2026-02-26'
 - title: An Empirical Study of Bugs in Modern LLM Agent Frameworks
   authors:
   - Xinxue Zhu
@@ -1567,6 +1661,7 @@ papers:
   - langchain
   - crewai
   source: arxiv
+  published: '2026-02-25'
 - title: 'MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks'
   authors: []
   url: https://arxiv.org/abs/2602.16313v1
@@ -1584,6 +1679,7 @@ papers:
   - multi-session
   - evaluation
   source: arxiv
+  published: '2026-02-18'
 - title: 'Authenticated Workflows: A Systems Approach to Protecting Agentic AI'
   authors:
   - Mohan Rajagopalan
@@ -1602,6 +1698,7 @@ papers:
   - enterprise-ai
   - cryptographic-trust
   source: arxiv
+  published: '2026-02-11'
 - title: 'AgentLAB: Benchmarking LLM Agents against Long-Horizon Attacks'
   authors:
   - Tanqiu Jiang
@@ -1621,6 +1718,7 @@ papers:
   - benchmarks
   - multi-turn-attacks
   source: arxiv
+  published: '2026-02-18'
 - title: 'AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation'
   authors: []
   url: https://arxiv.org/abs/2603.03761v1
@@ -1637,6 +1735,7 @@ papers:
   - recommendation
   - orchestration
   source: arxiv
+  published: '2026-03-04'
 - title: Evolutionary Generation of Multi-Agent Systems
   authors:
   - Yuntong Hu
@@ -1658,6 +1757,7 @@ papers:
   - swe-bench
   - auto-agent-design
   source: arxiv
+  published: '2026-02-06'
 - title: 'OpaqueToolsBench: Learning Nuances of Tool Behavior Through Interaction'
   authors: []
   url: https://arxiv.org/abs/2602.15197v1
@@ -1674,6 +1774,7 @@ papers:
   - function-calling
   - agent-evaluation
   source: arxiv
+  published: '2026-02-16'
 - title: 'AdaptOrch: Task-Adaptive Multi-Agent Orchestration in the Era of LLM Performance Convergence'
   authors:
   - Geunbin Yu
@@ -1691,6 +1792,7 @@ papers:
   - topology-routing
   - agent-framework
   source: arxiv
+  published: '2026-02-18'
 - title: 'FeatureBench: Benchmarking Agentic Coding for Complex Feature Development'
   authors:
   - Qixing Zhou
@@ -1713,6 +1815,7 @@ papers:
   - feature-development
   - swe-bench
   source: arxiv
+  published: '2026-02-11'
 - title: 'Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation'
   authors:
   - Hubert M. Pysklo
@@ -1733,6 +1836,7 @@ papers:
   - api-orchestration
   - benchmarking
   source: arxiv
+  published: '2026-02-11'
 - title: 'LOGIGEN: Logic-Driven Generation of Verifiable Agentic Tasks'
   authors: []
   url: https://arxiv.org/abs/2603.00540v1
@@ -1749,6 +1853,7 @@ papers:
   - data-synthesis
   - orchestration
   source: arxiv
+  published: '2026-02-28'
 - title: 'Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward'
   authors:
   - Renjun Xu
@@ -1767,6 +1872,7 @@ papers:
   - security
   - survey
   source: arxiv
+  published: '2026-02-12'
 - title: 'IDP Accelerator: Agentic Document Intelligence from Extraction to Compliance Validation'
   authors: []
   url: https://arxiv.org/abs/2602.23481v1
@@ -1784,6 +1890,7 @@ papers:
   - agentic-workflows
   - enterprise
   source: arxiv
+  published: '2026-02-26'
 - title: 'Mozi: Governed Autonomy for Drug Discovery LLM Agents'
   authors:
   - He Cao
@@ -1806,6 +1913,7 @@ papers:
   - guardrails
   - workflow-orchestration
   source: arxiv
+  published: '2026-03-04'
 - title: 'Beyond Rows to Reasoning: Agentic Retrieval for Multimodal Spreadsheet Understanding and Editing'
   authors: []
   url: https://arxiv.org/abs/2603.06503v1
@@ -1822,6 +1930,7 @@ papers:
   - multimodal
   - enterprise
   source: arxiv
+  published: '2026-03-06'
 - title: 'OptiRepair: Closed-Loop Diagnosis and Repair of Supply Chain Optimization Models with LLM Agents'
   authors: []
   url: https://arxiv.org/abs/2602.19439v2
@@ -1838,6 +1947,7 @@ papers:
   - optimization
   - domain-agents
   source: arxiv
+  published: '2026-02-23'
 - title: 'CT-Flow: Orchestrating CT Interpretation Workflow with Model Context Protocol Servers'
   authors: []
   url: https://arxiv.org/abs/2603.00123v1
@@ -1854,6 +1964,7 @@ papers:
   - tool-orchestration
   - clinical-workflows
   source: arxiv
+  published: '2026-02-23'
 - title: An end-to-end agentic pipeline for smart contract translation and quality evaluation
   authors:
   - Abhinav Goel
@@ -1874,6 +1985,7 @@ papers:
   - multi-agent
   - quality-evaluation
   source: arxiv
+  published: '2026-02-14'
 - title: 'LiaisonAgent: An Multi-Agent Framework for Autonomous Risk Investigation and Governance'
   authors:
   - Chuanming Tang
@@ -1893,6 +2005,7 @@ papers:
   - hybrid-planning
   - tool-calling
   source: arxiv
+  published: '2026-02-27'
 - title: Agentic AI for Scalable and Robust Optical Systems Control
   authors: []
   url: https://arxiv.org/abs/2602.20144v1
@@ -1909,6 +2022,7 @@ papers:
   - industrial-ai
   - optical-systems
   source: arxiv
+  published: '2026-02-23'
 - title: 'Decoding ML Decision: An Agentic Reasoning Framework for Large-Scale Ranking System'
   authors:
   - Longfei Yun
@@ -1929,6 +2043,7 @@ papers:
   - agentic-optimization
   - ml-operations
   source: arxiv
+  published: '2026-02-20'
 - title: 'Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational Video Generation'
   authors:
   - Lingyong Yan
@@ -1950,6 +2065,7 @@ papers:
   - orchestration
   - production-scale
   source: arxiv
+  published: '2026-02-12'
 - title: 'Cast-R1: Learning Tool-Augmented Sequential Decision Policies for Time Series Forecasting'
   authors: []
   url: https://arxiv.org/abs/2602.13802v1
@@ -1967,6 +2083,7 @@ papers:
   - sequential-decisions
   - forecasting
   source: arxiv
+  published: '2026-02-14'
 - title: Autonomous Edge-Deployed AI Agents for Electric Vehicle Charging Infrastructure Management
   authors: []
   url: https://arxiv.org/abs/2603.08736v1
@@ -1983,6 +2100,7 @@ papers:
   - orchestration
   - autonomous-agents
   source: arxiv
+  published: '2026-02-24'
 - title: 'AnomaMind: Agentic Time Series Anomaly Detection with Tool-Augmented Reasoning'
   authors: []
   url: https://arxiv.org/abs/2602.13807v1
@@ -1998,6 +2116,7 @@ papers:
   - tool-augmented
   - observability
   source: arxiv
+  published: '2026-02-14'
 - title: 'GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant'
   authors: []
   url: https://arxiv.org/abs/2603.01059v1
@@ -2014,6 +2133,7 @@ papers:
   - token-efficiency
   - chat-agents
   source: arxiv
+  published: '2026-03-01'
 - title: 'Catalyst-Agent: Autonomous heterogeneous catalyst screening and optimization with an LLM Agent'
   authors: []
   url: https://arxiv.org/abs/2603.01311v1
@@ -2030,6 +2150,7 @@ papers:
   - tool-orchestration
   - materials-science
   source: arxiv
+  published: '2026-03-01'
 - title: 'MedScope: Incentivizing Think with Videos for Clinical Reasoning via Coarse-to-Fine Tool Calling'
   authors: []
   url: https://arxiv.org/abs/2602.13332v1
@@ -2047,6 +2168,7 @@ papers:
   - tool-use
   - clinical
   source: arxiv
+  published: '2026-02-01'
 - title: 'HLER: Human-in-the-Loop Economic Research via Multi-Agent Pipelines for Empirical Discovery'
   authors: []
   url: https://arxiv.org/abs/2603.07444v1
@@ -2062,6 +2184,7 @@ papers:
   - multi-agent
   - research-automation
   source: arxiv
+  published: '2026-03-08'
 - title: 'CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era'
   authors: []
   url: https://arxiv.org/abs/2602.23452v1
@@ -2079,6 +2202,7 @@ papers:
   - multi-agent
   - scientific-writing
   source: arxiv
+  published: '2026-02-26'
 - title: 'DataJoint 2.0: A Computational Substrate for Agentic Scientific Workflows'
   authors:
   - Dimitri Yatsenko
@@ -2096,6 +2220,7 @@ papers:
   - scientific-computing
   - data-pipelines
   source: arxiv
+  published: '2026-02-18'
 - title: 'GenDB: The Next Generation of Query Processing -- Synthesized, Not Engineered'
   authors:
   - Jiale Lao
@@ -2113,6 +2238,7 @@ papers:
   - code-synthesis
   - multi-agent
   source: arxiv
+  published: '2026-03-02'
 - title: Quantifying Infrastructure Noise in Agentic Coding Evals
   authors:
   - Anthropic
@@ -2129,6 +2255,7 @@ papers:
   - infrastructure
   - anthropic
   source: blog
+  published: '2026-03-01'
 - title: Demystifying Evals for AI Agents
   authors:
   - Anthropic
@@ -2144,6 +2271,7 @@ papers:
   - anthropic
   - best-practices
   source: blog
+  published: '2026-01-09'
 - title: State of Agent Engineering
   authors:
   - LangChain
@@ -2159,6 +2287,7 @@ papers:
   - industry
   - langchain
   source: blog
+  published: '2026-02-01'
 - title: Eval Awareness in Claude Opus 4.6 BrowseComp Performance
   authors:
   - Anthropic
@@ -2174,6 +2303,7 @@ papers:
   - trust
   - anthropic
   source: blog
+  published: '2026-02-15'
 - title: Introducing GPT-5.3-Codex
   authors:
   - OpenAI
@@ -2189,6 +2319,7 @@ papers:
   - coding-model
   - agentic
   source: blog
+  published: '2026-02-05'
 - title: 'Gemini Deep Think: Redefining Scientific Research'
   authors:
   - Google DeepMind
@@ -2204,6 +2335,7 @@ papers:
   - inference-scaling
   - gemini
   source: blog
+  published: '2026-02-20'
 - title: 'Google DeepMind: Intelligent AI Delegation for the Agentic Web'
   authors:
   - Google DeepMind
@@ -2219,6 +2351,7 @@ papers:
   - multi-agent
   - deepmind
   source: blog
+  published: '2026-02-15'
 - title: 'SIMA 2: A Gemini-Powered AI Agent for 3D Virtual Worlds'
   authors:
   - Google DeepMind
@@ -2234,6 +2367,7 @@ papers:
   - gemini
   - deepmind
   source: blog
+  published: '2026-03-05'
 - title: Building a C Compiler with a Team of Parallel Claudes
   authors:
   - Anthropic
@@ -2249,6 +2383,7 @@ papers:
   - orchestration
   - anthropic
   source: blog
+  published: '2026-02-05'
 - title: 'Harness Engineering: Leveraging Codex in an Agent-First World'
   authors:
   - OpenAI
@@ -2264,6 +2399,7 @@ papers:
   - openai
   - patterns
   source: blog
+  published: '2026-02-10'
 - title: Unrolling the Codex Agent Loop
   authors:
   - OpenAI
@@ -2279,6 +2415,7 @@ papers:
   - architecture
   - openai
   source: blog
+  published: '2026-03-01'
 - title: Microsoft Agent Framework Reaches Release Candidate
   authors:
   - Microsoft
@@ -2294,6 +2431,7 @@ papers:
   - enterprise
   - release-candidate
   source: blog
+  published: '2026-02-19'
 - title: Gemini 2.5 Computer Use Model
   authors:
   - Google
@@ -2309,6 +2447,7 @@ papers:
   - gemini
   - google
   source: blog
+  published: '2026-03-10'
 - title: Build with Gemini Deep Research
   authors:
   - Google
@@ -2324,6 +2463,7 @@ papers:
   - gemini
   - google
   source: blog
+  published: '2026-03-01'
 - title: Reverse Engineering Claude CVE-2026-2796 Exploit
   authors:
   - Anthropic Red Team
@@ -2339,6 +2479,7 @@ papers:
   - anthropic
   - exploit
   source: blog
+  published: '2026-03-10'
 - title: On Agent Frameworks and Agent Observability
   authors:
   - LangChain
