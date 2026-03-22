@@ -25,11 +25,16 @@ For example, if today is Sunday March 22, the page is 'Week of March 16'.
    d. Check recent posts from Anthropic, OpenAI, Google DeepMind, Meta AI, Microsoft Research blogs
 
 2. SCORE AND CURATE:
-   - For each paper, score on 6 dimensions (1-5): novelty, practicality, rigor, impact, relevance, agentcore
-   - Weighted score: (novelty×1.0) + (practicality×2.0) + (rigor×1.0) + (impact×2.0) + (relevance×1.5) + (agentcore×2.5)
-   - AgentCore relevance: 4-5 if directly informs AWS AgentCore patterns (observability, runtime, memory, tool orchestration, guardrails), 2-3 if patterns could be implemented on AgentCore, 1 if no agent infra angle
-   - Categories: agentops, models, agents, ai-dev, harnesses, applications
-   - Keep top 4 per category (up to 24 papers total)
+   - For each paper, score on 5 dimensions (1-5): novelty, practicality, impact, agentic, applicability
+   - Weighted score: (novelty×1.0) + (practicality×2.0) + (impact×1.5) + (agentic×3.0) + (applicability×2.5)
+   - Agentic relevance: 5 if directly about agent learning/self-improvement, agentic loops, agentops, memory systems, or agent harnesses;
+     4 if about tool orchestration, guardrails, agent debugging, or agent infrastructure;
+     3 if patterns could be used in agent systems; 2 if tangentially related; 1 if no agent angle
+   - Applicability: 5 if immediately usable in real-world agent deployments; 4 if practical with minor adaptation;
+     3 if useful concept; 2 if mostly theoretical; 1 if purely academic
+   - Categories: agentops, agents, harnesses, applications, ai-dev, models
+   - Category targets: agentops 2-3, agents 2-3, harnesses 1-2, applications 1-2, ai-dev 0-1, models 0-1
+   - Models papers: ONLY include if truly exceptional (weighted score >= 40). Most weeks will have 0 model papers.
    - Deduplicate across sources by title similarity
 
 3. WRITE DATA FILE:

@@ -1,0 +1,207 @@
+week: '2026-03-16'
+curator_notes: 'Week of March 16 — strong week for agent infrastructure and memory systems.
+  Sources: HuggingFace trending, Microsoft Research blog, Anthropic blog, Google DeepMind.'
+papers:
+- title: 'Memento-Skills: Let Agents Design Agents'
+  authors:
+  - Huichi Zhou
+  - Siyuan Guo
+  - Anjie Liu
+  - Zhongwei Yu
+  - Ziqin Gong
+  url: https://arxiv.org/abs/2603.18743
+  category: agents
+  summary: A continually-learnable LLM agent system that autonomously constructs, adapts,
+    and improves task-specific agents through experience. Built on a memory-based RL
+    framework with stateful prompts where reusable skills are stored as structured
+    markdown files serving as persistent, evolving memory.
+  importance: Meta-agent architecture that designs specialized sub-agents — directly
+    relevant to agent orchestration and skill composition patterns.
+  tags:
+  - meta-agents
+  - skill-learning
+  - memory
+  - reinforcement-learning
+  source: huggingface
+  published: '2026-03-21'
+- title: 'AgentRx: Systematic Debugging Framework for AI Agents'
+  authors:
+  - Microsoft Research
+  url: https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/
+  category: agentops
+  summary: Framework for improving transparency when AI agents make errors in autonomous
+    tasks. Provides systematic approaches to diagnosing agent failures, tracing error
+    propagation through multi-step workflows, and identifying root causes in complex
+    agent pipelines.
+  importance: Production-grade agent observability — essential for debugging and reliability
+    in deployed agent systems.
+  tags:
+  - debugging
+  - observability
+  - reliability
+  - agent-errors
+  source: blog
+  published: '2026-03-12'
+- title: 'PlugMem: Transforming Raw Agent Interactions into Reusable Knowledge'
+  authors:
+  - Microsoft Research
+  url: https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/
+  category: agentops
+  summary: Method to convert raw agent interaction logs into structured, practical
+    knowledge while managing memory efficiency. Addresses the key challenge of what
+    to retain and what to discard from lengthy agent interaction histories.
+  importance: Directly tackles the agent memory bottleneck — critical for long-running
+    agents that need to learn from past interactions without context window exhaustion.
+  tags:
+  - memory
+  - knowledge-extraction
+  - interaction-logs
+  - efficiency
+  source: blog
+  published: '2026-03-10'
+- title: 'AndroTMem: Anchored Memory in Long-Horizon GUI Agents'
+  authors:
+  - Yibo Shi
+  - Jungang Li
+  - Linghao Zhang
+  - Zihao Dongfang
+  - Biao Wu
+  url: https://arxiv.org/abs/2603.18429
+  category: agents
+  summary: Diagnostic framework for anchored memory in long-horizon Android GUI agents.
+    Shows that replaying full interaction sequences is redundant and noisy, while
+    summaries erase dependency-critical information. Proposes anchored memory that
+    preserves traceability while reducing noise.
+  importance: Practical memory architecture for deployed GUI agents — balances information
+    retention with efficiency in real mobile automation tasks.
+  tags:
+  - gui-agents
+  - memory
+  - mobile
+  - long-horizon
+  source: huggingface
+  published: '2026-03-21'
+- title: 'ProRL Agent: Rollout-as-a-Service for RL Training of Multi-Turn LLM Agents'
+  authors:
+  - Hao Zhang
+  - Mingjie Liu
+  - Shaokun Zhang
+  - Songyang Han
+  - Jian Hu
+  url: https://arxiv.org/abs/2603.18815
+  category: harnesses
+  summary: Decouples rollout orchestration from the RL training loop for multi-turn
+    LLM agents. Makes sandboxed trajectory generation a scalable service, enabling
+    easier migration and maintenance of agent training infrastructure across environments.
+  importance: Infrastructure pattern for scaling agent RL training — separating rollout
+    from training is a key architectural insight for production agent systems.
+  tags:
+  - reinforcement-learning
+  - training-infrastructure
+  - multi-turn
+  - scalability
+  source: huggingface
+  published: '2026-03-21'
+- title: 'VTC-Bench: Evaluating Agentic Models via Compositional Visual Tool Chaining'
+  authors:
+  - Xuanyu Zhu
+  - Yuhao Dong
+  - Rundong Wang
+  - Yang Shi
+  - Zhipeng Wu
+  url: https://arxiv.org/abs/2603.15030
+  category: harnesses
+  summary: Benchmark for evaluating how well multimodal LLMs compose and chain external
+    tools for complex visual tasks. Exposes a persistent bottleneck — existing models
+    struggle to precisely execute and effectively compose diverse tools in multi-step
+    workflows.
+  importance: Directly measures agentic tool orchestration capability — reveals where
+    current agent harnesses break down in real tool-chaining scenarios.
+  tags:
+  - tool-chaining
+  - benchmarks
+  - agentic-evaluation
+  - multimodal
+  source: huggingface
+  published: '2026-03-19'
+- title: 'DICE-RL: Efficient Skill Mastery via Distribution Contractive RL Finetuning'
+  authors:
+  - Zhanyi Sun
+  - Shuran Song
+  url: https://arxiv.org/abs/2603.10263
+  category: agents
+  summary: Framework that uses RL as a distribution contraction operator to refine
+    pretrained generative robot policies. Turns a pretrained behavior prior into a
+    high-performing policy by amplifying high-success behaviors from online feedback,
+    enabling efficient skill acquisition from limited interaction.
+  importance: Practical agent self-improvement loop — demonstrates how agents can
+    rapidly master skills by refining pretrained behaviors through online experience.
+  tags:
+  - skill-learning
+  - reinforcement-learning
+  - self-improvement
+  - robotics
+  source: huggingface
+  published: '2026-03-17'
+- title: 'AI Scientist via Synthetic Task Scaling'
+  authors:
+  - Ziyang Cai
+  - Harkirat Behl
+  url: https://arxiv.org/abs/2603.17216
+  category: agents
+  summary: Provides a novel synthetic environment for training AI agents to perform
+    ML research. Addresses the gap between plausible-looking but ineffective research
+    ideas and genuine scientific discovery by using synthetic tasks to train agents
+    that learn from doing.
+  importance: Principled approach to training research agents — moves beyond prompt
+    scaffolding to actual learned scientific reasoning capabilities.
+  tags:
+  - ai-research
+  - synthetic-tasks
+  - scientific-discovery
+  - training
+  source: huggingface
+  published: '2026-03-20'
+- title: 'BenchPreS: Personalized Preference Selectivity of Persistent-Memory LLMs'
+  authors:
+  - Sangyeon Yoon
+  - Sunkyoung Kim
+  - Hyesoo Hong
+  - Wonje Jeung
+  - Yongil Kim
+  url: https://arxiv.org/abs/2603.16557
+  category: applications
+  summary: Evaluates whether memory-based user preferences in LLMs are appropriately
+    applied or suppressed across different social and institutional contexts. Addresses
+    when persistent memory should and should not influence model behavior in third-party
+    communication settings.
+  importance: Critical safety evaluation for personalized AI assistants — understanding
+    when to apply vs. suppress stored preferences is essential for deployed agents.
+  tags:
+  - persistent-memory
+  - personalization
+  - safety
+  - benchmarks
+  source: huggingface
+  published: '2026-03-19'
+- title: 'Alignment Makes Language Models Normative, Not Descriptive'
+  authors:
+  - Eilam Shapira
+  - Moshe Tennenholtz
+  - Roi Reichart
+  url: https://arxiv.org/abs/2603.17218
+  category: applications
+  summary: Compares 120 base-aligned model pairs on 10,000+ real human decisions in
+    multi-round strategic games — bargaining, persuasion, negotiation. Shows that
+    base models outperform aligned counterparts at predicting actual human behavior,
+    revealing that alignment optimizes for norms, not descriptions of how people act.
+  importance: Critical insight for agent design — agents deployed in negotiation,
+    persuasion, or strategic settings may need base models, not RLHF-aligned ones,
+    to accurately model human counterparts.
+  tags:
+  - alignment
+  - agent-behavior
+  - strategic-games
+  - human-modeling
+  source: huggingface
+  published: '2026-03-20'
